@@ -9,9 +9,11 @@ public class Main
         System.out.println();
 
         Blacksmith blacksmith = new Blacksmith();
+        blacksmith.greet(player);
         blacksmith.interact(player);
 
         Alchemist alchemist = new Alchemist();
+        alchemist.greet(player);
         alchemist.interact(player);
     }
 }

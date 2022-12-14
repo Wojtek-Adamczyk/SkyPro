@@ -3,7 +3,9 @@ import java.util.Scanner;
 
 public class Alchemist
 {
-    public Alchemist()
+    public Alchemist() {}
+
+    public void greet(Player player)
     {
         Random greet = new Random();
         Integer greeting = greet.nextInt(0,1);

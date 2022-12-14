@@ -6,8 +6,6 @@ public class Player
     Integer armor = 0;
     Integer money = 300;
 
-    City currentCity;
-
     public Player(Integer currentHP, Integer maximumHP, Integer damage, Integer armor, Integer money)
     {
         this.currentHP = currentHP;

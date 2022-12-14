@@ -3,7 +3,9 @@ import java.util.Scanner;
 
 public class Blacksmith
 {
-    public Blacksmith()
+    public Blacksmith() {}
+
+    public void greet(Player player)
     {
         Random greet = new Random();
         Integer greeting = greet.nextInt(0,2);
