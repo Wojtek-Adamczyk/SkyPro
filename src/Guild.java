@@ -1,2 +1,4 @@
-public class Guild {
+public class Guild extends Building
+{
+
 }

@@ -8,12 +8,21 @@ public class Main
 
         System.out.println();
 
-        Blacksmith blacksmith = new Blacksmith();
-        blacksmith.greet(player);
-        blacksmith.interact(player);
 
-        Alchemist alchemist = new Alchemist();
-        alchemist.greet(player);
-        alchemist.interact(player);
+//        Alchemist alchemist = new Alchemist();
+//        alchemist.greet(player);
+//        alchemist.interact(player);
+
+        City solitude = new City("Solitude", true, true, true, true, false, true);
+        City morthal = new City("Morthal", true, false, true, true, false, true);
+
+        morthal.menu(new City("Solitude", true, true, true, true, false, true), player);
+
+
+
+
+
+
+
     }
 }

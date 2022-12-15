@@ -1,2 +1,3 @@
-public class Wilderness {
+public class Wilderness extends Building
+{
 }

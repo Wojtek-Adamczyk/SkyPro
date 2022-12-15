@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Blacksmith
+public class Blacksmith extends Building
 {
     public Blacksmith() {}
 

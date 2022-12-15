@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Alchemist
+public class Alchemist extends Building
 {
     public Alchemist() {}
 
@@ -78,5 +78,12 @@ public class Alchemist
         if (playerInput == 0) {sheet(player);}
         else if (playerInput == 1) {buyPotion(player);}
         else if (playerInput == 2) {pickpocket(player);}
+    }
+
+    public void leave(Player player)
+    {
+        player.building = null;
+
+
     }
 }

@@ -14,6 +14,12 @@ public class Player
         this.armor = armor;
         this.money = money;
     }
+
+
+    public Building building;
+    public City currentCity;
+    public Building currentBuilding;
+
 }
 
 

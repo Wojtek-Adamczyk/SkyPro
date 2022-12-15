@@ -1,2 +1,5 @@
-public class Building {
+public class Building
+{
+
+
 }
