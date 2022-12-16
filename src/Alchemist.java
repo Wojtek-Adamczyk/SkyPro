@@ -78,12 +78,12 @@ public class Alchemist extends Building
         if (playerInput == 0) {sheet(player);}
         else if (playerInput == 1) {buyPotion(player);}
         else if (playerInput == 2) {pickpocket(player);}
+        else if (playerInput == 3) {leave(player);}
     }
 
     public void leave(Player player)
     {
         player.building = null;
-
-
+        player.currentCity.menu(player);
     }
 }

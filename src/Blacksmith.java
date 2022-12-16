@@ -94,5 +94,14 @@ public class Blacksmith extends Building
         else if (playerInput == 1) {buyWeapon(player);}
         else if (playerInput == 2) {buyArmor(player);}
         else if (playerInput == 3) {pickpocket(player);}
+        else if (playerInput == 4) {leave(player);
+
+        }
+    }
+
+    public void leave(Player player)
+    {
+        player.building = null;
+        player.currentCity.menu(player);
     }
 }

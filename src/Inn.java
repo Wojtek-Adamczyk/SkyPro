@@ -113,18 +113,25 @@ public class Inn extends Building
         System.out.println("4. Rent a room for one night");
         System.out.println("5. Hire follower");
         System.out.println("6. Pickpocket");
-        System.out.println("7. Leavet");
+        System.out.println("7. Leave");
 
         Scanner input = new Scanner(System.in);
         int playerInput = input.nextInt();
         System.out.println();
 
         if (playerInput == 0) {sheet(player);}
-        // else if (playerInput == 1) {talkToInkeeper(player);}
+        // else if (playerInput == 1) {talkToInnkeeper(player);}
         // else if (playerInput == 2) {eavesdropRumors(player);}
         // else if (playerInput == 3) {examineNoticeBoard(player);}
         else if (playerInput == 4) {rentRoom(player);}
         else if (playerInput == 5) {hireFollower(player);}
         else if (playerInput == 6) {pickpocket(player);}
+        else if (playerInput == 7) {leave(player);}
+    }
+
+    public void leave(Player player)
+    {
+        player.building = null;
+        player.currentCity.menu(player);
     }
 }

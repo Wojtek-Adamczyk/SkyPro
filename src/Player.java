@@ -15,7 +15,6 @@ public class Player
         this.money = money;
     }
 
-
     public Building building;
     public City currentCity;
     public Building currentBuilding;
