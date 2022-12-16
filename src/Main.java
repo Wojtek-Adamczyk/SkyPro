@@ -18,7 +18,7 @@ public class Main
         City windhelm = new City("Windhelm", true, true, true, true, false, true);
         City riften = new City("Riften", true, true, true, true, true, true);
 
-        solitude.menu(player);
+        dawnstar.menu(player);
 
 
 

@@ -88,7 +88,7 @@ public class Blacksmith extends Building
 
         Scanner input = new Scanner(System.in);
         int playerInput = input.nextInt();
-        System.out.println();
+
 
         if (playerInput == 0) {sheet(player);}
         else if (playerInput == 1) {buyWeapon(player);}

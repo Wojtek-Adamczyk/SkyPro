@@ -64,21 +64,21 @@ class City
     {
         int i;
         System.out.println("0. See your statistics");
-        for (i = 1; i <= 5; i++)
+        for (i = 0; i <= 5; i++)
         {
             if (buildings[i])
             {
                 switch (i)
                 {
-                    case 1 -> System.out.println("1. Go to the keep");
-                    case 2 -> System.out.println("2. Go to the blacksmith");
-                    case 3 -> System.out.println("3. Go to the alchemy shop");
-                    case 4 -> System.out.println("4. Go to the inn");
-                    case 5 -> System.out.println("5. Visit the guild");
-                    case 6 -> System.out.println("6. Leave the city");
+                    case 0 -> System.out.println("1. Go to the keep");
+                    case 1 -> System.out.println("2. Go to the blacksmith");
+                    case 2 -> System.out.println("3. Go to the alchemy shop");
+                    case 3 -> System.out.println("4. Go to the inn");
+                    case 4 -> System.out.println("5. Visit the guild");
+                    case 5 -> System.out.println("6. Leave the city");
+
                 }
             }
-
         }
 
         Scanner input = new Scanner(System.in);
