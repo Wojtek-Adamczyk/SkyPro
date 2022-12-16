@@ -28,42 +28,19 @@ class City
         this.isGuild = isGuild;
         this.isWilderness = isWilderness;
 
-        if (isKeep)
-        {
-            buildings[0] = true;
-            this.keep = new Keep();
-        }
-        if (isBlacksmith)
-        {
-            buildings[1] = true;
-            this.blacksmith = new Blacksmith();
-        }
-        if (isAlchemist)
-        {
-            buildings[2] = true;
-            this.alchemist = new Alchemist();
-        }
-        if (isInn)
-        {
-            buildings[3] = true;
-            this.inn = new Inn();
-        }
-        if (isGuild)
-        {
-            buildings[4] = true;
-            this.guild = new Guild();
-        }
-        if (isWilderness)
-        {
-            buildings[5] = true;
-            this.wilderness = new Wilderness();
-        }
+        if (isKeep) {buildings[0] = true; this.keep = new Keep();}
+        if (isBlacksmith) {buildings[1] = true; this.blacksmith = new Blacksmith();}
+        if (isAlchemist) {buildings[2] = true; this.alchemist = new Alchemist();}
+        if (isInn) {buildings[3] = true; this.inn = new Inn();}
+        if (isGuild) {buildings[4] = true; this.guild = new Guild();}
+        if (isWilderness) {buildings[5] = true; this.wilderness = new Wilderness();}
     }
 
     public void menu(Player player)
     {
-        int i;
         System.out.println("0. See your statistics");
+
+        int i;
         for (i = 0; i <= 5; i++)
         {
             if (buildings[i])
@@ -76,7 +53,15 @@ class City
                     case 3 -> System.out.println("4. Go to the inn");
                     case 4 -> System.out.println("5. Visit the guild");
                     case 5 -> System.out.println("6. Leave the city");
-
+                }
+            }
+            else if (!buildings[i])
+            {
+                switch (i)
+                {
+                    case 1 -> System.out.println("2. <NOT AVILABLE>");
+                    case 2 -> System.out.println("3. <NOT AVILABLE>");
+                    case 4 -> System.out.println("5. <NOT AVILABLE>");
                 }
             }
         }
@@ -86,7 +71,7 @@ class City
         switch (playerInput)
         {
             case "0" -> inn.sheet(player);
-            case "1" -> {}
+            case "1" -> {keep.greet(player); keep.interact(player);}
             case "2" -> {blacksmith.greet(player); blacksmith.interact(player);}
             case "3" -> {alchemist.greet(player); alchemist.interact(player);}
             case "4" -> {inn.greet(player); inn.interact(player);}
