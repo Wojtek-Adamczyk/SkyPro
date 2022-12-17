@@ -35,12 +35,11 @@ class City
             else if (name.equals("Morthal")) {this.keep = new Keep(Keep.Type.MORTHAL);}
             else if (name.equals("Markarth")) {this.keep = new Keep(Keep.Type.MARKARTH);}
             else if (name.equals("Falkreath")) {this.keep = new Keep(Keep.Type.FALKREATH);}
-            else if (name.equals("Whiteurn")) {this.keep = new Keep(Keep.Type.WHITERUN);}
+            else if (name.equals("Whiterun")) {this.keep = new Keep(Keep.Type.WHITERUN);}
             else if (name.equals("Dawnstar")) {this.keep = new Keep(Keep.Type.DAWNSTAR);}
             else if (name.equals("Winterhold")) {this.keep = new Keep(Keep.Type.WINTERHOLD);}
             else if (name.equals("Windhelm")) {this.keep = new Keep(Keep.Type.WINDHELM);}
             else if (name.equals("Riften")) {this.keep = new Keep(Keep.Type.RIFTEN);}
-
         }
         if (isBlacksmith) {buildings[1] = true; this.blacksmith = new Blacksmith();}
         if (isAlchemist) {buildings[2] = true; this.alchemist = new Alchemist();}
@@ -91,7 +90,7 @@ class City
         switch (playerInput)
         {
             case "0" -> inn.sheet(player);
-            case "1" -> {keep.greet(); keep.choices();}
+            case "1" -> {keep.menu(player);}
             case "2" -> {blacksmith.greet(player); blacksmith.interact(player);}
             case "3" -> {alchemist.greet(player); alchemist.interact(player);}
             case "4" -> {inn.greet(player); inn.interact(player);}

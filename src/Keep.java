@@ -65,7 +65,7 @@ public class Keep extends Building
 
         if (playerInput == 0) {sheet(player);}
        // else if (playerInput == 1) {talkToJarl(player);}
-        else if (playerInput == 2) {pickpocket(player);}
+        else if (playerInput == 2) {pickpocket(player); choices();}
         else if (playerInput == 3) {leave(player);}
     }
 
@@ -102,41 +102,139 @@ public class Keep extends Building
         {
             case SOLITUDE ->
             {
+                greet();
+                choices();
 
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {sheet(player); menu(player);}
+                    case "1" -> {}
+                    case "2" -> {pickpocket(player); menu(player);}
+                    case "3" -> {leave(player);}
+                }
             }
             case MORTHAL ->
             {
+                greet();
+                choices();
 
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {sheet(player); menu(player);}
+                    //case "1" -> {}
+                    case "2" -> {pickpocket(player); menu(player);}
+                    case "3" -> {leave(player);}
+                }
             }
             case MARKARTH ->
             {
+                greet();
+                choices();
 
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {sheet(player); menu(player);}
+                    //case "1" -> {}
+                    case "2" -> {pickpocket(player); menu(player);}
+                    case "3" -> {leave(player);}
+                }
             }
             case FALKREATH ->
             {
+                greet();
+                choices();
 
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {sheet(player); menu(player);}
+                    //case "1" -> {}
+                    case "2" -> {pickpocket(player); menu(player);}
+                    case "3" -> {leave(player);}
+                }
             }
             case WHITERUN ->
             {
+                greet();
+                choices();
 
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {sheet(player); menu(player);}
+                    //case "1" -> {}
+                    case "2" -> {pickpocket(player); menu(player);}
+                    case "3" -> {leave(player);}
+                }
             }
             case DAWNSTAR ->
             {
+                greet();
+                choices();
 
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {sheet(player); menu(player);}
+                    //case "1" -> {}
+                    case "2" -> {pickpocket(player); menu(player);}
+                    case "3" -> {leave(player);}
+                }
             }
             case WINTERHOLD ->
             {
+                greet();
+                choices();
 
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {sheet(player); menu(player);}
+                    //case "1" -> {}
+                    case "2" -> {pickpocket(player); menu(player);}
+                    case "3" -> {leave(player);}
+                }
             }
             case WINDHELM ->
             {
+                greet();
+                choices();
 
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {sheet(player); menu(player);}
+                    //case "1" -> {}
+                    case "2" -> {pickpocket(player); menu(player);}
+                    case "3" -> {leave(player);}
+                }
             }
             case RIFTEN ->
             {
+                greet();
+                choices();
 
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {sheet(player); menu(player);}
+                    //case "1" -> {}
+                    case "2" -> {pickpocket(player); menu(player);}
+                    case "3" -> {leave(player);}
+                }
             }
         }
-
     }
 }
