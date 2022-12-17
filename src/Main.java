@@ -16,6 +16,7 @@ public class Main
         City windhelm = new City("Windhelm", true, true, true, true, false, true);
         City riften = new City("Riften", true, true, true, true, true, true);
 
-        whiterun.menu(player);
+//        whiterun.menu(player);
+        falkreath.menu(player);
     }
 }

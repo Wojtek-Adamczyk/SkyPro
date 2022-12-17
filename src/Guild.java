@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Guild
 {
     public enum Type
@@ -10,14 +12,44 @@ public class Guild
         private final String name;
 
         Type(String name) {this.name = name;}
+    }
 
-        public String getName() {return name;}
+    public void leave(Player player)
+    {
+        player.building = null;
+        player.currentCity.menu(player);
+    }
 
+    public void sheet(Player player)
+    {
+        System.out.println("HP: " + player.currentHP + "/" + player.maximumHP);
+        System.out.println("Damage: " + player.damage);
+        System.out.println("Armor: " + player.armor);
+        System.out.println("Money: " + player.money + " septims");
+        System.out.println();
+        menu(player);
     }
 
     private final Type type;
 
     public Guild(Type type) {this.type = type;}
+
+    public void greet()
+    {
+        if(type.name.equals("Dark Brotherhood")) {System.out.println("- Hail Sithis brother! Night Mother is asking for a next prey.");}
+        if(type.name.equals("Companions")) {System.out.println("- Welcome shield-brother. Good to see you.");}
+        if(type.name.equals("College of Winterhold")) {System.out.println("- Watch out with these spells, apprentice. You don't want to burn anything.");}
+        if(type.name.equals("Thieves Guild")) {System.out.println("- How ya' doin' mate? Did ya' get your hands on something lately?");}
+    }
+
+    public void choices()
+    {
+        System.out.println("0. See your statistics");
+        System.out.println("1. Take beginner mission");
+        System.out.println("2. Take intermediate mission");
+        System.out.println("3. Take advenced mission");
+        System.out.println("4. Leave");
+    }
 
     public void menu(Player player)
     {
@@ -25,27 +57,71 @@ public class Guild
         {
             case BROTHERHOOD ->
             {
-                System.out.println("- Hail Sithis brother! Night Mother is asking for a next prey.");
-                break;
+                greet();
+                choices();
+
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {sheet(player); menu(player);}
+                    case "1" -> {}
+                    case "2" -> {}
+                    case "3" -> {}
+                    case "4" -> {leave(player);}
+                }
             }
+
             case COMPANIONS ->
             {
-                System.out.println("- Welcome shield-brother. Good to see you.");
-                break;
+                greet();
+                choices();
+
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {sheet(player); menu(player);}
+                    case "1" -> {System.out.println();}
+                    case "2" -> {}
+                    case "3" -> {}
+                    case "4" -> {leave(player);}
+                }
             }
 
             case COLLEGE ->
             {
-                System.out.println("- We are masters of the arcane arts.");
-                break;
+                greet();
+                choices();
+
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {sheet(player); menu(player);}
+                    case "1" -> {System.out.println();}
+                    case "2" -> {System.out.println();}
+                    case "3" -> {}
+                    case "4" -> {leave(player);}
+                }
             }
 
             case THIEVES ->
             {
-                System.out.println("- We are the masters of stealth and deception.");
-                break;
-            }
+                greet();
+                choices();
 
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {sheet(player); menu(player);}
+                    case "1" -> {System.out.println();}
+                    case "2" -> {}
+                    case "3" -> {System.out.println();}
+                    case "4" -> {leave(player);}
+                }
+            }
         }
     }
 }
