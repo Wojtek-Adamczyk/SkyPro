@@ -32,7 +32,14 @@ class City
         if (isBlacksmith) {buildings[1] = true; this.blacksmith = new Blacksmith();}
         if (isAlchemist) {buildings[2] = true; this.alchemist = new Alchemist();}
         if (isInn) {buildings[3] = true; this.inn = new Inn();}
-        if (isGuild) {buildings[4] = true; this.guild = new Guild();}
+        if (isGuild)
+        {
+            buildings[4] = true;
+            if (name.equals("Falkreath")) {this.guild = new Guild(Guild.Type.BROTHERHOOD);}
+            else if (name.equals("Whiterun")) {this.guild = new Guild(Guild.Type.COMPANIONS);}
+            else if (name.equals("Winterhold")) {this.guild = new Guild(Guild.Type.COLLEGE);}
+            else if (name.equals("Riften")) {this.guild = new Guild(Guild.Type.THIEVES);}
+        }
         if (isWilderness) {buildings[5] = true; this.wilderness = new Wilderness();}
     }
 
@@ -75,10 +82,8 @@ class City
             case "2" -> {blacksmith.greet(player); blacksmith.interact(player);}
             case "3" -> {alchemist.greet(player); alchemist.interact(player);}
             case "4" -> {inn.greet(player); inn.interact(player);}
-            case "5" -> {}
+            case "5" -> {guild.menu(player);}
             case "6" -> {}
         }
-
     }
-
 }

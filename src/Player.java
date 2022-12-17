@@ -17,8 +17,6 @@ public class Player
 
     public Building building;
     public City currentCity;
-    public Building currentBuilding;
-
 }
 
 

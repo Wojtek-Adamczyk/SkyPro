@@ -1,31 +1,51 @@
-public class Guild extends Building
+public class Guild
 {
-    City falkreath;
-    City whiterun;
-    City winterhold;
-    City riften;
-
-    public void Guild(City falkreath, City whiterun, City winterhold, City riften)
+    public enum Type
     {
-        this.falkreath = falkreath;
-        this.whiterun = whiterun;
-        this.winterhold = winterhold;
-        this.riften = riften;
+        BROTHERHOOD("Dark Brotherhood"),
+        COMPANIONS("Companions"),
+        COLLEGE("College of Winterhold"),
+        THIEVES("Thieves Guild");
 
-//        switch ()
-//        {
-//            case falkreath ->
-//            {
-//
-//            }
-//
-//            case whiterun ->
-//            {
-//
-//            }
-//
-//        }
+        private final String name;
+
+        Type(String name) {this.name = name;}
+
+        public String getName() {return name;}
+
     }
 
+    private final Type type;
 
+    public Guild(Type type) {this.type = type;}
+
+    public void menu(Player player)
+    {
+        switch (type)
+        {
+            case BROTHERHOOD ->
+            {
+                System.out.println("- Hail Sithis brother! Night Mother is asking for a next prey.");
+                break;
+            }
+            case COMPANIONS ->
+            {
+                System.out.println("- Welcome shield-brother. Good to see you.");
+                break;
+            }
+
+            case COLLEGE ->
+            {
+                System.out.println("- We are masters of the arcane arts.");
+                break;
+            }
+
+            case THIEVES ->
+            {
+                System.out.println("- We are the masters of stealth and deception.");
+                break;
+            }
+
+        }
+    }
 }
