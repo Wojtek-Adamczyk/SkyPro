@@ -28,7 +28,20 @@ class City
         this.isGuild = isGuild;
         this.isWilderness = isWilderness;
 
-        if (isKeep) {buildings[0] = true; this.keep = new Keep();}
+        if (isKeep)
+        {
+            buildings[0] = true;
+            if (name.equals("Solitude")) {this.keep = new Keep(Keep.Type.SOLITUDE);}
+            else if (name.equals("Morthal")) {this.keep = new Keep(Keep.Type.MORTHAL);}
+            else if (name.equals("Markarth")) {this.keep = new Keep(Keep.Type.MARKARTH);}
+            else if (name.equals("Falkreath")) {this.keep = new Keep(Keep.Type.FALKREATH);}
+            else if (name.equals("Whiteurn")) {this.keep = new Keep(Keep.Type.WHITERUN);}
+            else if (name.equals("Dawnstar")) {this.keep = new Keep(Keep.Type.DAWNSTAR);}
+            else if (name.equals("Winterhold")) {this.keep = new Keep(Keep.Type.WINTERHOLD);}
+            else if (name.equals("Windhelm")) {this.keep = new Keep(Keep.Type.WINDHELM);}
+            else if (name.equals("Riften")) {this.keep = new Keep(Keep.Type.RIFTEN);}
+
+        }
         if (isBlacksmith) {buildings[1] = true; this.blacksmith = new Blacksmith();}
         if (isAlchemist) {buildings[2] = true; this.alchemist = new Alchemist();}
         if (isInn) {buildings[3] = true; this.inn = new Inn();}
@@ -78,7 +91,7 @@ class City
         switch (playerInput)
         {
             case "0" -> inn.sheet(player);
-            case "1" -> {keep.greet(player); keep.interact(player);}
+            case "1" -> {keep.greet(); keep.choices();}
             case "2" -> {blacksmith.greet(player); blacksmith.interact(player);}
             case "3" -> {alchemist.greet(player); alchemist.interact(player);}
             case "4" -> {inn.greet(player); inn.interact(player);}

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Guild
+public class Guild extends Building
 {
     public enum Type
     {
