@@ -111,6 +111,4 @@ class City
             case "6" -> {wilderness.interact(player);}
         }
     }
-
-
 }

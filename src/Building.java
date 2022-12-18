@@ -6,7 +6,5 @@ class Building
         player.currentCity.menu(player);
 
     }
-
-
 }
 

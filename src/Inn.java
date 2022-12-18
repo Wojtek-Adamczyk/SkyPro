@@ -70,8 +70,6 @@ public class Inn extends Building
         }
         else System.out.println("- Come back when you will have enough gold.");
         System.out.println();
-
-
     }
 
     public void hireFollower(Player player)

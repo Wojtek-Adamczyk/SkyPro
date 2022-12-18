@@ -5,8 +5,6 @@ public class Wilderness extends Building
 {
     public Wilderness() {}
 
-    City[] cities = new City[9];
-
     public void misja1(Player player)
     {
         // misja 1
@@ -25,16 +23,6 @@ public class Wilderness extends Building
         interact(player);
     }
 
-    public void sheet(Player player)
-    {
-        System.out.println("HP: " + player.currentHP + "/" + player.maximumHP);
-        System.out.println("Damage: " + player.damage);
-        System.out.println("Armor: " + player.armor);
-        System.out.println("Money: " + player.money + " septims");
-        System.out.println();
-        interact(player);
-    }
-
     public void interact(Player player)
     {
         System.out.println("0. See your statistics");
@@ -47,16 +35,11 @@ public class Wilderness extends Building
         Scanner input = new Scanner(System.in);
         int playerInput = input.nextInt();
 
-        if (playerInput == 0) {sheet(player);}
+        if (playerInput == 0) {player.sheet(player);}
         else if (playerInput == 1) {player.currentCity.menu(player);}
         else if (playerInput == 2) {misja1(player);}
         else if (playerInput == 3) {misja2(player);}
         else if (playerInput == 4) {misja3(player);}
         else if (playerInput == 5) {player.travel();}
     }
-
-
-
-
-
 }
