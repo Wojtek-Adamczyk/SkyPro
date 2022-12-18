@@ -4,18 +4,22 @@ public class Main
     {
         Player player = new Player(100,100,10,0,300);
 
+        City[] cities = new City[9];
+
         System.out.println();
 
-        City solitude = new City("Solitude", true, true, true, true, false, true);
-        City morthal = new City("Morthal", true, false, true, true, false, true);
-        City markarth = new City("Markarth", true, true, true, true, false, true);
-        City falkreath = new City("Falkreath", true, true, false, true, true, true);
-        City whiterun = new City("Whiterun", true, true, true, true, true, true);
-        City dawnstar = new City("Dawnstar", true, true, true, true, false, true);
-        City winterhold = new City("Winterhold", true, false, false, true, true, true);
-        City windhelm = new City("Windhelm", true, true, true, true, false, true);
-        City riften = new City("Riften", true, true, true, true, true, true);
+        cities[0] = new City("Solitude", true, true, true, true, false, true);
+        cities[1] = new City("Morthal", true, false, true, true, false, true);
+        cities[2] = new City("Markarth", true, true, true, true, false, true);
+        cities[3] = new City("Falkreath", true, true, false, true, true, true);
+        cities[4] = new City("Whiterun", true, true, true, true, true, true);
+        cities[5] = new City("Dawnstar", true, true, true, true, false, true);
+        cities[6] = new City("Winterhold", true, false, false, true, true, true);
+        cities[7] = new City("Windhelm", true, true, true, true, false, true);
+        cities[8] = new City("Riften", true, true, true, true, true, true);
 
-        windhelm.menu(player);
+        player.currentCity = cities[5];
+
+        cities[5].menu(player);
     }
 }

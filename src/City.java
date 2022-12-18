@@ -43,7 +43,19 @@ class City
         }
         if (isBlacksmith) {buildings[1] = true; this.blacksmith = new Blacksmith();}
         if (isAlchemist) {buildings[2] = true; this.alchemist = new Alchemist();}
-        if (isInn) {buildings[3] = true; this.inn = new Inn();}
+        if (isInn)
+        {
+            {buildings[3] = true;}
+            if (name.equals("Solitude")) {this.inn = new Inn(Inn.Type.SOLITUDE);}
+            else if (name.equals("Morthal")) {this.inn = new Inn(Inn.Type.MORTHAL);}
+            else if (name.equals("Markarth")) {this.inn = new Inn(Inn.Type.MARKARTH);}
+            else if (name.equals("Falkreath")) {this.inn = new Inn(Inn.Type.FALKREATH);}
+            else if (name.equals("Whiterun")) {this.inn = new Inn(Inn.Type.WHITERUN);}
+            else if (name.equals("Dawnstar")) {this.inn = new Inn(Inn.Type.DAWNSTAR);}
+            else if (name.equals("Winterhold")) {this.inn = new Inn(Inn.Type.WINTERHOLD);}
+            else if (name.equals("Windhelm")) {this.inn = new Inn(Inn.Type.WINDHELM);}
+            else if (name.equals("Riften")) {this.inn = new Inn(Inn.Type.RIFTEN);}
+        }
         if (isGuild)
         {
             buildings[4] = true;
@@ -90,12 +102,37 @@ class City
         switch (playerInput)
         {
             case "0" -> {player.sheet(player); menu(player);}
-            case "1" -> {keep.menu(player);}
+            case "1" -> {keep.greet(); ;keep.menu(player);}
             case "2" -> {blacksmith.greet(player); blacksmith.interact(player);}
             case "3" -> {alchemist.greet(player); alchemist.interact(player);}
-            case "4" -> {inn.greet(player); inn.interact(player);}
+            case "4" -> {inn.greet(player); inn.menu(player);}
             case "5" -> {guild.menu(player);}
             case "6" -> {}
         }
+    }
+
+    public void travel(Player player, City[] cities)
+    {
+        System.out.println("1. Travel to Solitude");
+        System.out.println("2. Travel to Morthal");
+        System.out.println("3. Travel to Markarth");
+        System.out.println("4. Travel to Falkreath");
+        System.out.println("5. Travel to Whiterun");
+        System.out.println("6. Travel to Dawnstar");
+        System.out.println("7 .Travel to Winterhold");
+        System.out.println("8. Travel to Windhelm");
+        System.out.println("9. Travel to Riften");
+
+        Scanner input = new Scanner(System.in);
+        int playerInput = input.nextInt();
+        if (playerInput == 1) {player.currentCity = cities[0];}
+        if (playerInput == 2) {player.currentCity = cities[1];}
+        if (playerInput == 3) {player.currentCity = cities[2];}
+        if (playerInput == 4) {player.currentCity = cities[3];}
+        if (playerInput == 5) {player.currentCity = cities[4];}
+        if (playerInput == 6) {player.currentCity = cities[5];}
+        if (playerInput == 7) {player.currentCity = cities[6];}
+        if (playerInput == 8) {player.currentCity = cities[7];}
+        if (playerInput == 9) {player.currentCity = cities[8];}
     }
 }

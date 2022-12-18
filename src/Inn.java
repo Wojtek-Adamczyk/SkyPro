@@ -3,7 +3,25 @@ import java.util.Scanner;
 
 public class Inn extends Building
 {
-    public Inn() {}
+    public enum Type
+    {
+        SOLITUDE("Solitude"),
+        MORTHAL("Morthal"),
+        MARKARTH("Markarth"),
+        FALKREATH("Falkreath"),
+        WHITERUN("Whiterun"),
+        DAWNSTAR("Dawnstar"),
+        WINTERHOLD("Winterhold"),
+        WINDHELM("Windhelm"),
+        RIFTEN("Riften");
+
+        private final String name;
+        Type(String name) {this.name = name;}
+    }
+
+    private final Inn.Type type;
+
+    public Inn(Inn.Type type) {this.type = type;}
 
     public void greet(Player player)
     {
@@ -23,7 +41,7 @@ public class Inn extends Building
         // dodanie metody i jakiesgos dialogu
         // systemout - jakis napis mowiacy ze nowa lokacja zostala dodana w wilderness
 
-        interact(player);
+        choices(player);
     }
 
     public void eavesdropRumors(Player player)
@@ -31,7 +49,7 @@ public class Inn extends Building
         // dodanie metody i jakiesgos dialogu
         // systemout - jakis napis mowiacy ze nowa lokacja zostala dodana w wilderness
 
-        interact(player);
+        choices(player);
     }
 
     public void examineNoticeBoard(Player player)
@@ -39,7 +57,7 @@ public class Inn extends Building
         // dodanie metody i jakiesgos dialogu
         // systemout - jakis napis mowiacy ze nowa lokacja zostala dodana w wilderness
 
-        interact(player);
+        choices(player);
     }
 
     public void rentRoom(Player player)
@@ -53,7 +71,7 @@ public class Inn extends Building
         else System.out.println("- Come back when you will have enough gold.");
         System.out.println();
 
-        interact(player);
+        choices(player);
     }
 
     public void hireFollower(Player player)
@@ -67,7 +85,7 @@ public class Inn extends Building
         else System.out.println("- I'm sorry. You can't afford my skills.");
         System.out.println();
 
-        interact(player);
+        choices(player);
     }
 
     public void pickpocket(Player player)
@@ -90,21 +108,11 @@ public class Inn extends Building
             Integer stolenMoney = stolen.nextInt(1,50);
             player.money += stolenMoney;
             System.out.println("> You stole " + stolenMoney + " septims");
-            interact(player);
+            choices(player);
         }
     }
 
-    public void sheet(Player player)
-    {
-        System.out.println("HP: " + player.currentHP + "/" + player.maximumHP);
-        System.out.println("Damage: " + player.damage);
-        System.out.println("Armor: " + player.armor);
-        System.out.println("Money: " + player.money + " septims");
-        System.out.println();
-        interact(player);
-    }
-
-    public void interact(Player player)
+    public void choices(Player player)
     {
         System.out.println("0. See your statistics");
         System.out.println("1. Talk to the Innkeeper");
@@ -114,18 +122,174 @@ public class Inn extends Building
         System.out.println("5. Hire follower");
         System.out.println("6. Pickpocket");
         System.out.println("7. Leave");
+    }
 
-        Scanner input = new Scanner(System.in);
-        int playerInput = input.nextInt();
-        System.out.println();
+    public void menu(Player player)
+    {
+        switch (type)
+        {
+            case SOLITUDE ->
+            {
+                choices(player);
 
-        if (playerInput == 0) {sheet(player);}
-        // else if (playerInput == 1) {talkToInnkeeper(player);}
-        // else if (playerInput == 2) {eavesdropRumors(player);}
-        // else if (playerInput == 3) {examineNoticeBoard(player);}
-        else if (playerInput == 4) {rentRoom(player);}
-        else if (playerInput == 5) {hireFollower(player);}
-        else if (playerInput == 6) {pickpocket(player);}
-        else if (playerInput == 7) {leave(player);}
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {player.sheet(player);menu(player);}
+                    case "1" -> {}
+                    case "2" -> {}
+                    case "3" -> {}
+                    case "4" -> {rentRoom(player);}
+                    case "5" -> {hireFollower(player);}
+                    case "6" -> {pickpocket(player);}
+                    case "7" -> {leave(player);}
+                }
+            }
+            case MORTHAL ->
+            {
+                choices(player);
+
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {player.sheet(player);menu(player);}
+                    case "1" -> {}
+                    case "2" -> {}
+                    case "3" -> {}
+                    case "4" -> {rentRoom(player);}
+                    case "5" -> {hireFollower(player);}
+                    case "6" -> {pickpocket(player);}
+                    case "7" -> {leave(player);}
+                }
+            }
+            case MARKARTH ->
+            {
+                choices(player);
+
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {player.sheet(player);menu(player);}
+                    case "1" -> {}
+                    case "2" -> {}
+                    case "3" -> {}
+                    case "4" -> {rentRoom(player);}
+                    case "5" -> {hireFollower(player);}
+                    case "6" -> {pickpocket(player);}
+                    case "7" -> {leave(player);}
+                }
+            }
+            case FALKREATH ->
+            {
+                choices(player);
+
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {player.sheet(player);menu(player);}
+                    case "1" -> {}
+                    case "2" -> {}
+                    case "3" -> {}
+                    case "4" -> {rentRoom(player);}
+                    case "5" -> {hireFollower(player);}
+                    case "6" -> {pickpocket(player);}
+                    case "7" -> {leave(player);}
+                }
+            }
+            case WHITERUN ->
+            {
+                choices(player);
+
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {player.sheet(player);menu(player);}
+                    case "1" -> {}
+                    case "2" -> {}
+                    case "3" -> {}
+                    case "4" -> {rentRoom(player);}
+                    case "5" -> {hireFollower(player);}
+                    case "6" -> {pickpocket(player);}
+                    case "7" -> {leave(player);}
+                }
+            }
+            case DAWNSTAR ->
+            {
+                choices(player);
+
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {player.sheet(player);menu(player);}
+                    case "1" -> {}
+                    case "2" -> {}
+                    case "3" -> {}
+                    case "4" -> {rentRoom(player);}
+                    case "5" -> {hireFollower(player);}
+                    case "6" -> {pickpocket(player);}
+                    case "7" -> {leave(player);}
+                }
+            }
+            case WINTERHOLD ->
+            {
+                choices(player);
+
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {player.sheet(player);menu(player);}
+                    case "1" -> {}
+                    case "2" -> {}
+                    case "3" -> {}
+                    case "4" -> {rentRoom(player);}
+                    case "5" -> {hireFollower(player);}
+                    case "6" -> {pickpocket(player);}
+                    case "7" -> {leave(player);}
+                }
+            }
+            case WINDHELM ->
+            {
+                choices(player);
+
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {player.sheet(player);menu(player);}
+                    case "1" -> {}
+                    case "2" -> {}
+                    case "3" -> {}
+                    case "4" -> {rentRoom(player);}
+                    case "5" -> {hireFollower(player);}
+                    case "6" -> {pickpocket(player);}
+                    case "7" -> {leave(player);}
+                }
+            }
+            case RIFTEN ->
+            {
+                choices(player);
+
+                Scanner input = new Scanner(System.in);
+                String playerInput = input.nextLine();
+                switch (playerInput)
+                {
+                    case "0" -> {player.sheet(player);menu(player);}
+                    case "1" -> {}
+                    case "2" -> {}
+                    case "3" -> {}
+                    case "4" -> {rentRoom(player);}
+                    case "5" -> {hireFollower(player);}
+                    case "6" -> {pickpocket(player);}
+                    case "7" -> {leave(player);}
+                }
+            }
+        }
     }
 }

@@ -75,7 +75,6 @@ public class Keep extends Building
         {
             case SOLITUDE ->
             {
-                greet();
                 choices();
 
                 Scanner input = new Scanner(System.in);
@@ -90,7 +89,6 @@ public class Keep extends Building
             }
             case MORTHAL ->
             {
-                greet();
                 choices();
 
                 Scanner input = new Scanner(System.in);
@@ -105,7 +103,6 @@ public class Keep extends Building
             }
             case MARKARTH ->
             {
-                greet();
                 choices();
 
                 Scanner input = new Scanner(System.in);
@@ -120,7 +117,6 @@ public class Keep extends Building
             }
             case FALKREATH ->
             {
-                greet();
                 choices();
 
                 Scanner input = new Scanner(System.in);
@@ -135,7 +131,6 @@ public class Keep extends Building
             }
             case WHITERUN ->
             {
-                greet();
                 choices();
 
                 Scanner input = new Scanner(System.in);
@@ -150,7 +145,6 @@ public class Keep extends Building
             }
             case DAWNSTAR ->
             {
-                greet();
                 choices();
 
                 Scanner input = new Scanner(System.in);
@@ -165,7 +159,6 @@ public class Keep extends Building
             }
             case WINTERHOLD ->
             {
-                greet();
                 choices();
 
                 Scanner input = new Scanner(System.in);
@@ -180,7 +173,6 @@ public class Keep extends Building
             }
             case WINDHELM ->
             {
-                greet();
                 choices();
 
                 Scanner input = new Scanner(System.in);
@@ -195,7 +187,6 @@ public class Keep extends Building
             }
             case RIFTEN ->
             {
-                greet();
                 choices();
 
                 Scanner input = new Scanner(System.in);

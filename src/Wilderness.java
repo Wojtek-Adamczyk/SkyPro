@@ -49,23 +49,10 @@ public class Wilderness extends Building
         else if (playerInput == 1) {misja1(player);}
         else if (playerInput == 2) {misja2(player);}
         else if (playerInput == 3) {misja3(player);}
-        else if (playerInput == 4) {travel(player);}
+        else if (playerInput == 4) {}
     }
 
-    public void travel(Player player)
-    {
-        System.out.println("1. Travel to Solitude");
-        System.out.println("2. Travel to Morthal");
-        System.out.println("3. Travel to Markarth");
-        System.out.println("4. Travel to Falkreath");
-        System.out.println("5. Travel to Whiterun");
-        System.out.println("6. Travel to Dawnstar");
-        System.out.println("7 .Travel to Winterhold");
-        System.out.println("8. Travel to Windhelm");
-        System.out.println("9. Travel to Riften");
 
-        Scanner input = new Scanner(System.in);
-        int playerInput = input.nextInt();
-        //if (playerInput == 1) player.currentCity
-    }
+
+
 }
