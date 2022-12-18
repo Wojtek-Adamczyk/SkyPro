@@ -15,7 +15,7 @@ public class Keep extends Building
         WINDHELM("Windhelm"),
         RIFTEN("Riften");
 
-        public final String name;
+        private final String name;
         Type(String name) {this.name = name;}
     }
 
@@ -41,38 +41,11 @@ public class Keep extends Building
         else
         {
             Random stolen = new Random();
-            Integer stolenMoney = stolen.nextInt(1,600);
+            Integer stolenMoney = stolen.nextInt(50,600);
             player.money += stolenMoney;
             System.out.println("> You stole " + stolenMoney + " septims");
-            interact(player);
+            menu(player);
         }
-    }
-
-    public void sheet(Player player)
-    {
-        System.out.println("HP: " + player.currentHP + "/" + player.maximumHP);
-        System.out.println("Damage: " + player.damage);
-        System.out.println("Armor: " + player.armor);
-        System.out.println("Money: " + player.money + " septims");
-        System.out.println();
-        interact(player);
-    }
-
-    public void interact(Player player)
-    {
-        Scanner input = new Scanner(System.in);
-        int playerInput = input.nextInt();
-
-        if (playerInput == 0) {sheet(player);}
-       // else if (playerInput == 1) {talkToJarl(player);}
-        else if (playerInput == 2) {pickpocket(player); choices();}
-        else if (playerInput == 3) {leave(player);}
-    }
-
-    public void leave(Player player)
-    {
-        player.building = null;
-        player.currentCity.menu(player);
     }
 
     public void greet()
@@ -109,9 +82,9 @@ public class Keep extends Building
                 String playerInput = input.nextLine();
                 switch (playerInput)
                 {
-                    case "0" -> {sheet(player); menu(player);}
+                    case "0" -> {player.sheet(player); menu(player);}
                     case "1" -> {}
-                    case "2" -> {pickpocket(player); menu(player);}
+                    case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                 }
             }
@@ -124,9 +97,9 @@ public class Keep extends Building
                 String playerInput = input.nextLine();
                 switch (playerInput)
                 {
-                    case "0" -> {sheet(player); menu(player);}
+                    case "0" -> {player.sheet(player); menu(player);}
                     //case "1" -> {}
-                    case "2" -> {pickpocket(player); menu(player);}
+                    case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                 }
             }
@@ -139,9 +112,9 @@ public class Keep extends Building
                 String playerInput = input.nextLine();
                 switch (playerInput)
                 {
-                    case "0" -> {sheet(player); menu(player);}
+                    case "0" -> {player.sheet(player); menu(player);}
                     //case "1" -> {}
-                    case "2" -> {pickpocket(player); menu(player);}
+                    case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                 }
             }
@@ -154,9 +127,9 @@ public class Keep extends Building
                 String playerInput = input.nextLine();
                 switch (playerInput)
                 {
-                    case "0" -> {sheet(player); menu(player);}
+                    case "0" -> {player.sheet(player); menu(player);}
                     //case "1" -> {}
-                    case "2" -> {pickpocket(player); menu(player);}
+                    case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                 }
             }
@@ -169,9 +142,9 @@ public class Keep extends Building
                 String playerInput = input.nextLine();
                 switch (playerInput)
                 {
-                    case "0" -> {sheet(player); menu(player);}
+                    case "0" -> {player.sheet(player); menu(player);}
                     //case "1" -> {}
-                    case "2" -> {pickpocket(player); menu(player);}
+                    case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                 }
             }
@@ -184,9 +157,9 @@ public class Keep extends Building
                 String playerInput = input.nextLine();
                 switch (playerInput)
                 {
-                    case "0" -> {sheet(player); menu(player);}
+                    case "0" -> {player.sheet(player); menu(player);}
                     //case "1" -> {}
-                    case "2" -> {pickpocket(player); menu(player);}
+                    case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                 }
             }
@@ -199,9 +172,9 @@ public class Keep extends Building
                 String playerInput = input.nextLine();
                 switch (playerInput)
                 {
-                    case "0" -> {sheet(player); menu(player);}
+                    case "0" -> {player.sheet(player); menu(player);}
                     //case "1" -> {}
-                    case "2" -> {pickpocket(player); menu(player);}
+                    case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                 }
             }
@@ -214,9 +187,9 @@ public class Keep extends Building
                 String playerInput = input.nextLine();
                 switch (playerInput)
                 {
-                    case "0" -> {sheet(player); menu(player);}
+                    case "0" -> {player.sheet(player); menu(player);}
                     //case "1" -> {}
-                    case "2" -> {pickpocket(player); menu(player);}
+                    case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                 }
             }
@@ -229,9 +202,9 @@ public class Keep extends Building
                 String playerInput = input.nextLine();
                 switch (playerInput)
                 {
-                    case "0" -> {sheet(player); menu(player);}
+                    case "0" -> {player.sheet(player); menu(player);}
                     //case "1" -> {}
-                    case "2" -> {pickpocket(player); menu(player);}
+                    case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                 }
             }

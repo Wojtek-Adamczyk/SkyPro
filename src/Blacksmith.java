@@ -61,21 +61,11 @@ public class Blacksmith extends Building
         else
         {
             Random stolen = new Random();
-            Integer stolenMoney = stolen.nextInt(1,150);
+            Integer stolenMoney = stolen.nextInt(10,150);
             player.money += stolenMoney;
             System.out.println("> You stole " + stolenMoney + " septims");
             interact(player);
         }
-    }
-
-    public void sheet(Player player)
-    {
-        System.out.println("HP: " + player.currentHP + "/" + player.maximumHP);
-        System.out.println("Damage: " + player.damage);
-        System.out.println("Armor: " + player.armor);
-        System.out.println("Money: " + player.money + " septims");
-        System.out.println();
-        interact(player);
     }
 
     public void interact(Player player)
@@ -89,16 +79,11 @@ public class Blacksmith extends Building
         Scanner input = new Scanner(System.in);
         int playerInput = input.nextInt();
 
-        if (playerInput == 0) {sheet(player);}
+        if (playerInput == 0) {player.sheet(player); interact(player);}
         else if (playerInput == 1) {buyWeapon(player);}
         else if (playerInput == 2) {buyArmor(player);}
         else if (playerInput == 3) {pickpocket(player);}
         else if (playerInput == 4) {leave(player);}
     }
 
-    public void leave(Player player)
-    {
-        player.building = null;
-        player.currentCity.menu(player);
-    }
 }

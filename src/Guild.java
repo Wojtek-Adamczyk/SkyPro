@@ -14,22 +14,6 @@ public class Guild extends Building
         Type(String name) {this.name = name;}
     }
 
-    public void leave(Player player)
-    {
-        player.building = null;
-        player.currentCity.menu(player);
-    }
-
-    public void sheet(Player player)
-    {
-        System.out.println("HP: " + player.currentHP + "/" + player.maximumHP);
-        System.out.println("Damage: " + player.damage);
-        System.out.println("Armor: " + player.armor);
-        System.out.println("Money: " + player.money + " septims");
-        System.out.println();
-        menu(player);
-    }
-
     private final Type type;
 
     public Guild(Type type) {this.type = type;}
@@ -64,7 +48,7 @@ public class Guild extends Building
                 String playerInput = input.nextLine();
                 switch (playerInput)
                 {
-                    case "0" -> {sheet(player); menu(player);}
+                    case "0" -> {player.sheet(player); menu(player);}
                     case "1" -> {}
                     case "2" -> {}
                     case "3" -> {}
@@ -81,7 +65,7 @@ public class Guild extends Building
                 String playerInput = input.nextLine();
                 switch (playerInput)
                 {
-                    case "0" -> {sheet(player); menu(player);}
+                    case "0" -> {player.sheet(player); menu(player);}
                     case "1" -> {System.out.println();}
                     case "2" -> {}
                     case "3" -> {}
@@ -98,7 +82,7 @@ public class Guild extends Building
                 String playerInput = input.nextLine();
                 switch (playerInput)
                 {
-                    case "0" -> {sheet(player); menu(player);}
+                    case "0" -> {player.sheet(player); menu(player);}
                     case "1" -> {System.out.println();}
                     case "2" -> {System.out.println();}
                     case "3" -> {}
@@ -115,7 +99,7 @@ public class Guild extends Building
                 String playerInput = input.nextLine();
                 switch (playerInput)
                 {
-                    case "0" -> {sheet(player); menu(player);}
+                    case "0" -> {player.sheet(player); menu(player);}
                     case "1" -> {System.out.println();}
                     case "2" -> {}
                     case "3" -> {System.out.println();}

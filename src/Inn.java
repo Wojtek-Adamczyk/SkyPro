@@ -128,10 +128,4 @@ public class Inn extends Building
         else if (playerInput == 6) {pickpocket(player);}
         else if (playerInput == 7) {leave(player);}
     }
-
-    public void leave(Player player)
-    {
-        player.building = null;
-        player.currentCity.menu(player);
-    }
 }

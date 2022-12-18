@@ -89,7 +89,7 @@ class City
         String playerInput = input.nextLine();
         switch (playerInput)
         {
-            case "0" -> inn.sheet(player);
+            case "0" -> {player.sheet(player); menu(player);}
             case "1" -> {keep.menu(player);}
             case "2" -> {blacksmith.greet(player); blacksmith.interact(player);}
             case "3" -> {alchemist.greet(player); alchemist.interact(player);}
