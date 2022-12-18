@@ -96,7 +96,7 @@ public class Keep extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player); menu(player);}
-                    //case "1" -> {}
+                    case "1" -> {}
                     case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                 }
@@ -110,7 +110,7 @@ public class Keep extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player); menu(player);}
-                    //case "1" -> {}
+                    case "1" -> {}
                     case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                 }
@@ -124,7 +124,7 @@ public class Keep extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player); menu(player);}
-                    //case "1" -> {}
+                    case "1" -> {}
                     case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                 }
@@ -138,7 +138,7 @@ public class Keep extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player); menu(player);}
-                    //case "1" -> {}
+                    case "1" -> {}
                     case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                 }
@@ -152,7 +152,7 @@ public class Keep extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player); menu(player);}
-                    //case "1" -> {}
+                    case "1" -> {}
                     case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                 }
@@ -166,7 +166,7 @@ public class Keep extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player); menu(player);}
-                    //case "1" -> {}
+                    case "1" -> {}
                     case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                 }
@@ -180,7 +180,7 @@ public class Keep extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player); menu(player);}
-                    //case "1" -> {}
+                    case "1" -> {}
                     case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                 }
@@ -194,7 +194,7 @@ public class Keep extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player); menu(player);}
-                    //case "1" -> {}
+                    case "1" -> {}
                     case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                 }

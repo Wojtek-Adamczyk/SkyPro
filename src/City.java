@@ -72,6 +72,7 @@ class City
         System.out.println("0. See your statistics");
 
         int i;
+
         for (i = 0; i <= 5; i++)
         {
             if (buildings[i])
@@ -107,32 +108,9 @@ class City
             case "3" -> {alchemist.greet(player); alchemist.interact(player);}
             case "4" -> {inn.greet(player); inn.menu(player);}
             case "5" -> {guild.menu(player);}
-            case "6" -> {}
+            case "6" -> {wilderness.interact(player);}
         }
     }
 
-    public void travel(Player player, City[] cities)
-    {
-        System.out.println("1. Travel to Solitude");
-        System.out.println("2. Travel to Morthal");
-        System.out.println("3. Travel to Markarth");
-        System.out.println("4. Travel to Falkreath");
-        System.out.println("5. Travel to Whiterun");
-        System.out.println("6. Travel to Dawnstar");
-        System.out.println("7 .Travel to Winterhold");
-        System.out.println("8. Travel to Windhelm");
-        System.out.println("9. Travel to Riften");
 
-        Scanner input = new Scanner(System.in);
-        int playerInput = input.nextInt();
-        if (playerInput == 1) {player.currentCity = cities[0];}
-        if (playerInput == 2) {player.currentCity = cities[1];}
-        if (playerInput == 3) {player.currentCity = cities[2];}
-        if (playerInput == 4) {player.currentCity = cities[3];}
-        if (playerInput == 5) {player.currentCity = cities[4];}
-        if (playerInput == 6) {player.currentCity = cities[5];}
-        if (playerInput == 7) {player.currentCity = cities[6];}
-        if (playerInput == 8) {player.currentCity = cities[7];}
-        if (playerInput == 9) {player.currentCity = cities[8];}
-    }
 }

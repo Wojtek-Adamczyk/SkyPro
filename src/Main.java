@@ -18,8 +18,13 @@ public class Main
         cities[7] = new City("Windhelm", true, true, true, true, false, true);
         cities[8] = new City("Riften", true, true, true, true, true, true);
 
-        player.currentCity = cities[5];
+        player.currentCity = cities[4];
+        cities[4].menu(player);
 
-        cities[5].menu(player);
+        while (true)
+        {
+            player.currentCity.menu(player);
+            System.out.println(player.currentCity);
+        }
     }
 }

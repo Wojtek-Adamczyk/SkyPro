@@ -5,6 +5,8 @@ public class Wilderness extends Building
 {
     public Wilderness() {}
 
+    City[] cities = new City[9];
+
     public void misja1(Player player)
     {
         // misja 1
@@ -46,11 +48,13 @@ public class Wilderness extends Building
         int playerInput = input.nextInt();
 
         if (playerInput == 0) {sheet(player);}
-        else if (playerInput == 1) {misja1(player);}
-        else if (playerInput == 2) {misja2(player);}
-        else if (playerInput == 3) {misja3(player);}
-        else if (playerInput == 4) {}
+        else if (playerInput == 1) {player.currentCity.menu(player);}
+        else if (playerInput == 2) {misja1(player);}
+        else if (playerInput == 3) {misja2(player);}
+        else if (playerInput == 4) {misja3(player);}
+        else if (playerInput == 5) {player.travel();}
     }
+
 
 
 
