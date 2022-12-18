@@ -76,11 +76,10 @@ public class Inn extends Building
     {
         if (player.money >= 500)
         {
-            // add follower
             player.money -= 500;
             System.out.println("> FOLLOWER JOINS TO YOUR PARTY");
         }
-        else System.out.println("- I'm sorry. You can't afford my skills.");
+        else System.out.println("- I'm sorry traveller. You can't afford my skills.");
         System.out.println();
 
         choices(player);
@@ -95,7 +94,7 @@ public class Inn extends Building
             System.out.println("- Stop right there you criminal scum! You have commited crimes against Skyrim and her people. You will rot in jail!");
             System.out.println("> ALL YOUR BELONGINGS WERE CONFISCATED");
             System.out.println("> DURING JAIL TIME YOU CURED YOURSELF");
-            // usun followera
+            player.follower = null;
             System.out.println();
             player.currentHP = player.maximumHP;
             player.money = 0;
@@ -139,7 +138,12 @@ public class Inn extends Building
                     case "2" -> {}
                     case "3" -> {}
                     case "4" -> {rentRoom(player);}
-                    case "5" -> {hireFollower(player);}
+                    case "5" ->
+                    {
+                        if (player.currentCity.follower != null) {player.hireFollower(player.currentCity.follower);}
+                        else System.out.println("> There is no one in the inn who wants to join you");
+                        System.out.println();
+                    }
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
                 }
@@ -157,7 +161,12 @@ public class Inn extends Building
                     case "2" -> {}
                     case "3" -> {}
                     case "4" -> {rentRoom(player);}
-                    case "5" -> {hireFollower(player);}
+                    case "5" ->
+                    {
+                        if (player.currentCity.follower != null) {player.hireFollower(player.currentCity.follower);}
+                        else System.out.println("> There is no one in the inn who wants to join you");
+                        System.out.println();
+                    }
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
                 }
@@ -175,7 +184,12 @@ public class Inn extends Building
                     case "2" -> {}
                     case "3" -> {}
                     case "4" -> {rentRoom(player);}
-                    case "5" -> {hireFollower(player);}
+                    case "5" ->
+                    {
+                        if (player.currentCity.follower != null) {player.hireFollower(player.currentCity.follower);}
+                        else System.out.println("> There is no one in the inn who wants to join you");
+                        System.out.println();
+                    }
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
                 }
@@ -193,7 +207,12 @@ public class Inn extends Building
                     case "2" -> {}
                     case "3" -> {}
                     case "4" -> {rentRoom(player);}
-                    case "5" -> {hireFollower(player);}
+                    case "5" ->
+                    {
+                        if (player.currentCity.follower != null) {player.hireFollower(player.currentCity.follower);}
+                        else System.out.println("> There is no one in the inn who wants to join you");
+                        System.out.println();
+                    }
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
                 }
@@ -211,7 +230,12 @@ public class Inn extends Building
                     case "2" -> {}
                     case "3" -> {}
                     case "4" -> {rentRoom(player);}
-                    case "5" -> {hireFollower(player);}
+                    case "5" ->
+                    {
+                        if (player.currentCity.follower != null) {player.hireFollower(player.currentCity.follower);}
+                        else System.out.println("> There is no one in the inn who wants to join you");
+                        System.out.println();
+                    }
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
                 }
@@ -229,7 +253,12 @@ public class Inn extends Building
                     case "2" -> {}
                     case "3" -> {}
                     case "4" -> {rentRoom(player);}
-                    case "5" -> {hireFollower(player);}
+                    case "5" ->
+                    {
+                        if (player.currentCity.follower != null) {player.hireFollower(player.currentCity.follower);}
+                        else System.out.println("> There is no one in the inn who wants to join you");
+                        System.out.println();
+                    }
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
                 }
@@ -247,7 +276,12 @@ public class Inn extends Building
                     case "2" -> {}
                     case "3" -> {}
                     case "4" -> {rentRoom(player);}
-                    case "5" -> {hireFollower(player);}
+                    case "5" ->
+                    {
+                        if (player.currentCity.follower != null) {player.hireFollower(player.currentCity.follower);}
+                        else System.out.println("> There is no one in the inn who wants to join you");
+                        System.out.println();
+                    }
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
                 }
@@ -265,7 +299,12 @@ public class Inn extends Building
                     case "2" -> {}
                     case "3" -> {}
                     case "4" -> {rentRoom(player);}
-                    case "5" -> {hireFollower(player);}
+                    case "5" ->
+                    {
+                        if (player.currentCity.follower != null) {player.hireFollower(player.currentCity.follower);}
+                        else System.out.println("> There is no one in the inn who wants to join you");
+                        System.out.println();
+                    }
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
                 }
@@ -283,7 +322,12 @@ public class Inn extends Building
                     case "2" -> {}
                     case "3" -> {}
                     case "4" -> {rentRoom(player);}
-                    case "5" -> {hireFollower(player);}
+                    case "5" ->
+                    {
+                        if (player.currentCity.follower != null) {player.hireFollower(player.currentCity.follower);}
+                        else System.out.println("> There is no one in the inn who wants to join you");
+                        System.out.println();
+                    }
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
                 }

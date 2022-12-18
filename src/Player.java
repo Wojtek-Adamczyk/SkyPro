@@ -8,8 +8,6 @@ public class Player
     Integer armor = 0;
     Integer money = 300;
 
-    City[] cities = new City[9];
-
     public Player(Integer currentHP, Integer maximumHP, Integer damage, Integer armor, Integer money)
     {
         this.currentHP = currentHP;
@@ -17,16 +15,6 @@ public class Player
         this.damage = damage;
         this.armor = armor;
         this.money = money;
-
-        cities[0] = new City("Solitude", true, true, true, true, false, true);
-        cities[1] = new City("Morthal", true, false, true, true, false, true);
-        cities[2] = new City("Markarth", true, true, true, true, false, true);
-        cities[3] = new City("Falkreath", true, true, false, true, true, true);
-        cities[4] = new City("Whiterun", true, true, true, true, true, true);
-        cities[5] = new City("Dawnstar", true, true, true, true, false, true);
-        cities[6] = new City("Winterhold", true, false, false, true, true, true);
-        cities[7] = new City("Windhelm", true, true, true, true, false, true);
-        cities[8] = new City("Riften", true, true, true, true, true, true);
     }
 
     public Building building;
@@ -39,6 +27,14 @@ public class Player
         System.out.println("Armor: " + player.armor);
         System.out.println("Money: " + player.money + " septims");
         System.out.println();
+
+        if (follower != null)
+        {
+            System.out.println("Follower HP: " + follower.currentHP);
+            System.out.println("Follower damage: " + follower.damage);
+            System.out.println("Follower armor: " + follower.armor);
+            System.out.println();
+        }
     }
 
     public void travel()
@@ -55,16 +51,36 @@ public class Player
 
         Scanner input = new Scanner(System.in);
         int playerInput = input.nextInt();
-        if (playerInput == 1) {currentCity = cities[0];}
-        if (playerInput == 2) {currentCity = cities[1];}
-        if (playerInput == 3) {currentCity = cities[2];}
-        if (playerInput == 4) {currentCity = cities[3];}
-        if (playerInput == 5) {currentCity = cities[4];}
-        if (playerInput == 6) {currentCity = cities[5];}
-        if (playerInput == 7) {currentCity = cities[6];}
-        if (playerInput == 8) {currentCity = cities[7];}
-        if (playerInput == 9) {currentCity = cities[8];}
+        if (playerInput == 1) {currentCity = world.cities[0];}
+        if (playerInput == 2) {currentCity = world.cities[1];}
+        if (playerInput == 3) {currentCity = world.cities[2];}
+        if (playerInput == 4) {currentCity = world.cities[3];}
+        if (playerInput == 5) {currentCity = world.cities[4];}
+        if (playerInput == 6) {currentCity = world.cities[5];}
+        if (playerInput == 7) {currentCity = world.cities[6];}
+        if (playerInput == 8) {currentCity = world.cities[7];}
+        if (playerInput == 9) {currentCity = world.cities[8];}
     }
+
+    public void hireFollower(Follower follower)
+    {
+        if (money >= 500)
+        {
+            money -= 500;
+            System.out.println(follower.name + " joins you");
+            this.follower = follower;
+            currentCity.follower = null;
+
+        }
+        else System.out.println("- I'm sorry traveller. You can't afford my skills.");
+        System.out.println();
+
+    }
+
+    World world;
+
+    Follower follower;
+
 }
 
 

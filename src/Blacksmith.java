@@ -53,7 +53,7 @@ public class Blacksmith extends Building
             System.out.println("- Stop right there you criminal scum! You have commited crimes against Skyrim and her people. You will rot in jail!");
             System.out.println("> ALL YOUR BELONGINGS WERE CONFISCATED");
             System.out.println("> DURING JAIL TIME YOU CURED YOURSELF");
-            // usun followera
+            player.follower = null;
             System.out.println();
             player.currentHP = player.maximumHP;
             player.money = 0;

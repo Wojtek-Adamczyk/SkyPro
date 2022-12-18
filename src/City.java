@@ -9,6 +9,10 @@ class City
     Guild guild;
     Keep keep;
     Wilderness wilderness;
+    Follower follower;
+
+    Follower guildFollower;
+
 
     boolean isKeep;
     boolean isBlacksmith;
@@ -18,7 +22,7 @@ class City
     boolean isWilderness;
     public boolean[] buildings = new boolean[6];
 
-    City(String name, boolean isKeep, boolean isBlacksmith, boolean isAlchemist, boolean isInn, boolean isGuild, boolean isWilderness)
+    City(String name, boolean isKeep, boolean isBlacksmith, boolean isAlchemist, boolean isInn, boolean isGuild, boolean isWilderness, Follower follower)
     {
         this.name = name;
         this.isKeep = isKeep;
@@ -27,6 +31,7 @@ class City
         this.isInn = isInn;
         this.isGuild = isGuild;
         this.isWilderness = isWilderness;
+        this.follower = follower;
 
         if (isKeep)
         {
@@ -64,11 +69,88 @@ class City
             else if (name.equals("Winterhold")) {this.guild = new Guild(Guild.Type.COLLEGE);}
             else if (name.equals("Riften")) {this.guild = new Guild(Guild.Type.THIEVES);}
         }
-        if (isWilderness) {buildings[5] = true; this.wilderness = new Wilderness();}
+        if (isWilderness)
+        {
+            {buildings[5] = true;}
+            if (name.equals("Solitude")) {this.wilderness = new Wilderness(Wilderness.Type.SOLITUDE);}
+            else if (name.equals("Morthal")) {this.wilderness = new Wilderness(Wilderness.Type.MORTHAL);}
+            else if (name.equals("Markarth")) {this.wilderness = new Wilderness(Wilderness.Type.MARKARTH);}
+            else if (name.equals("Falkreath")) {this.wilderness = new Wilderness(Wilderness.Type.FALKREATH);}
+            else if (name.equals("Whiterun")) {this.wilderness = new Wilderness(Wilderness.Type.WHITERUN);}
+            else if (name.equals("Dawnstar")) {this.wilderness = new Wilderness(Wilderness.Type.DAWNSTAR);}
+            else if (name.equals("Winterhold")) {this.wilderness = new Wilderness(Wilderness.Type.WINTERHOLD);}
+            else if (name.equals("Windhelm")) {this.wilderness = new Wilderness(Wilderness.Type.WINDHELM);}
+            else if (name.equals("Riften")) {this.wilderness = new Wilderness(Wilderness.Type.RIFTEN);}
+        }
+    }
+
+    City(String name, boolean isKeep, boolean isBlacksmith, boolean isAlchemist, boolean isInn, boolean isGuild, boolean isWilderness, Follower follower, Follower guildFollower)
+    {
+        this.name = name;
+        this.isKeep = isKeep;
+        this.isBlacksmith = isBlacksmith;
+        this.isAlchemist = isAlchemist;
+        this.isInn = isInn;
+        this.isGuild = isGuild;
+        this.isWilderness = isWilderness;
+        this.follower = follower;
+        this.guildFollower = guildFollower;
+
+        if (isKeep)
+        {
+            buildings[0] = true;
+            if (name.equals("Solitude")) {this.keep = new Keep(Keep.Type.SOLITUDE);}
+            else if (name.equals("Morthal")) {this.keep = new Keep(Keep.Type.MORTHAL);}
+            else if (name.equals("Markarth")) {this.keep = new Keep(Keep.Type.MARKARTH);}
+            else if (name.equals("Falkreath")) {this.keep = new Keep(Keep.Type.FALKREATH);}
+            else if (name.equals("Whiterun")) {this.keep = new Keep(Keep.Type.WHITERUN);}
+            else if (name.equals("Dawnstar")) {this.keep = new Keep(Keep.Type.DAWNSTAR);}
+            else if (name.equals("Winterhold")) {this.keep = new Keep(Keep.Type.WINTERHOLD);}
+            else if (name.equals("Windhelm")) {this.keep = new Keep(Keep.Type.WINDHELM);}
+            else if (name.equals("Riften")) {this.keep = new Keep(Keep.Type.RIFTEN);}
+        }
+        if (isBlacksmith) {buildings[1] = true; this.blacksmith = new Blacksmith();}
+        if (isAlchemist) {buildings[2] = true; this.alchemist = new Alchemist();}
+        if (isInn)
+        {
+            {buildings[3] = true;}
+            if (name.equals("Solitude")) {this.inn = new Inn(Inn.Type.SOLITUDE);}
+            else if (name.equals("Morthal")) {this.inn = new Inn(Inn.Type.MORTHAL);}
+            else if (name.equals("Markarth")) {this.inn = new Inn(Inn.Type.MARKARTH);}
+            else if (name.equals("Falkreath")) {this.inn = new Inn(Inn.Type.FALKREATH);}
+            else if (name.equals("Whiterun")) {this.inn = new Inn(Inn.Type.WHITERUN);}
+            else if (name.equals("Dawnstar")) {this.inn = new Inn(Inn.Type.DAWNSTAR);}
+            else if (name.equals("Winterhold")) {this.inn = new Inn(Inn.Type.WINTERHOLD);}
+            else if (name.equals("Windhelm")) {this.inn = new Inn(Inn.Type.WINDHELM);}
+            else if (name.equals("Riften")) {this.inn = new Inn(Inn.Type.RIFTEN);}
+        }
+        if (isGuild)
+        {
+            buildings[4] = true;
+            if (name.equals("Falkreath")) {this.guild = new Guild(Guild.Type.BROTHERHOOD);}
+            else if (name.equals("Whiterun")) {this.guild = new Guild(Guild.Type.COMPANIONS);}
+            else if (name.equals("Winterhold")) {this.guild = new Guild(Guild.Type.COLLEGE);}
+            else if (name.equals("Riften")) {this.guild = new Guild(Guild.Type.THIEVES);}
+        }
+        if (isWilderness)
+        {
+            {buildings[5] = true;}
+            if (name.equals("Solitude")) {this.wilderness = new Wilderness(Wilderness.Type.SOLITUDE);}
+            else if (name.equals("Morthal")) {this.wilderness = new Wilderness(Wilderness.Type.MORTHAL);}
+            else if (name.equals("Markarth")) {this.wilderness = new Wilderness(Wilderness.Type.MARKARTH);}
+            else if (name.equals("Falkreath")) {this.wilderness = new Wilderness(Wilderness.Type.FALKREATH);}
+            else if (name.equals("Whiterun")) {this.wilderness = new Wilderness(Wilderness.Type.WHITERUN);}
+            else if (name.equals("Dawnstar")) {this.wilderness = new Wilderness(Wilderness.Type.DAWNSTAR);}
+            else if (name.equals("Winterhold")) {this.wilderness = new Wilderness(Wilderness.Type.WINTERHOLD);}
+            else if (name.equals("Windhelm")) {this.wilderness = new Wilderness(Wilderness.Type.WINDHELM);}
+            else if (name.equals("Riften")) {this.wilderness = new Wilderness(Wilderness.Type.RIFTEN);}
+        }
     }
 
     public void menu(Player player)
     {
+        System.out.println(player.currentCity.name);
+
         System.out.println("0. See your statistics");
 
         int i;
@@ -108,7 +190,7 @@ class City
             case "3" -> {alchemist.greet(player); alchemist.interact(player);}
             case "4" -> {inn.greet(player); inn.menu(player);}
             case "5" -> {guild.menu(player);}
-            case "6" -> {wilderness.interact(player);}
+            case "6" -> {wilderness.menu(player);}
         }
     }
 }

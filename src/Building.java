@@ -4,7 +4,6 @@ class Building
     {
         player.building = null;
         player.currentCity.menu(player);
-
     }
 }
 
