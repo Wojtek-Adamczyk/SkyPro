@@ -57,7 +57,7 @@ public class Guild extends Building
                     case "4" ->
                     {
                         if (player.currentCity.guildFollower != null && points >= 6) {player.hireFollower(player.currentCity.guildFollower); player.money += 500;}
-                        // w nawiązaniu do pola w hireFollower w klasie Player, trzeba zrobić by zwracało jakąś wiadomość, że już wynająłeś followera
+                        else if (player.currentCity.guildFollower == null) System.out.println("- Cicero is already with you brother... isn't he?");
                         else System.out.println("- You are not ready child. Take more lives in the name of Dread Father.");
                         System.out.println();
                     }
@@ -81,6 +81,7 @@ public class Guild extends Building
                     case "4" ->
                     {
                         if (player.currentCity.guildFollower != null && points >= 6) {player.hireFollower(player.currentCity.guildFollower); player.money += 500;}
+                        else if (player.currentCity.guildFollower == null) System.out.println("- Farkas is your shield-brother now. Is everything good with him?");
                         else System.out.println("- You haven't proven your worth yet, brother.");
                         System.out.println();
                     }
@@ -104,6 +105,7 @@ public class Guild extends Building
                     case "4" ->
                     {
                         if (player.currentCity.guildFollower != null && points >= 6) {player.hireFollower(player.currentCity.guildFollower); player.money += 500;}
+                        else if (player.currentCity.guildFollower == null) System.out.println("- What is it? J'zargo got bored with you and left?");
                         else System.out.println("- Khajiit got better things to do than chasing after a rookie. Be back when you will be master in our arts.");
                         System.out.println();
                     }
@@ -127,6 +129,7 @@ public class Guild extends Building
                     case "4" ->
                     {
                         if (player.currentCity.guildFollower != null && points >= 6) {player.hireFollower(player.currentCity.guildFollower); player.money += 500;}
+                        else if (player.currentCity.guildFollower == null) System.out.println("- What's wrong pal? Sapphire used you and disappeared?");
                         else System.out.println("- If you can't help yourself, no one here can help you. Prove yourself and we'll talk.");
                         System.out.println();
                     }

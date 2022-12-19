@@ -67,8 +67,8 @@ public class Player
             System.out.println(follower.name + " joins you");
             this.follower = follower;
 
-            currentCity.follower = null;
-            // trzeba zrobic zeby bylo rozdzielenie na currentCity.follower = null; i currentCity.guildFollower = null;
+            if (currentCity.guildFollower == follower) {currentCity.guildFollower = null;}
+            if (currentCity.follower == follower) {currentCity.guildFollower = null;}
         }
         else System.out.println("- I'm sorry traveller. You can't afford my skills.");
     }
