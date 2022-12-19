@@ -48,8 +48,7 @@ public class Wilderness extends Building
         System.out.println("6. Travel to another city");
     }
 
-    public void menu(Player player)
-    {
+    public void menu(Player player) throws InterruptedException {
         switch (type)
         {
             case SOLITUDE ->
@@ -63,7 +62,7 @@ public class Wilderness extends Building
                 {
                     case "0" -> {player.sheet(player);}
                     case "1" -> {player.currentCity.menu(player);}
-                    case "2" -> {}//misja1
+                    case "2" -> {}
                     case "3" -> {}//misja2
                     case "4" -> {}//misja3
                     case "5" -> {}//misja jarla
@@ -138,7 +137,15 @@ public class Wilderness extends Building
                 {
                     case "0" -> {player.sheet(player);}
                     case "1" -> {player.currentCity.menu(player);}
-                    case "2" -> {}//misja1
+                    case "2" ->
+                    {
+                        if (player.world.missions[0].completed == false)
+                        {
+                            player.mission = player.world.missions[0];
+                            player.mission.fight(player);
+                        }
+                        else System.out.println("chuj");
+                    }
                     case "3" -> {}//misja2
                     case "4" -> {}//misja3
                     case "5" -> {}//misja jarla

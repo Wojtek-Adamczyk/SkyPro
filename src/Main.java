@@ -1,8 +1,8 @@
 public class Main
 {
-    public static void main(String[] args)
+    public static void main(String[] args) throws InterruptedException
     {
-        Player player = new Player(100, 100, 10, 0, 3666600);
+        Player player = new Player(100, 100, 10, 0, 3666600, 0);
         World world = new World();
         player.world = world;
 

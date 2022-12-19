@@ -7,14 +7,16 @@ public class Player
     Integer damage = 10;
     Integer armor = 0;
     Integer money = 300;
+    Integer stealth = 0;
 
-    public Player(Integer currentHP, Integer maximumHP, Integer damage, Integer armor, Integer money)
+    public Player(Integer currentHP, Integer maximumHP, Integer damage, Integer armor, Integer money, Integer stealth)
     {
         this.currentHP = currentHP;
         this.maximumHP = maximumHP;
         this.damage = damage;
         this.armor = armor;
         this.money = money;
+        this.stealth = stealth;
     }
 
     public void sheet(Player player)
@@ -22,6 +24,7 @@ public class Player
         System.out.println("HP: " + player.currentHP + "/" + player.maximumHP);
         System.out.println("Damage: " + player.damage);
         System.out.println("Armor: " + player.armor);
+        System.out.println("Stealth: " + player.stealth);
         System.out.println("Money: " + player.money + " septims");
         System.out.println();
 
@@ -72,6 +75,8 @@ public class Player
         }
         else System.out.println("- I'm sorry traveller. You can't afford my skills.");
     }
+
+    Mission mission;
 
     World world;
     Follower follower;

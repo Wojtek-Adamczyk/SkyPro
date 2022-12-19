@@ -2,7 +2,6 @@ public class World
 {
     public World()
     {
-
         followers[0] = new Follower("Belrand", 100, 11, 2, cities[0]);
         followers[1] = new Follower("Benor", 110, 11, 1, cities[1]);
         followers[2] = new Follower("Vorstag", 130, 14, 1, cities[2]);
@@ -18,17 +17,27 @@ public class World
         followers[11] = new Follower("J'zargo", 120, 22, 0, cities[6]);
         followers[12] = new Follower("Sapphire", 150, 13, 1, cities[8]);
 
-        cities[0] = new City("Solitude", true, true, true, true, false, true, followers[0]);
-        cities[1] = new City("Morthal", true, false, true, true, false, true, followers[1]);
-        cities[2] = new City("Markarth", true, true, true, true, false, true, followers[2]);
-        cities[3] = new City("Falkreath", true, true, false, true, true, true, followers[3], followers[9]);
-        cities[4] = new City("Whiterun", true, true, true, true, true, true, followers[4], followers[10]);
-        cities[5] = new City("Dawnstar", true, true, true, true, false, true, followers[5]);
-        cities[6] = new City("Winterhold", true, false, false, true, true, true, followers[6], followers[11]);
-        cities[7] = new City("Windhelm", true, true, true, true, false, true, followers[7]);
-        cities[8] = new City("Riften", true, true, true, true, true, true, followers[8], followers[12]);
+        cities[0] = new City("Solitude", true, true, true, true, false, true, true, followers[0]);
+        cities[1] = new City("Morthal", true, false, true, true, false, false, true, followers[1]);
+        cities[2] = new City("Markarth", true, true, true, true, false, false, true, followers[2]);
+        cities[3] = new City("Falkreath", true, true, false, true, true, false, true, followers[3], followers[9]);
+        cities[4] = new City("Whiterun", true, true, true, true, true, false,true, followers[4], followers[10]);
+        cities[5] = new City("Dawnstar", true, true, true, true, false, false, true, followers[5]);
+        cities[6] = new City("Winterhold", true, false, false, true, true, false,true, followers[6], followers[11]);
+        cities[7] = new City("Windhelm", true, true, true, true, false, false, true, followers[7]);
+        cities[8] = new City("Riften", true, true, true, true, true, true,true, followers[8], followers[12]);
+
+        enemies[0] = new Enemy(0);
+        enemies[1] = new Enemy(1);
+        enemies[2] = new Enemy(2);
+        enemies[3] = new Enemy(3);
+
+        missions[0] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
     }
 
     public City[] cities = new City[9];
     public Follower[] followers = new Follower[14];
+    public Mission[] missions = new Mission[48];
+    public Enemy[] enemies = new Enemy[4];
+
 }

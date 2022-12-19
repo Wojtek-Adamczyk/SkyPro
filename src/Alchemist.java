@@ -16,8 +16,7 @@ public class Alchemist extends Building
         }
     }
 
-    public void buyPotion(Player player)
-    {
+    public void buyPotion(Player player) throws InterruptedException {
         if (player.money >= 125)
         {
             player.maximumHP += 10;
@@ -30,8 +29,7 @@ public class Alchemist extends Building
         interact(player);
     }
 
-    public void pickpocket(Player player)
-    {
+    public void pickpocket(Player player) throws InterruptedException {
         Random chance = new Random();
         Integer stealChance = chance.nextInt(0, 5);
         if (stealChance == 1)
@@ -54,8 +52,7 @@ public class Alchemist extends Building
         }
     }
 
-    public void interact(Player player)
-    {
+    public void interact(Player player) throws InterruptedException {
         System.out.println("0. See your statistics");
         System.out.println("1. Buy health increment potion");
         System.out.println("2. Pickpocket");

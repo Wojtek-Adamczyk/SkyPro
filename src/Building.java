@@ -1,7 +1,6 @@
 class Building
 {
-    public void leave(Player player)
-    {
+    public void leave(Player player) throws InterruptedException {
         player.building = null;
         player.currentCity.menu(player);
     }

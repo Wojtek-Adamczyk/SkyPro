@@ -37,8 +37,7 @@ public class Guild extends Building
         System.out.println("5. Leave");
     }
 
-    public void menu(Player player)
-    {
+    public void menu(Player player) throws InterruptedException {
         switch (type)
         {
             case BROTHERHOOD ->

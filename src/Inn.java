@@ -22,6 +22,7 @@ public class Inn extends Building
     private final Inn.Type type;
     public Inn(Inn.Type type) {this.type = type;}
 
+
     public void greet(Player player)
     {
         Random greet = new Random();
@@ -107,7 +108,7 @@ public class Inn extends Building
         System.out.println("7. Leave");
     }
 
-    public void menu(Player player)
+    public void menu(Player player) throws InterruptedException
     {
         switch (type)
         {
@@ -211,7 +212,7 @@ public class Inn extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);menu(player);}
-                    case "1" -> {}
+                    case "1" -> {System.out.println("");}
                     case "2" -> {}
                     case "3" -> {}
                     case "4" -> {rentRoom(player);}

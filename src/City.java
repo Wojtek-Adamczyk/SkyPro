@@ -8,6 +8,7 @@ class City
     Alchemist alchemist;
     Guild guild;
     Keep keep;
+    School school;
     Wilderness wilderness;
     Follower follower;
     Follower guildFollower;
@@ -17,10 +18,11 @@ class City
     boolean isAlchemist;
     boolean isInn;
     boolean isGuild;
+    boolean isSchool;
     boolean isWilderness;
-    public boolean[] buildings = new boolean[6];
+    public boolean[] buildings = new boolean[7];
 
-    City(String name, boolean isKeep, boolean isBlacksmith, boolean isAlchemist, boolean isInn, boolean isGuild, boolean isWilderness, Follower follower)
+    City(String name, boolean isKeep, boolean isBlacksmith, boolean isAlchemist, boolean isInn, boolean isGuild, boolean isSchool, boolean isWilderness, Follower follower)
     {
         this.name = name;
         this.isKeep = isKeep;
@@ -30,6 +32,7 @@ class City
         this.isGuild = isGuild;
         this.isWilderness = isWilderness;
         this.follower = follower;
+        this.isSchool = isSchool;
 
         if (isKeep)
         {
@@ -67,9 +70,10 @@ class City
             else if (name.equals("Winterhold")) {this.guild = new Guild(Guild.Type.COLLEGE);}
             else if (name.equals("Riften")) {this.guild = new Guild(Guild.Type.THIEVES);}
         }
+        if (isSchool) {buildings[5] = true; this.school = new School();}
         if (isWilderness)
         {
-            {buildings[5] = true;}
+            {buildings[6] = true;}
             if (name.equals("Solitude")) {this.wilderness = new Wilderness(Wilderness.Type.SOLITUDE);}
             else if (name.equals("Morthal")) {this.wilderness = new Wilderness(Wilderness.Type.MORTHAL);}
             else if (name.equals("Markarth")) {this.wilderness = new Wilderness(Wilderness.Type.MARKARTH);}
@@ -82,7 +86,7 @@ class City
         }
     }
 
-    City(String name, boolean isKeep, boolean isBlacksmith, boolean isAlchemist, boolean isInn, boolean isGuild, boolean isWilderness, Follower follower, Follower guildFollower)
+    City(String name, boolean isKeep, boolean isBlacksmith, boolean isAlchemist, boolean isInn, boolean isGuild, boolean isSchool, boolean isWilderness, Follower follower, Follower guildFollower)
     {
         this.name = name;
         this.isKeep = isKeep;
@@ -93,6 +97,7 @@ class City
         this.isWilderness = isWilderness;
         this.follower = follower;
         this.guildFollower = guildFollower;
+        this.isSchool = isSchool;
 
         if (isKeep)
         {
@@ -130,9 +135,10 @@ class City
             else if (name.equals("Winterhold")) {this.guild = new Guild(Guild.Type.COLLEGE);}
             else if (name.equals("Riften")) {this.guild = new Guild(Guild.Type.THIEVES);}
         }
+        if (isSchool) {buildings[5] = true; this.school = new School();}
         if (isWilderness)
         {
-            {buildings[5] = true;}
+            {buildings[6] = true;}
             if (name.equals("Solitude")) {this.wilderness = new Wilderness(Wilderness.Type.SOLITUDE);}
             else if (name.equals("Morthal")) {this.wilderness = new Wilderness(Wilderness.Type.MORTHAL);}
             else if (name.equals("Markarth")) {this.wilderness = new Wilderness(Wilderness.Type.MARKARTH);}
@@ -145,13 +151,12 @@ class City
         }
     }
 
-    public void menu(Player player)
-    {
+    public void menu(Player player) throws InterruptedException {
         System.out.println(player.currentCity.name);
         System.out.println("0. See your statistics");
 
         int i;
-        for (i = 0; i <= 5; i++)
+        for (i = 0; i <= 6; i++)
         {
             if (buildings[i])
             {
@@ -162,7 +167,8 @@ class City
                     case 2 -> System.out.println("3. Go to the alchemy shop");
                     case 3 -> System.out.println("4. Go to the inn");
                     case 4 -> System.out.println("5. Visit the guild");
-                    case 5 -> System.out.println("6. Leave the city");
+                    case 5 -> System.out.println("6. Visit stealth school");
+                    case 6 -> System.out.println("7. Leave the city");
                 }
             }
             else if (!buildings[i])
@@ -172,6 +178,7 @@ class City
                     case 1 -> System.out.println("2. <NOT AVILABLE>");
                     case 2 -> System.out.println("3. <NOT AVILABLE>");
                     case 4 -> System.out.println("5. <NOT AVILABLE>");
+                    case 5 -> System.out.println("6. <NOT AVILABLE>");
                 }
             }
         }
@@ -186,7 +193,8 @@ class City
             case "3" -> {alchemist.greet(player); alchemist.interact(player);}
             case "4" -> {inn.greet(player); inn.menu(player);}
             case "5" -> {guild.menu(player);}
-            case "6" -> {wilderness.menu(player);}
+            case "6" -> {school.greet(player); school.interact(player);}
+            case "7" -> {wilderness.menu(player);}
         }
     }
 }
