@@ -20,7 +20,6 @@ public class Inn extends Building
     }
 
     private final Inn.Type type;
-
     public Inn(Inn.Type type) {this.type = type;}
 
     public void greet(Player player)
@@ -70,19 +69,6 @@ public class Inn extends Building
         }
         else System.out.println("- Come back when you will have enough gold.");
         System.out.println();
-    }
-
-    public void hireFollower(Player player)
-    {
-        if (player.money >= 500)
-        {
-            player.money -= 500;
-            System.out.println("> FOLLOWER JOINS TO YOUR PARTY");
-        }
-        else System.out.println("- I'm sorry traveller. You can't afford my skills.");
-        System.out.println();
-
-        choices(player);
     }
 
     public void pickpocket(Player player)
@@ -142,7 +128,6 @@ public class Inn extends Building
                     {
                         if (player.currentCity.follower != null) {player.hireFollower(player.currentCity.follower);}
                         else System.out.println("> There is no one in the inn who wants to join you");
-                        System.out.println();
                     }
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}

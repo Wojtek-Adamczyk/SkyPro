@@ -10,9 +10,7 @@ class City
     Keep keep;
     Wilderness wilderness;
     Follower follower;
-
     Follower guildFollower;
-
 
     boolean isKeep;
     boolean isBlacksmith;
@@ -150,11 +148,9 @@ class City
     public void menu(Player player)
     {
         System.out.println(player.currentCity.name);
-
         System.out.println("0. See your statistics");
 
         int i;
-
         for (i = 0; i <= 5; i++)
         {
             if (buildings[i])

@@ -20,9 +20,7 @@ public class Keep extends Building
     }
 
     private final Type type;
-
     public Keep(Type type) {this.type = type;}
-
 
     public void pickpocket(Player player)
     {

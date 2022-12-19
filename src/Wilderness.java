@@ -55,7 +55,6 @@ public class Wilderness extends Building
             case SOLITUDE ->
             {
                 System.out.println("> YOU ARE STANDING IN THE SOLITUDE'S WALLS OUTER RING");
-
                 menuNoGuild(player);
 
                 Scanner input = new Scanner(System.in);
@@ -74,7 +73,6 @@ public class Wilderness extends Building
             case MORTHAL ->
             {
                 System.out.println("> YOU ARE STANDING IN THE HAAFINGAR MARSHES. IN THE DISTANCE YOU SEE HOUSES OF MORTHAL");
-
                 menuNoGuild(player);
 
                 Scanner input = new Scanner(System.in);
@@ -93,7 +91,6 @@ public class Wilderness extends Building
             case MARKARTH ->
             {
                 System.out.println("> YOU ARE STANDING IN FRONT OF GATES OF THE ANCIENT DWEMER CITY' - MARKARTH");
-
                 menuNoGuild(player);
 
                 Scanner input = new Scanner(System.in);
@@ -112,7 +109,6 @@ public class Wilderness extends Building
             case FALKREATH ->
             {
                 System.out.println("> BETWEEN THE WOODS YOU SEE THE LIGHTS OF FALKREATH");
-
                 menuGuild(player);
 
                 Scanner input = new Scanner(System.in);
@@ -134,7 +130,6 @@ public class Wilderness extends Building
             case WHITERUN ->
             {
                 System.out.println("> YOU ARE STANDING IN FRONT OF THE WHITERUN WALLS");
-
                 menuGuild(player);
 
                 Scanner input = new Scanner(System.in);
@@ -156,7 +151,6 @@ public class Wilderness extends Building
             case DAWNSTAR ->
             {
                 System.out.println("> FROZEN BAY OF THE DAWNSTAR SHINES IN THE DISTANCE");
-
                 menuNoGuild(player);
 
                 Scanner input = new Scanner(System.in);
@@ -175,7 +169,6 @@ public class Wilderness extends Building
             case WINTERHOLD ->
             {
                 System.out.println("> GIANT TOWERS OF COLLEGE OF WINTERHOLD STRIKES TO THE SKY");
-
                 menuGuild(player);
 
                 Scanner input = new Scanner(System.in);
@@ -197,7 +190,6 @@ public class Wilderness extends Building
             case WINDHELM ->
             {
                 System.out.println("> ON THE OTHER SIDE OF THE STONE BRIDGE STANDS ANCIENT CITY OF FORMER KINGS - WINDHELM");
-
                 menuNoGuild(player);
 
                 Scanner input = new Scanner(System.in);
@@ -216,7 +208,6 @@ public class Wilderness extends Building
             case RIFTEN ->
             {
                 System.out.println("> FALLEN YELLOW AND RED LEAVES COVERS THE GROUND OF THE RIFT");
-
                 menuGuild(player);
 
                 Scanner input = new Scanner(System.in);

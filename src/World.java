@@ -18,7 +18,6 @@ public class World
         followers[11] = new Follower("J'zargo", 120, 22, 0, cities[6]);
         followers[12] = new Follower("Sapphire", 150, 13, 1, cities[8]);
 
-
         cities[0] = new City("Solitude", true, true, true, true, false, true, followers[0]);
         cities[1] = new City("Morthal", true, false, true, true, false, true, followers[1]);
         cities[2] = new City("Markarth", true, true, true, true, false, true, followers[2]);
@@ -31,6 +30,5 @@ public class World
     }
 
     public City[] cities = new City[9];
-
     public Follower[] followers = new Follower[14];
 }

@@ -17,9 +17,6 @@ public class Player
         this.money = money;
     }
 
-    public Building building;
-    public City currentCity;
-
     public void sheet(Player player)
     {
         System.out.println("HP: " + player.currentHP + "/" + player.maximumHP);
@@ -69,17 +66,17 @@ public class Player
             money -= 500;
             System.out.println(follower.name + " joins you");
             this.follower = follower;
-            currentCity.follower = null;
 
+            currentCity.follower = null;
+            // trzeba zrobic zeby bylo rozdzielenie na currentCity.follower = null; i currentCity.guildFollower = null;
         }
         else System.out.println("- I'm sorry traveller. You can't afford my skills.");
-        System.out.println();
-
     }
 
     World world;
-
     Follower follower;
+    public Building building;
+    public City currentCity;
 
 }
 

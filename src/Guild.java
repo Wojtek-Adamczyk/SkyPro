@@ -14,11 +14,10 @@ public class Guild extends Building
         Type(String name) {this.name = name;}
     }
 
-    Integer points = 0;
-
     private final Type type;
-
     public Guild(Type type) {this.type = type;}
+
+    Integer points = 0;
 
     public void greet()
     {
@@ -57,7 +56,8 @@ public class Guild extends Building
                     case "3" -> {points += 3;}
                     case "4" ->
                     {
-                        if (player.currentCity.guildFollower != null && points >= 6) {player.hireFollower(player.currentCity.guildFollower);}
+                        if (player.currentCity.guildFollower != null && points >= 6) {player.hireFollower(player.currentCity.guildFollower); player.money += 500;}
+                        // w nawiązaniu do pola w hireFollower w klasie Player, trzeba zrobić by zwracało jakąś wiadomość, że już wynająłeś followera
                         else System.out.println("- You are not ready child. Take more lives in the name of Dread Father.");
                         System.out.println();
                     }
@@ -75,12 +75,12 @@ public class Guild extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player); menu(player);}
-                    case "1" -> {System.out.println();}
-                    case "2" -> {}
-                    case "3" -> {}
+                    case "1" -> {points += 1;}
+                    case "2" -> {points += 2;}
+                    case "3" -> {points += 3;}
                     case "4" ->
                     {
-                        if (player.currentCity.guildFollower != null && points >= 6) {player.hireFollower(player.currentCity.guildFollower);}
+                        if (player.currentCity.guildFollower != null && points >= 6) {player.hireFollower(player.currentCity.guildFollower); player.money += 500;}
                         else System.out.println("- You haven't proven your worth yet, brother.");
                         System.out.println();
                     }
@@ -98,13 +98,13 @@ public class Guild extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player); menu(player);}
-                    case "1" -> {System.out.println();}
-                    case "2" -> {System.out.println();}
+                    case "1" -> {}
+                    case "2" -> {}
                     case "3" -> {}
                     case "4" ->
                     {
-                        if (player.currentCity.guildFollower != null && points >= 6) {player.hireFollower(player.currentCity.guildFollower);}
-                        else System.out.println("- Khajiit got better things to do than chasing after a rookie. Be back when you will be master at our arts.");
+                        if (player.currentCity.guildFollower != null && points >= 6) {player.hireFollower(player.currentCity.guildFollower); player.money += 500;}
+                        else System.out.println("- Khajiit got better things to do than chasing after a rookie. Be back when you will be master in our arts.");
                         System.out.println();
                     }
                     case "5" -> {leave(player);}
@@ -126,7 +126,7 @@ public class Guild extends Building
                     case "3" -> {System.out.println();}
                     case "4" ->
                     {
-                        if (player.currentCity.guildFollower != null && points >= 6) {player.hireFollower(player.currentCity.guildFollower);}
+                        if (player.currentCity.guildFollower != null && points >= 6) {player.hireFollower(player.currentCity.guildFollower); player.money += 500;}
                         else System.out.println("- If you can't help yourself, no one here can help you. Prove yourself and we'll talk.");
                         System.out.println();
                     }
