@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba9b0e8-e653-4fc5-935a-609cd52afe78" name="Changes" comment="whatever">
-      <change afterPath="$PROJECT_DIR$/src/School.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Alchemist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alchemist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blacksmith.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blacksmith.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Building.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Building.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/City.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Guild.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Guild.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Inn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Keep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Keep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -183,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671475338707</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="whatever">
+      <created>1671483600557</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1671483600557</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

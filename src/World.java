@@ -31,13 +31,59 @@ public class World
         enemies[1] = new Enemy(1);
         enemies[2] = new Enemy(2);
         enemies[3] = new Enemy(3);
+        enemies[4] = new Enemy(4);
+        enemies[5] = new Enemy(5);
+        enemies[6] = new Enemy(6);
 
-        missions[0] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
+        missions[0] = new Mission("> King Olaf's tomb exudes sinister energy", enemies[1], enemies[0].reward, false, cities[0], 0);
+        missions[1] = new Mission("> There are several bags with various thing snext to the cave", enemies[0], enemies[0].reward, false, cities[0], 2);
+        missions[2] = new Mission("> As you enter the cave you hear the necromancers incanting some ritual", enemies[2], enemies[0].reward + 1200, false, cities[0], 0);
+        missions[3] = new Mission("> The filthy cave is filled with human bones and a disgusting smell emanates from inside", enemies[5], enemies[0].reward, false, cities[1], 0);
+        missions[4] = new Mission("> Turns out Alva is a vampire, but the ring on the table looks valuable indeed", enemies[5], enemies[0].reward, false, cities[1], 4);
+        missions[5] = new Mission("> The swamps are vast but the crabs make familiar sounds", enemies[3], enemies[0].reward + 200, false, cities[1], 0);
+
+        missions[6] = new Mission("> Hall of the Dead seems quiet, but after few moments you see a group of people devouring on a corpse", enemies[0], enemies[0].reward, false, cities[2], 0);
+        missions[7] = new Mission("> As the clatter of the gate dies down, only gusts of steam and steady knocking can be heard", enemies[1], enemies[0].reward, false, cities[2], 5);
+        missions[8] = new Mission("> When you enter the mine, you see fornsworns taking clothes and money from the murdered people", enemies[1], enemies[0].reward + 800, false, cities[2], 0);
+
+        missions[9] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
+        missions[10] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
+        missions[11] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
+        missions[12] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
+        missions[13] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
+        missions[14] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
+        missions[15] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
+        missions[16] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
+        missions[17] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
+        missions[18] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
+        missions[19] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
+        missions[20] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
+        missions[21] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
+        missions[22] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
+        missions[23] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
+        missions[24] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
+        missions[25] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
+        missions[26] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
+        missions[27] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[4], 0);
+
+        missions[28] = new Mission("> As you climbing higher, you see marks of dragon's claws in the snow", enemies[4], enemies[0].reward + 2000, false, cities[0], 0);
+        missions[29] = new Mission("> In the distance you see Eldersblood Peak and marks of dragon's presence between the marsh trees", enemies[4], enemies[0].reward + 1000, false, cities[1], 0);
+        missions[30] = new Mission("> Mountains and ravines of The Reach hold seems a perfect place to dragon's lair", enemies[4], enemies[0].reward + 1500, false, cities[0], 0);
+
+        missions[31] = new Mission("> ", enemies[4], enemies[0].reward + 1000, false, cities[1], 0);
+        missions[32] = new Mission("> ", enemies[4], enemies[0].reward + 2000, false, cities[0], 0);
+        missions[33] = new Mission("> ", enemies[4], enemies[0].reward + 1000, false, cities[1], 0);
+        missions[34] = new Mission("> ", enemies[4], enemies[0].reward + 2000, false, cities[0], 0);
+        missions[35] = new Mission("> ", enemies[4], enemies[0].reward + 1000, false, cities[1], 0);
+        missions[36] = new Mission("> ", enemies[4], enemies[0].reward + 2000, false, cities[0], 0);
+
+
+
     }
 
     public City[] cities = new City[9];
     public Follower[] followers = new Follower[14];
     public Mission[] missions = new Mission[48];
-    public Enemy[] enemies = new Enemy[4];
+    public Enemy[] enemies = new Enemy[10];
 
 }

@@ -2,7 +2,7 @@ public class Main
 {
     public static void main(String[] args) throws InterruptedException
     {
-        Player player = new Player(100, 100, 10, 0, 3666600, 0);
+        Player player = new Player(1000, 1000, 100, 0, 100000, 4);
         World world = new World();
         player.world = world;
 
@@ -10,6 +10,6 @@ public class Main
         System.out.println();
         world.cities[4].wilderness.menu(player);
 
-        while (true) {player.currentCity.menu(player);}
+        while (player.currentHP >= 0) {player.currentCity.menu(player);}
     }
 }

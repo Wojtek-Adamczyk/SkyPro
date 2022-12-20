@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class Player
 {
@@ -30,14 +31,15 @@ public class Player
 
         if (follower != null)
         {
-            System.out.println("Follower HP: " + follower.currentHP);
-            System.out.println("Follower damage: " + follower.damage);
-            System.out.println("Follower armor: " + follower.armor);
+            System.out.println(follower.name + ":");
+            System.out.println("HP: " + follower.currentHP);
+            System.out.println("Damage: " + follower.damage);
+            System.out.println("Armor: " + follower.armor);
             System.out.println();
         }
     }
 
-    public void travel()
+    public void travel() throws InterruptedException
     {
         System.out.println("1. Travel to Solitude");
         System.out.println("2. Travel to Morthal");
