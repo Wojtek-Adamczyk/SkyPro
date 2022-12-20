@@ -231,7 +231,7 @@ public class Wilderness extends Building
                 System.out.println("2. misja 1");
                 System.out.println("3. misja 2");
                 System.out.println("4. misja 3");
-                System.out.println("5. misja jarla");
+                System.out.println("5. Go to Ancestors Glade");
                 System.out.println("6. misja gildii 1");
                 System.out.println("7. misja gildii 2");
                 System.out.println("8. misja gildii 3");
@@ -246,7 +246,17 @@ public class Wilderness extends Building
                     case "2" -> {}//misja1
                     case "3" -> {}//misja2
                     case "4" -> {}//misja3
-                    case "5" -> {}//misja jarla
+                    case "5" ->
+                    {
+                        System.out.println(player.world.missions[31].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[31].completed)
+                        {
+                            player.mission = player.world.missions[31];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
                     case "6" -> {}//misja gildii1
                     case "7" -> {}//misja gildii2
                     case "8" -> {}//misja gildii 3
@@ -261,7 +271,7 @@ public class Wilderness extends Building
                 System.out.println("2. misja 1");
                 System.out.println("3. misja 2");
                 System.out.println("4. misja 3");
-                System.out.println("5. misja jarla");
+                System.out.println("5. Go to the Watchtower");
                 System.out.println("6. misja gildii 1");
                 System.out.println("7. misja gildii 2");
                 System.out.println("8. misja gildii 3");
@@ -273,18 +283,21 @@ public class Wilderness extends Building
                 {
                     case "0" -> {player.sheet(player);}
                     case "1" -> {player.currentCity.menu(player);}
-                    case "2" ->
-                    {
-                        if (player.world.missions[0].completed == false)
-                        {
-                            player.mission = player.world.missions[0];
-                            player.mission.fight(player);
-                        }
-                        else System.out.println("chuj");
-                    }
+                    case "2" -> {}
                     case "3" -> {}//misja2
                     case "4" -> {}//misja3
-                    case "5" -> {}//misja jarla
+                    case "5" ->
+                    {
+                        System.out.println(player.world.missions[32].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[32].completed)
+                        {
+                            player.mission = player.world.missions[32];
+                            player.mission.check(player);
+                            player.damage += 1;
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
                     case "6" -> {}//misja gildii1
                     case "7" -> {}//misja gildii2
                     case "8" -> {}//misja gildii 3
@@ -299,7 +312,7 @@ public class Wilderness extends Building
                 System.out.println("2. misja 1");
                 System.out.println("3. misja 2");
                 System.out.println("4. misja 3");
-                System.out.println("5. misja jarla");
+                System.out.println("5. Go to Nightcaller Temple");
                 System.out.println("6. Travel to another city");
 
                 Scanner input = new Scanner(System.in);
@@ -311,7 +324,17 @@ public class Wilderness extends Building
                     case "2" -> {}//misja1
                     case "3" -> {}//misja2
                     case "4" -> {}//misja3
-                    case "5" -> {}//misja jarla
+                    case "5" ->
+                    {
+                        System.out.println(player.world.missions[33].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[33].completed)
+                        {
+                            player.mission = player.world.missions[33];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
                     case "6" -> {player.travel();}
                 }
             }
@@ -323,7 +346,7 @@ public class Wilderness extends Building
                 System.out.println("2. misja 1");
                 System.out.println("3. misja 2");
                 System.out.println("4. misja 3");
-                System.out.println("5. misja jarla");
+                System.out.println("5. Go to Skytemple Ruins");
                 System.out.println("6. misja gildii 1");
                 System.out.println("7. misja gildii 2");
                 System.out.println("8. misja gildii 3");
@@ -338,7 +361,17 @@ public class Wilderness extends Building
                     case "2" -> {}//misja1
                     case "3" -> {}//misja2
                     case "4" -> {}//misja3
-                    case "5" -> {}//misja jarla
+                    case "5" ->
+                    {
+                        System.out.println(player.world.missions[34].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[34].completed)
+                        {
+                            player.mission = player.world.missions[34];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
                     case "6" -> {}//misja gildii1
                     case "7" -> {}//misja gildii2
                     case "8" -> {}//misja gildii 3
@@ -353,7 +386,7 @@ public class Wilderness extends Building
                 System.out.println("2. misja 1");
                 System.out.println("3. misja 2");
                 System.out.println("4. misja 3");
-                System.out.println("5. misja jarla");
+                System.out.println("5. Go to Yngol Barrow");
                 System.out.println("6. Travel to another city");
 
                 Scanner input = new Scanner(System.in);
@@ -365,7 +398,18 @@ public class Wilderness extends Building
                     case "2" -> {}//misja1
                     case "3" -> {}//misja2
                     case "4" -> {}//misja3
-                    case "5" -> {}//misja jarla
+                    case "5" ->
+                    {
+                        System.out.println(player.world.missions[35].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[35].completed)
+                        {
+                            player.mission = player.world.missions[35];
+                            player.mission.check(player);
+                            player.armor += 1;
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
                     case "6" -> {player.travel();}
                 }
             }
@@ -377,7 +421,7 @@ public class Wilderness extends Building
                 System.out.println("2. misja 1");
                 System.out.println("3. misja 2");
                 System.out.println("4. misja 3");
-                System.out.println("5. misja jarla");
+                System.out.println("5. Go to Northwind Summit");
                 System.out.println("6. misja gildii 1");
                 System.out.println("7. misja gildii 2");
                 System.out.println("8. misja gildii 3");
@@ -392,7 +436,17 @@ public class Wilderness extends Building
                     case "2" -> {}//misja1
                     case "3" -> {}//misja2
                     case "4" -> {}//misja3
-                    case "5" -> {}//misja jarla
+                    case "5" ->
+                    {
+                        System.out.println(player.world.missions[36].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[36].completed)
+                        {
+                            player.mission = player.world.missions[36];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
                     case "6" -> {}//misja gildii1
                     case "7" -> {}//misja gildii2
                     case "8" -> {}//misja gildii 3
