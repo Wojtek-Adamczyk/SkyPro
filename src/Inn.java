@@ -322,7 +322,7 @@ public class Inn extends Building
                     {
                         if (!player.world.missions[14].completed)
                         {
-                            System.out.print("Jarl put a bounty on the head of the Redguard rebel who orchestrated the assassination of the Thalmor ambassador. Recent information on his whereabouts points to his whereabouts at Swindler's Den. Reward: 500 septims <");
+                            System.out.println("Jarl put a bounty on the head of the Redguard rebel who orchestrated the assassination of the Thalmor ambassador. Recent information on his whereabouts points to his whereabouts at Swindler's Den. Reward: 500 septims <");
                             System.out.println();
                         }
                         else {System.out.println(boardQuestTaken); System.out.println();}
@@ -370,7 +370,7 @@ public class Inn extends Building
                     {
                         if (!player.world.missions[17].completed)
                         {
-                            System.out.print("> Jarl offered a bounty of 600 septims for killing an extremely dangerous horker that had already killed four experienced hunters. The beast has a lair somewhere on the shores of the Sea of Ghosts. <");
+                            System.out.println("> Jarl offered a bounty of 600 septims for killing an extremely dangerous horker that had already killed four experienced hunters. The beast has a lair somewhere on the shores of the Sea of Ghosts. <");
                             System.out.println();
                         }
                         else {System.out.println(boardQuestTaken); System.out.println();}
@@ -395,9 +395,33 @@ public class Inn extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);menu(player);}
-                    case "1" -> {}
-                    case "2" -> {}
-                    case "3" -> {}
+                    case "1" ->
+                    {
+                        if (!player.world.missions[18].completed)
+                        {
+                            System.out.println("- A pack of wolves has been attacking travelers lately. Together with the citizens, we collected a small amount for a volunteer who will take care of this matter, but so far no one has come forward");
+                            System.out.println();
+                        }
+                        else {System.out.println(inkeeperQuestTaken); System.out.println();}
+                    }
+                    case "2" ->
+                    {
+                        if (!player.world.missions[19].completed)
+                        {
+                            System.out.println("> You overheard that some rich nobleman who wanted to visit the College is staying at the Nightgate Inn a short distance from the town");
+                            System.out.println();
+                        }
+                        else {System.out.println(rumorsQuestTaken); System.out.println();}
+                    }
+                    case "3" ->
+                    {
+                        if (!player.world.missions[20].completed)
+                        {
+                            System.out.println("> Jarl offered a bounty for getting rid of the elemental accidentally created by the mages. The beast is unpredictable and dangerous, so the jarl has also banned ordinary people from taking this task <");
+                            System.out.println();
+                        }
+                        else {System.out.println(boardQuestTaken); System.out.println();}
+                    }
                     case "4" -> {rentRoom(player);}
                     case "5" ->
                     {
@@ -418,9 +442,34 @@ public class Inn extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);menu(player);}
-                    case "1" -> {}
-                    case "2" -> {}
-                    case "3" -> {}
+                    case "1" ->
+                    {
+                        if (!player.world.missions[21].completed)
+                        {
+                            System.out.println("- These out-of-town hunters are asking for a brawl... They come here every day and drink and then hurl racial slurs at Dunmers and Argonians. It scares away all non-human clients.");
+                            System.out.println("Why don't you take care of them for a few gold coins? No one will miss them.");
+                            System.out.println();
+                        }
+                        else {System.out.println(inkeeperQuestTaken); System.out.println();}
+                    }
+                    case "2" ->
+                    {
+                        if (!player.world.missions[22].completed)
+                        {
+                            System.out.println("> You overheard Dunmer and Argonian talking about the Viola Giordiano's ring they plan to steal.");
+                            System.out.println();
+                        }
+                        else {System.out.println(rumorsQuestTaken); System.out.println();}
+                    }
+                    case "3" ->
+                    {
+                        if (!player.world.missions[23].completed)
+                        {
+                            System.out.println("> King Ulfric seeks out a seasoned tracker to track down and kill the fugitive criminal responsible for three murderers in the Windhelm. Reward: 1000 septims <");
+                            System.out.println();
+                        }
+                        else {System.out.println(boardQuestTaken); System.out.println();}
+                    }
                     case "4" -> {rentRoom(player);}
                     case "5" ->
                     {

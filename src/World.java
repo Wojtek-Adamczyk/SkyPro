@@ -43,33 +43,29 @@ public class World
         missions[1] = new Mission("> There are several bags with various things next to the cave", enemies[0], enemies[0].reward, false, cities[0], 2);
         missions[2] = new Mission("> As you enter the cave you hear the necromancers incanting some ritual", enemies[2], enemies[0].reward + 1200, false, cities[0], 0);
         missions[3] = new Mission("> The filthy cave is filled with human bones and a disgusting smell emanates from inside", enemies[5], enemies[0].reward, false, cities[1], 0);
-        missions[4] = new Mission("> Turns out Alva is a vampire, but the ring on the table looks valuable indeed", enemies[5], enemies[0].reward, false, cities[1], 4);
+        missions[4] = new Mission("> Turns out Alva is a vampire, but the ring on the table looks valuable indeed", enemies[5], enemies[0].reward + 300, false, cities[1], 4);
         missions[5] = new Mission("> The swamps are vast but the crabs make familiar sounds", enemies[3], enemies[0].reward + 200, false, cities[1], 0);
         missions[6] = new Mission("> Hall of the Dead seems quiet, but after few moments you see a group of people devouring on a corpse", enemies[0], enemies[0].reward, false, cities[2], 0);
-        missions[7] = new Mission("> As the clatter of the gate dies down, only gusts of steam and steady knocking can be heard", enemies[1], enemies[0].reward, false, cities[2], 5);
+        missions[7] = new Mission("> As the clatter of the gate dies down, only gusts of steam and steady knocking can be heard", enemies[1], enemies[0].reward + 500, false, cities[2], 5);
         missions[8] = new Mission("> When you enter the mine, you see fornsworns taking clothes and money from the murdered people", enemies[1], enemies[0].reward + 800, false, cities[2], 0);
         missions[9] = new Mission("> Animal, and not only animal bones spill out of the cave", enemies[6], enemies[0].reward, false, cities[3], 0);
-        missions[10] = new Mission("> A strange mist hovers over the graves", enemies[0], enemies[0].reward, false, cities[3], 0);
+        missions[10] = new Mission("> A strange mist hovers over the graves", enemies[0], enemies[0].reward + 100, false, cities[3], 0);
         missions[11] = new Mission("> As you make your way through the dense forest, you suddenly smell sulfur", enemies[9], enemies[0].reward + 500, false, cities[3], 0);
         missions[12] = new Mission("> Heimskr's hut looks warm and welcoming", enemies[0], enemies[0].reward, false, cities[4], 0);
-        missions[13] = new Mission("> A strange unnatural flash comes from the Elderglow Cave", enemies[8], enemies[0].reward, false, cities[4], 5);
+        missions[13] = new Mission("> A strange unnatural flash comes from the Elderglow Cave", enemies[8], enemies[0].reward + 100, false, cities[4], 5);
         missions[14] = new Mission("> Swinder's Den is well hidden among the rocks of the lowlands", enemies[1], enemies[0].reward + 500, false, cities[4], 0);
         missions[15] = new Mission("> Immediately after entering the tower you see that its resident is by no means an ordinary alchemist who wants to heal town folk", enemies[2], enemies[0].reward, false, cities[5], 0);
-        missions[16] = new Mission("> The museum is full of ancient artifacts to please the eye and soul. Especially a dark one", enemies[2], enemies[0].reward, false, cities[5], 7);
+        missions[16] = new Mission("> The museum is full of ancient artifacts to please the eye and soul. Especially a dark one", enemies[2], enemies[0].reward + 400, false, cities[5], 7);
         missions[17] = new Mission("> Along the entire length of the coast there are traces of a horker's body gliding through the snow", enemies[6], enemies[0].reward + 600, false, cities[5], 0);
-
-        missions[18] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[6], 0);
-        missions[19] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[6], 0);
-        missions[20] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[6], 0);
-
-        missions[21] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[7], 0);
-        missions[22] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[7], 0);
-        missions[23] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[7], 0);
-
+        missions[18] = new Mission("> Wandering among the snowdrifts, you notice the traces of the wolves not yet covered with white fluff", enemies[6], enemies[0].reward + 100, false, cities[6], 0);
+        missions[19] = new Mission("> There are not many guests in the inn, but still no one pays attention to your presence", enemies[0], enemies[0].reward + 200, false, cities[6], 4);
+        missions[20] = new Mission("> Traversing the snowy tundra, you notice scorched marks in the snow and on trees that indicate the presence of a fire elemental", enemies[8], enemies[0].reward + 400, false, cities[6], 0);
+        missions[21] = new Mission("> You see bottles scattered around the messy campsite in the copse nearby", enemies[0], enemies[0].reward + 50, false, cities[7], 0);
+        missions[22] = new Mission("> Viola Giordiano's house is sumptuous and is sure to impress even the nobles", enemies[0], enemies[0].reward + 100, false, cities[7], 3);
+        missions[23] = new Mission("> Walking through the forest you find traces of someone's quick escape", enemies[7], enemies[0].reward + 1000, false, cities[7], 0);
         missions[24] = new Mission("> The Black Briar Lodge from a distance looks like a regular big house, but as you get closer you see more and more fortifications and mercenary thugs", enemies[7], enemies[0].reward, false, cities[8], 0);
-        missions[25] = new Mission("> There is a bonfire by the road, and several tents are pitched around it", enemies[0], enemies[0].reward, false, cities[8], 4);
+        missions[25] = new Mission("> There is a bonfire by the road, and several tents are pitched around it", enemies[0], enemies[0].reward + 200, false, cities[8], 4);
         missions[26] = new Mission("> Autumnshade Clearing radiates a beautiful greenish light", enemies[8], enemies[0].reward + 300, false, cities[8], 0);
-
         // missions[27] - there is one break mission because I can't count
         missions[28] = new Mission("> As you climbing higher, you see marks of dragon's claws in the snow", enemies[4], enemies[0].reward + 2000, false, cities[0], 0);
         missions[29] = new Mission("> In the distance you see Eldersblood Peak and marks of dragon's presence between the marsh trees", enemies[4], enemies[0].reward + 1000, false, cities[1], 0);
@@ -81,16 +77,16 @@ public class World
         missions[35] = new Mission("> The Yngol Barrow is burned by dragon almost to the ground. partially it's still smoldering", enemies[4], enemies[0].reward + 1000, false, cities[7], 0);
         missions[36] = new Mission("> The closer you get to Northwind Summit, the more it seems to you that there is no better place for a dragon lair", enemies[4], enemies[0].reward + 1000, false, cities[8], 0);
 
-        missions[37] = new Mission("> An abandoned hut is located by a small stream. inside are the remains of an primitive bonfire", enemies[3], enemies[0].reward, false, cities[3], 0);
-        missions[38] = new Mission("> The mill wheel is in full swing. you can hear the pleasant crackling of grains crushed by the millstones", enemies[5], enemies[0].reward, false, cities[3], 0);
-        missions[39] = new Mission("> The outpost is surrounded by a small stone wall and continuously patrolled by soldiers, but nobody notice your presence", enemies[7], enemies[0].reward, false, cities[3], 0);
+        missions[37] = new Mission("> An abandoned hut is located by a small stream. inside are the remains of an primitive bonfire", enemies[3], enemies[0].reward + 100, false, cities[3], 0);
+        missions[38] = new Mission("> The mill wheel is in full swing. you can hear the pleasant crackling of grains crushed by the millstones", enemies[5], enemies[0].reward + 300, false, cities[3], 0);
+        missions[39] = new Mission("> The outpost is surrounded by a small stone wall and continuously patrolled by soldiers, but nobody notice your presence", enemies[7], enemies[0].reward + 500, false, cities[3], 0);
         missions[40] = new Mission("> The shed is sealed off from the outside and the farmers seem scared of whats inside", enemies[6], enemies[0].reward, false, cities[4], 0);
         missions[41] = new Mission("> In front of the cave you can see several goat heads impaled on poles and a trickle of musty blood leads inside", enemies[2], enemies[0].reward, false, cities[4], 0);
         missions[42] = new Mission("> Gallows rock is smaller than suggested. over the arch of the gate there are several hanged men, devoured by birds and silver hand soldiers watch over the walls", enemies[7], enemies[0].reward, false, cities[4], 0);
         missions[43] = new Mission("> The ruins of Saarthal make an ominous impression. standing over the excavations, you see archaeologists bustling around", enemies[0], enemies[0].reward + 300, false, cities[6], 0);
         missions[44] = new Mission("> The gate to the Alftands is snowed over and the Dwemer elevator doesn't seem to be working after centuries of disuse", enemies[1], enemies[0].reward, false, cities[6], 0);
         missions[45] = new Mission("> The dragon priest's sanctuary is built of the blackest granite you have ever seen", enemies[8], enemies[0].reward, false, cities[6], 0);
-        missions[46] = new Mission("> Small farm surrounded by fallen leaves of different colors makes a beautiful impression ", enemies[3], enemies[0].reward, false, cities[8], 3);
+        missions[46] = new Mission("> Small farm surrounded by fallen leaves of different colors makes a beautiful impression ", enemies[3], enemies[0].reward + 200, false, cities[8], 3);
         missions[47] = new Mission("> In the distance you can see the lights of an estate located on a small island", enemies[0], enemies[0].reward, false, cities[8], 8);
         missions[48] = new Mission("> The employees of the brewery look at you with a meaningful pattern", enemies[2], enemies[0].reward, false, cities[8], 6);
     }

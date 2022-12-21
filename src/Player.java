@@ -53,15 +53,15 @@ public class Player
 
         Scanner input = new Scanner(System.in);
         int playerInput = input.nextInt();
-        if (playerInput == 1) {currentCity = world.cities[0];}
-        if (playerInput == 2) {currentCity = world.cities[1];}
-        if (playerInput == 3) {currentCity = world.cities[2];}
-        if (playerInput == 4) {currentCity = world.cities[3];}
-        if (playerInput == 5) {currentCity = world.cities[4];}
-        if (playerInput == 6) {currentCity = world.cities[5];}
-        if (playerInput == 7) {currentCity = world.cities[6];}
-        if (playerInput == 8) {currentCity = world.cities[7];}
-        if (playerInput == 9) {currentCity = world.cities[8];}
+        if (playerInput == 1) {currentCity = world.cities[0]; System.out.println("Travelling to Solitude..."); System.out.println(); TimeUnit.SECONDS.sleep(10);}
+        if (playerInput == 2) {currentCity = world.cities[1]; System.out.println("Travelling to Morthal..."); System.out.println(); TimeUnit.SECONDS.sleep(10);}
+        if (playerInput == 3) {currentCity = world.cities[2]; System.out.println("Travelling to Markarth..."); System.out.println(); TimeUnit.SECONDS.sleep(10);}
+        if (playerInput == 4) {currentCity = world.cities[3]; System.out.println("Travelling to Falkreath..."); System.out.println(); TimeUnit.SECONDS.sleep(10);}
+        if (playerInput == 5) {currentCity = world.cities[4]; System.out.println("Travelling to Whiterun..."); System.out.println(); TimeUnit.SECONDS.sleep(10);}
+        if (playerInput == 6) {currentCity = world.cities[5]; System.out.println("Travelling to Dawnstar..."); System.out.println(); TimeUnit.SECONDS.sleep(10);}
+        if (playerInput == 7) {currentCity = world.cities[6]; System.out.println("Travelling to Winterhold..."); System.out.println(); TimeUnit.SECONDS.sleep(10);}
+        if (playerInput == 8) {currentCity = world.cities[7]; System.out.println("Travelling to Windhelm..."); System.out.println(); TimeUnit.SECONDS.sleep(10);}
+        if (playerInput == 9) {currentCity = world.cities[8]; System.out.println("Travelling to Riften..."); System.out.println(); TimeUnit.SECONDS.sleep(10);}
     }
 
     public void hireFollower(Follower follower)

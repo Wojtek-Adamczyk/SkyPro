@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 class City
 {
@@ -204,14 +205,20 @@ class City
             case "5" ->
             {
                 if (guild == null) {player.currentCity.menu(player);}
-                else {guild.greet(); guild.menu(player);}
+                else {guild.menu(player);}
             }
             case "6" ->
             {
                 if (school == null) {player.currentCity.menu(player);}
                 else {school.greet(player); school.interact(player);}
             }
-            case "7" -> {wilderness.menu(player);}
+            case "7" ->
+            {
+                System.out.println("Leaving the city...");
+                System.out.println();
+                TimeUnit.SECONDS.sleep(3);
+                wilderness.menu(player);
+            }
         }
     }
 }

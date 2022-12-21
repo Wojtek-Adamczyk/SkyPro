@@ -47,7 +47,13 @@ public class Wilderness extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);}
-                    case "1" -> {player.currentCity.menu(player);}
+                    case "1" ->
+                    {
+                        System.out.println("Entering Solitude...");
+                        TimeUnit.SECONDS.sleep(3);
+                        System.out.println();
+                        player.currentCity.menu(player);
+                    }
                     case "2" ->
                     {
                         System.out.println(player.world.missions[0].dialog);
@@ -111,7 +117,13 @@ public class Wilderness extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);}
-                    case "1" -> {player.currentCity.menu(player);}
+                    case "1" ->
+                    {
+                        System.out.println("Entering Morthal...");
+                        TimeUnit.SECONDS.sleep(3);
+                        System.out.println();
+                        player.currentCity.menu(player);
+                    }
                     case "2" ->
                     {
                         System.out.println(player.world.missions[3].dialog);
@@ -175,7 +187,13 @@ public class Wilderness extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);}
-                    case "1" -> {player.currentCity.menu(player);}
+                    case "1" ->
+                    {
+                        System.out.println("Entering Markarth...");
+                        TimeUnit.SECONDS.sleep(3);
+                        System.out.println();
+                        player.currentCity.menu(player);
+                    }
                     case "2" ->
                     {
                         System.out.println(player.world.missions[6].dialog);
@@ -242,7 +260,13 @@ public class Wilderness extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);}
-                    case "1" -> {player.currentCity.menu(player);}
+                    case "1" ->
+                    {
+                        System.out.println("Entering Falkreath...");
+                        TimeUnit.SECONDS.sleep(3);
+                        System.out.println();
+                        player.currentCity.menu(player);
+                    }
                     case "2" ->
                     {
                         System.out.println(player.world.missions[9].dialog);
@@ -342,7 +366,13 @@ public class Wilderness extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);}
-                    case "1" -> {player.currentCity.menu(player);}
+                    case "1" ->
+                    {
+                        System.out.println("Entering Whiterun...");
+                        TimeUnit.SECONDS.sleep(3);
+                        System.out.println();
+                        player.currentCity.menu(player);
+                    }
                     case "2" ->
                     {
                         System.out.println(player.world.missions[12].dialog);
@@ -440,7 +470,13 @@ public class Wilderness extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);}
-                    case "1" -> {player.currentCity.menu(player);}
+                    case "1" ->
+                    {
+                        System.out.println("Entering Dawnstar...");
+                        TimeUnit.SECONDS.sleep(3);
+                        System.out.println();
+                        player.currentCity.menu(player);
+                    }
                     case "2" ->
                     {
                         System.out.println(player.world.missions[15].dialog);
@@ -493,9 +529,9 @@ public class Wilderness extends Building
                 System.out.println("> GIANT TOWERS OF COLLEGE OF WINTERHOLD STRIKES TO THE SKY");
                 System.out.println("0. See your statistics");
                 System.out.println("1. Enter the city");
-                System.out.println("2. ");
-                System.out.println("3. ");
-                System.out.println("4. ");
+                System.out.println("2. Walk around the city");
+                System.out.println("3. Go to the Nightgate Inn");
+                System.out.println("4. Search the tundra");
                 System.out.println("5. Go to Skytemple Ruins");
                 System.out.println("6. Go to Saarthal");
                 System.out.println("7. Go to Alftand");
@@ -507,10 +543,46 @@ public class Wilderness extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);}
-                    case "1" -> {player.currentCity.menu(player);}
-                    case "2" -> {}//misja1
-                    case "3" -> {}//misja2
-                    case "4" -> {}//misja3
+                    case "1" ->
+                    {
+                        System.out.println("Entering Winterhold...");
+                        TimeUnit.SECONDS.sleep(3);
+                        System.out.println();
+                        player.currentCity.menu(player);
+                    }
+                    case "2" ->
+                    {
+                        System.out.println(player.world.missions[18].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[18].completed)
+                        {
+                            player.mission = player.world.missions[18];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
+                    case "3" ->
+                    {
+                        System.out.println(player.world.missions[19].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[19].completed)
+                        {
+                            player.mission = player.world.missions[19];
+                            player.mission.sneak(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
+                    case "4" ->
+                    {
+                        System.out.println(player.world.missions[20].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[20].completed)
+                        {
+                            player.mission = player.world.missions[20];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
                     case "5" ->
                     {
                         System.out.println(player.world.missions[34].dialog);
@@ -563,9 +635,9 @@ public class Wilderness extends Building
                 System.out.println("> ON THE OTHER SIDE OF THE STONE BRIDGE STANDS ANCIENT CITY OF FORMER KINGS - WINDHELM");
                 System.out.println("0. See your statistics");
                 System.out.println("1. Enter the city");
-                System.out.println("2. misja 1");
-                System.out.println("3. misja 2");
-                System.out.println("4. misja 3");
+                System.out.println("2. Serach for a hunter's camp");
+                System.out.println("3. Go to Viola Giordiano's household");
+                System.out.println("4. Serach the forest");
                 System.out.println("5. Go to Yngol Barrow");
                 System.out.println("6. Travel to another city");
 
@@ -574,10 +646,46 @@ public class Wilderness extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);}
-                    case "1" -> {player.currentCity.menu(player);}
-                    case "2" -> {}//misja1
-                    case "3" -> {}//misja2
-                    case "4" -> {}//misja3
+                    case "1" ->
+                    {
+                        System.out.println("Entering Windhelm...");
+                        TimeUnit.SECONDS.sleep(3);
+                        System.out.println();
+                        player.currentCity.menu(player);
+                    }
+                    case "2" ->
+                    {
+                        System.out.println(player.world.missions[21].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[21].completed)
+                        {
+                            player.mission = player.world.missions[21];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
+                    case "3" ->
+                    {
+                        System.out.println(player.world.missions[22].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[22].completed)
+                        {
+                            player.mission = player.world.missions[22];
+                            player.mission.sneak(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
+                    case "4" ->
+                    {
+                        System.out.println(player.world.missions[23].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[23].completed)
+                        {
+                            player.mission = player.world.missions[23];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
                     case "5" ->
                     {
                         System.out.println(player.world.missions[35].dialog);
@@ -612,7 +720,13 @@ public class Wilderness extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);}
-                    case "1" -> {player.currentCity.menu(player);}
+                    case "1" ->
+                    {
+                        System.out.println("Entering Riften...");
+                        TimeUnit.SECONDS.sleep(3);
+                        System.out.println();
+                        player.currentCity.menu(player);
+                    }
                     case "2" ->
                     {
                         System.out.println(player.world.missions[24].dialog);
