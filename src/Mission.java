@@ -49,7 +49,7 @@ public class Mission
             {
                 if (player.stealth >= stealth)
                 {
-                    System.out.println("You managed to sneak through enemies and steal " + player.mission.reward + " septims");
+                    System.out.println("You managed to sneak through and steal " + player.mission.reward + " septims");
                     System.out.println();
                     player.money += player.mission.reward;
                     completed = true;

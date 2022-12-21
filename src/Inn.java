@@ -347,9 +347,34 @@ public class Inn extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);menu(player);}
-                    case "1" -> {}
-                    case "2" -> {}
-                    case "3" -> {}
+                    case "1" ->
+                    {
+                        if (!player.world.missions[15].completed)
+                        {
+                            System.out.println("- No one in town can sleep. It's been like this for a few weeks since this mage moved into the Windward Tower on the shore. No one knows what he's doing there, but people are saying more and more that he cursed us.");
+                            System.out.println(" Maybe... would you take care of this problem?");
+                            System.out.println();
+                        }
+                        else {System.out.println(inkeeperQuestTaken); System.out.println();}
+                    }
+                    case "2" ->
+                    {
+                        if (!player.world.missions[16].completed)
+                        {
+                            System.out.println("> You heard that the curator of the newly created Mythic Dawn Museum has collected many legendary items, including one extremely valuable - the necklace of Mankar Camoran, the leader of the cult during the Oblivion Crisis");
+                            System.out.println();
+                        }
+                        else {System.out.println(rumorsQuestTaken); System.out.println();}
+                    }
+                    case "3" ->
+                    {
+                        if (!player.world.missions[17].completed)
+                        {
+                            System.out.print("> Jarl offered a bounty of 600 septims for killing an extremely dangerous horker that had already killed four experienced hunters. The beast has a lair somewhere on the shores of the Sea of Ghosts. <");
+                            System.out.println();
+                        }
+                        else {System.out.println(boardQuestTaken); System.out.println();}
+                    }
                     case "4" -> {rentRoom(player);}
                     case "5" ->
                     {
@@ -416,9 +441,34 @@ public class Inn extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);menu(player);}
-                    case "1" -> {}
-                    case "2" -> {}
-                    case "3" -> {}
+                    case "1" ->
+                    {
+                        if (!player.world.missions[24].completed)
+                        {
+                            System.out.println("- These Briar Rose Meadery thugs come here every week and demand some protection money and the Jarl doesn't do anything about it. The citizens would take care of it themselves, but their seat is a real fortress.");
+                            System.out.println("But you... you seem like someone who could help us.");
+                            System.out.println();
+                        }
+                        else {System.out.println(inkeeperQuestTaken); System.out.println();}
+                    }
+                    case "2" ->
+                    {
+                        if (!player.world.missions[25].completed)
+                        {
+                            System.out.println("> You've heard rumors that one of the merchants camping near the city never closes his chest of valuables, as if he's waiting for someone to get at them");
+                            System.out.println();
+                        }
+                        else {System.out.println(rumorsQuestTaken); System.out.println();}
+                    }
+                    case "3" ->
+                    {
+                        if (!player.world.missions[26].completed)
+                        {
+                            System.out.print("> Jarl is looking for a volunteer to collect Nirnroot for the court alchemist. To the best of honorable Wylandriah knowledge, Nirnroot grows at Sutumnshade Clearing infested with aggresive spriggans. Reward: 300 septims <");
+                            System.out.println();
+                        }
+                        else {System.out.println(boardQuestTaken); System.out.println();}
+                    }
                     case "4" -> {rentRoom(player);}
                     case "5" ->
                     {

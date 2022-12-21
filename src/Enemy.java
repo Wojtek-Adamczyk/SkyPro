@@ -65,9 +65,9 @@ public class Enemy
 
         if (level == 6) // duze zwierzaki
         {
-            currentHP = generator.nextInt(100,150);
-            damage = generator.nextInt(8,14);
-            armor = generator.nextInt(0,1);
+            currentHP = generator.nextInt(100,180);
+            damage = generator.nextInt(8,15);
+            armor = generator.nextInt(0,2);
             reward = generator.nextInt(0,10);
         }
 

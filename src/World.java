@@ -50,15 +50,13 @@ public class World
         missions[8] = new Mission("> When you enter the mine, you see fornsworns taking clothes and money from the murdered people", enemies[1], enemies[0].reward + 800, false, cities[2], 0);
         missions[9] = new Mission("> Animal, and not only animal bones spill out of the cave", enemies[6], enemies[0].reward, false, cities[3], 0);
         missions[10] = new Mission("> A strange mist hovers over the graves", enemies[0], enemies[0].reward, false, cities[3], 0);
-        missions[11] = new Mission("> As you make your way through the dense forest, you suddenly smell sulfur", enemies[9], enemies[0].reward, false, cities[3], 0);
+        missions[11] = new Mission("> As you make your way through the dense forest, you suddenly smell sulfur", enemies[9], enemies[0].reward + 500, false, cities[3], 0);
         missions[12] = new Mission("> Heimskr's hut looks warm and welcoming", enemies[0], enemies[0].reward, false, cities[4], 0);
         missions[13] = new Mission("> A strange unnatural flash comes from the Elderglow Cave", enemies[8], enemies[0].reward, false, cities[4], 5);
         missions[14] = new Mission("> Swinder's Den is well hidden among the rocks of the lowlands", enemies[1], enemies[0].reward + 500, false, cities[4], 0);
-
-
-        missions[15] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[5], 0);
-        missions[16] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[5], 0);
-        missions[17] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[5], 0);
+        missions[15] = new Mission("> Immediately after entering the tower you see that its resident is by no means an ordinary alchemist who wants to heal town folk", enemies[2], enemies[0].reward, false, cities[5], 0);
+        missions[16] = new Mission("> The museum is full of ancient artifacts to please the eye and soul. Especially a dark one", enemies[2], enemies[0].reward, false, cities[5], 7);
+        missions[17] = new Mission("> Along the entire length of the coast there are traces of a horker's body gliding through the snow", enemies[6], enemies[0].reward + 600, false, cities[5], 0);
 
         missions[18] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[6], 0);
         missions[19] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[6], 0);
@@ -68,12 +66,11 @@ public class World
         missions[22] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[7], 0);
         missions[23] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[7], 0);
 
-        missions[24] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[8], 0);
-        missions[25] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[8], 0);
-        missions[26] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[8], 0);
+        missions[24] = new Mission("> The Black Briar Lodge from a distance looks like a regular big house, but as you get closer you see more and more fortifications and mercenary thugs", enemies[7], enemies[0].reward, false, cities[8], 0);
+        missions[25] = new Mission("> There is a bonfire by the road, and several tents are pitched around it", enemies[0], enemies[0].reward, false, cities[8], 4);
+        missions[26] = new Mission("> Autumnshade Clearing radiates a beautiful greenish light", enemies[8], enemies[0].reward + 300, false, cities[8], 0);
 
         // missions[27] - there is one break mission because I can't count
-
         missions[28] = new Mission("> As you climbing higher, you see marks of dragon's claws in the snow", enemies[4], enemies[0].reward + 2000, false, cities[0], 0);
         missions[29] = new Mission("> In the distance you see Eldersblood Peak and marks of dragon's presence between the marsh trees", enemies[4], enemies[0].reward + 1000, false, cities[1], 0);
         missions[30] = new Mission("> Mountains and ravines of The Reach hold seems a perfect place to dragon's lair", enemies[4], enemies[0].reward + 1500, false, cities[0], 0);

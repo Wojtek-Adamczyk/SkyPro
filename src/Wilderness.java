@@ -429,9 +429,9 @@ public class Wilderness extends Building
                 System.out.println("> FROZEN BAY OF THE DAWNSTAR SHINES IN THE DISTANCE");
                 System.out.println("0. See your statistics");
                 System.out.println("1. Enter the city");
-                System.out.println("2. misja 1");
-                System.out.println("3. misja 2");
-                System.out.println("4. misja 3");
+                System.out.println("2. Go to Windward Tower");
+                System.out.println("3. Visit the Mythic Dawn Museum");
+                System.out.println("4. Walk along the coast");
                 System.out.println("5. Go to Nightcaller Temple");
                 System.out.println("6. Travel to another city");
 
@@ -441,9 +441,39 @@ public class Wilderness extends Building
                 {
                     case "0" -> {player.sheet(player);}
                     case "1" -> {player.currentCity.menu(player);}
-                    case "2" -> {}//misja1
-                    case "3" -> {}//misja2
-                    case "4" -> {}//misja3
+                    case "2" ->
+                    {
+                        System.out.println(player.world.missions[15].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[15].completed)
+                        {
+                            player.mission = player.world.missions[15];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
+                    case "3" ->
+                    {
+                        System.out.println(player.world.missions[16].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[16].completed)
+                        {
+                            player.mission = player.world.missions[16];
+                            player.mission.sneak(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
+                    case "4" ->
+                    {
+                        System.out.println(player.world.missions[17].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[17].completed)
+                        {
+                            player.mission = player.world.missions[17];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
                     case "5" ->
                     {
                         System.out.println(player.world.missions[33].dialog);
@@ -463,9 +493,9 @@ public class Wilderness extends Building
                 System.out.println("> GIANT TOWERS OF COLLEGE OF WINTERHOLD STRIKES TO THE SKY");
                 System.out.println("0. See your statistics");
                 System.out.println("1. Enter the city");
-                System.out.println("2. misja 1");
-                System.out.println("3. misja 2");
-                System.out.println("4. misja 3");
+                System.out.println("2. ");
+                System.out.println("3. ");
+                System.out.println("4. ");
                 System.out.println("5. Go to Skytemple Ruins");
                 System.out.println("6. Go to Saarthal");
                 System.out.println("7. Go to Alftand");
@@ -568,9 +598,9 @@ public class Wilderness extends Building
                 System.out.println("> FALLEN YELLOW AND RED LEAVES COVERS THE GROUND OF THE RIFT");
                 System.out.println("0. See your statistics");
                 System.out.println("1. Enter the city");
-                System.out.println("2. misja 1");
-                System.out.println("3. misja 2");
-                System.out.println("4. misja 3");
+                System.out.println("2. Go to Black Briar Lodge");
+                System.out.println("3. Go to the merchants camp");
+                System.out.println("4. Go to Autumnshade Clearing");
                 System.out.println("5. Go to Northwind Summit");
                 System.out.println("6. Go to Merryfair Farm");
                 System.out.println("7. Go to Goldenglow Estate");
@@ -583,9 +613,39 @@ public class Wilderness extends Building
                 {
                     case "0" -> {player.sheet(player);}
                     case "1" -> {player.currentCity.menu(player);}
-                    case "2" -> {}//misja1
-                    case "3" -> {}//misja2
-                    case "4" -> {}//misja3
+                    case "2" ->
+                    {
+                        System.out.println(player.world.missions[24].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[24].completed)
+                        {
+                            player.mission = player.world.missions[24];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
+                    case "3" ->
+                    {
+                        System.out.println(player.world.missions[25].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[25].completed)
+                        {
+                            player.mission = player.world.missions[25];
+                            player.mission.sneak(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
+                    case "4" ->
+                    {
+                        System.out.println(player.world.missions[26].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[26].completed)
+                        {
+                            player.mission = player.world.missions[26];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
                     case "5" ->
                     {
                         System.out.println(player.world.missions[36].dialog);
