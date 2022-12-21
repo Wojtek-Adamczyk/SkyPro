@@ -251,9 +251,33 @@ public class Inn extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);menu(player);}
-                    case "1" -> {}
-                    case "2" -> {}
-                    case "3" -> {}
+                    case "1" ->
+                    {
+                        if (!player.world.missions[9].completed)
+                        {
+                            System.out.println("- People say that a monstrous bear has a lair in a nearby cave. They make bets who will kill the beasts first... You look like a tough man. Maybe you will kill the beast before it will hurt one of these imbecils?");
+                            System.out.println();
+                        }
+                        else {System.out.println(inkeeperQuestTaken); System.out.println();}
+                    }
+                    case "2" ->
+                    {
+                        if (!player.world.missions[10].completed)
+                        {
+                            System.out.println("> You overheard a rumor that someone heard a rumor that one of the Jarl's prisoners buried a ring of extraordinary value in the cemetery. The point is that the place is haunted by the ghosts or skeletons");
+                            System.out.println();
+                        }
+                        else {System.out.println(rumorsQuestTaken); System.out.println();}
+                    }
+                    case "3" ->
+                    {
+                        if (!player.world.missions[11].completed)
+                        {
+                            System.out.print("> Jarl is looking for a daredevil who will slay Deadra lurking around the town. Risk is high but the payment is even higher <");
+                            System.out.println();
+                        }
+                        else {System.out.println(boardQuestTaken); System.out.println();}
+                    }
                     case "4" -> {rentRoom(player);}
                     case "5" ->
                     {

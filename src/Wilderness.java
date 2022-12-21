@@ -228,9 +228,9 @@ public class Wilderness extends Building
                 System.out.println("> BETWEEN THE WOODS YOU SEE THE LIGHTS OF FALKREATH");
                 System.out.println("0. See your statistics");
                 System.out.println("1. Enter the city");
-                System.out.println("2. misja 1");
-                System.out.println("3. misja 2");
-                System.out.println("4. misja 3");
+                System.out.println("2. Find Moss Mother Cave");
+                System.out.println("3. Go to the graveyard");
+                System.out.println("4. Search the forest");
                 System.out.println("5. Go to Ancestors Glade");
                 System.out.println("6. Search for abandoned shack");
                 System.out.println("7. Go to Half-Moon Mill");
@@ -243,9 +243,39 @@ public class Wilderness extends Building
                 {
                     case "0" -> {player.sheet(player);}
                     case "1" -> {player.currentCity.menu(player);}
-                    case "2" -> {}//misja1
-                    case "3" -> {}//misja2
-                    case "4" -> {}//misja3
+                    case "2" ->
+                    {
+                        System.out.println(player.world.missions[9].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[0].completed)
+                        {
+                            player.mission = player.world.missions[0];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
+                    case "3" ->
+                    {
+                        System.out.println(player.world.missions[10].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[10].completed)
+                        {
+                            player.mission = player.world.missions[10];
+                            player.mission.sneak(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
+                    case "4" ->
+                    {
+                        System.out.println(player.world.missions[11].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[11].completed)
+                        {
+                            player.mission = player.world.missions[11];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
                     case "5" ->
                     {
                         System.out.println(player.world.missions[31].dialog);

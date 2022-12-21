@@ -48,15 +48,13 @@ public class World
         missions[6] = new Mission("> Hall of the Dead seems quiet, but after few moments you see a group of people devouring on a corpse", enemies[0], enemies[0].reward, false, cities[2], 0);
         missions[7] = new Mission("> As the clatter of the gate dies down, only gusts of steam and steady knocking can be heard", enemies[1], enemies[0].reward, false, cities[2], 5);
         missions[8] = new Mission("> When you enter the mine, you see fornsworns taking clothes and money from the murdered people", enemies[1], enemies[0].reward + 800, false, cities[2], 0);
-
-
-        missions[9] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[3], 0);
-        missions[10] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[3], 0);
-        missions[11] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[3], 0);
-
+        missions[9] = new Mission("> Animal, and not only animal bones spill out of the cave", enemies[6], enemies[0].reward, false, cities[3], 0);
+        missions[10] = new Mission("> A strange mist hovers over the graves", enemies[0], enemies[0].reward, false, cities[3], 0);
+        missions[11] = new Mission("> As you make your way through the dense forest, you suddenly smell sulfur", enemies[9], enemies[0].reward, false, cities[3], 0);
         missions[12] = new Mission("> Heimskr's hut looks warm and welcoming", enemies[0], enemies[0].reward, false, cities[4], 0);
         missions[13] = new Mission("> A strange unnatural flash comes from the Elderglow Cave", enemies[8], enemies[0].reward, false, cities[4], 5);
         missions[14] = new Mission("> Swinder's Den is well hidden among the rocks of the lowlands", enemies[1], enemies[0].reward + 500, false, cities[4], 0);
+
 
         missions[15] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[5], 0);
         missions[16] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[5], 0);
@@ -74,6 +72,7 @@ public class World
         missions[25] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[8], 0);
         missions[26] = new Mission("-chuj ci na łeb", enemies[3], enemies[0].reward, false, cities[8], 0);
 
+        // missions[27] - there is one break mission because I can't count
 
         missions[28] = new Mission("> As you climbing higher, you see marks of dragon's claws in the snow", enemies[4], enemies[0].reward + 2000, false, cities[0], 0);
         missions[29] = new Mission("> In the distance you see Eldersblood Peak and marks of dragon's presence between the marsh trees", enemies[4], enemies[0].reward + 1000, false, cities[1], 0);

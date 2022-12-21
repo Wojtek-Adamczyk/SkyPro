@@ -90,8 +90,16 @@ public class Enemy
         if (level == 8) // fey
         {
             currentHP = generator.nextInt(150,250);
-            damage = generator.nextInt(12,26);
+            damage = generator.nextInt(12,16);
             armor = generator.nextInt(1,3);
+            reward = generator.nextInt(50,100);
+        }
+
+        if (level == 9) // deadry
+        {
+            currentHP = generator.nextInt(200,300);
+            damage = generator.nextInt(15,19);
+            armor = generator.nextInt(2,4);
             reward = generator.nextInt(50,150);
         }
     }
