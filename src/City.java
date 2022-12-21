@@ -154,7 +154,6 @@ class City
 
     public void menu(Player player) throws InterruptedException
     {
-        System.out.println(player.currentCity.name);
         System.out.println("0. See your statistics");
 
         int i;

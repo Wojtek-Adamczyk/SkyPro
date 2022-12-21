@@ -1,5 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class Inn extends Building
 {
@@ -36,12 +37,14 @@ public class Inn extends Building
         }
     }
 
-    public void rentRoom(Player player)
+    public void rentRoom(Player player) throws InterruptedException
     {
         if (player.money >= 10)
         {
             player.currentHP = player.maximumHP;
             player.money -= 10;
+            System.out.println("> Drowsiness overwhelms you...");
+            TimeUnit.SECONDS.sleep(8);
             System.out.println("> YOU AWAKEND FEELING WELL RESTED");
         }
         else System.out.println("- Come back when you will have enough gold.");

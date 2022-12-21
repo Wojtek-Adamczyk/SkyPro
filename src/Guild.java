@@ -122,7 +122,7 @@ public class Guild extends Building
                     {
                         if (!player.world.missions[40].completed)
                         {
-                            System.out.println("- Your first quest, ey? Good. It won't be hard, brother. You have to go to Pelagia Farm and kill some wild cat that infested in the shed. Beast killed one farmer already so the landowner ask us to take care of this 'problem'.");
+                            System.out.println("- First quest, ey? Good. It won't be hard, brother. You have to go to Pelagia Farm and kill some wild cat that infested in the shed. Beast killed one farmer already so the landowner ask us to take care of this 'problem'.");
                             points += 1;
                             System.out.println();
                         }
