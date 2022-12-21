@@ -103,7 +103,7 @@ public class Wilderness extends Building
             }
             case MORTHAL ->
             {
-                System.out.println("> YOU ARE STANDING IN THE HAAFINGAR MARSHES. IN THE DISTANCE YOU SEE HOUSES OF MORTHAL");
+                System.out.println("> YOU ARE STANDING IN THE HJAALMARCH MARSHES. IN THE DISTANCE YOU SEE HOUSES OF MORTHAL");
                 System.out.println("0. See your statistics");
                 System.out.println("1. Enter the city");
                 System.out.println("2. Examine Movarth's Lair");

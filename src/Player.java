@@ -3,12 +3,12 @@ import java.util.concurrent.TimeUnit;
 
 public class Player
 {
-    Integer currentHP = 100;
-    Integer maximumHP = 100;
-    Integer damage = 10;
-    Integer armor = 0;
-    Integer money = 300;
-    Integer stealth = 0;
+    Integer currentHP;
+    Integer maximumHP;
+    Integer damage;
+    Integer armor;
+    Integer money;
+    Integer stealth;
 
     public Player(Integer currentHP, Integer maximumHP, Integer damage, Integer armor, Integer money, Integer stealth)
     {
@@ -31,7 +31,7 @@ public class Player
 
         if (follower != null)
         {
-            System.out.println(follower.name + ":");
+            System.out.println(player.follower.name + ":");
             System.out.println("HP: " + follower.currentHP);
             System.out.println("Damage: " + follower.damage);
             System.out.println("Armor: " + follower.armor);
