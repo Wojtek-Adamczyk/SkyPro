@@ -5,16 +5,7 @@ public class School extends Building
 {
     public School() {}
 
-    public void greet(Player player)
-    {
-        Random greet = new Random();
-        Integer greeting = greet.nextInt(0,2);
-        switch (greeting)
-        {
-            case 0 -> {System.out.println("- The finest weapons and armor."); break;}
-            case 1 -> {System.out.println("- Lookin' to protect yourself? Or deal some damage?"); break;}
-        }
-    }
+    public void greet(Player player) {{System.out.println("- Why would you like to train your stealth, hm? Just joking. I don't care, unless you got shining septims, it stands to reason");}}
 
     public void train(Player player) throws InterruptedException
     {

@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba9b0e8-e653-4fc5-935a-609cd52afe78" name="Changes" comment="whatever">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Keep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Keep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Guild.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Guild.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/School.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Wilderness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wilderness.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World.java" afterDir="false" />
     </list>
@@ -187,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671557999858</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="whatever">
+      <created>1671561502302</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1671561502302</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

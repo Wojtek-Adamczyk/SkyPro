@@ -2,7 +2,7 @@ public class Main
 {
     public static void main(String[] args) throws InterruptedException
     {
-        Player player = new Player(100, 1000, 10, 0, 100000, 4);
+        Player player = new Player(10000, 1000, 100, 0, 10000, 4);
         World world = new World();
         player.world = world;
 

@@ -15,7 +15,7 @@ public class Enemy
         this.level = level;
         Random generator = new Random();
 
-        if (level == 0) // bandyty, słabe draugry, duze zwierzaki
+        if (level == 0) // bandyty, słabe draugry
         {
             currentHP = generator.nextInt(50,110);
             damage = generator.nextInt(5,11);
@@ -25,7 +25,7 @@ public class Enemy
 
         if (level == 1) // silne draugry, fornswrons, automatony
         {
-            currentHP = generator.nextInt(150,200);
+            currentHP = generator.nextInt(150,220);
             damage = generator.nextInt(11,15);
             armor = generator.nextInt(0,2);
             reward = generator.nextInt(70,300);
@@ -58,14 +58,41 @@ public class Enemy
         if (level == 5) // wampiry/wilkołaki
         {
             currentHP = generator.nextInt(150,250);
-            damage = generator.nextInt(12,18);
+            damage = generator.nextInt(11,18);
             armor = generator.nextInt(0,2);
-            reward = generator.nextInt(300,500);
+            reward = generator.nextInt(200,400);
+        }
+
+        if (level == 6) // duze zwierzaki
+        {
+            currentHP = generator.nextInt(100,150);
+            damage = generator.nextInt(8,14);
+            armor = generator.nextInt(0,1);
+            reward = generator.nextInt(0,10);
+        }
+
+        if (level == 7) // herszty
+        {
+            currentHP = generator.nextInt(150,250);
+            damage = generator.nextInt(8,14);
+            armor = generator.nextInt(1,3);
+            reward = generator.nextInt(100,300);
+        }
+
+        if (level == 8) // silny mag
+        {
+            currentHP = generator.nextInt(150,250);
+            damage = generator.nextInt(20,26);
+            armor = generator.nextInt(0,1);
+            reward = generator.nextInt(100,300);
+        }
+
+        if (level == 8) // fey
+        {
+            currentHP = generator.nextInt(150,250);
+            damage = generator.nextInt(12,26);
+            armor = generator.nextInt(1,3);
+            reward = generator.nextInt(50,150);
         }
     }
-
-
-
-
-
 }

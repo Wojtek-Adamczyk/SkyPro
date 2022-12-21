@@ -176,10 +176,10 @@ class City
             {
                 switch (i)
                 {
-                    case 1 -> System.out.println("2. <NOT AVILABLE>");
-                    case 2 -> System.out.println("3. <NOT AVILABLE>");
-                    case 4 -> System.out.println("5. <NOT AVILABLE>");
-                    case 5 -> System.out.println("6. <NOT AVILABLE>");
+                    case 1 -> {System.out.println("2. <NOT AVILABLE>");}
+                    case 2 -> {System.out.println("3. <NOT AVILABLE>");}
+                    case 4 -> {System.out.println("5. <NOT AVILABLE>");}
+                    case 5 -> {System.out.println("6. <NOT AVILABLE>");}
                 }
             }
         }
@@ -190,11 +190,27 @@ class City
         {
             case "0" -> {player.sheet(player); menu(player);}
             case "1" -> {keep.greet(); ;keep.menu(player);}
-            case "2" -> {blacksmith.greet(player); blacksmith.interact(player);}
-            case "3" -> {alchemist.greet(player); alchemist.interact(player);}
+            case "2" ->
+            {
+                if (blacksmith == null) {player.currentCity.menu(player);}
+                else {blacksmith.greet(player); blacksmith.interact(player);}
+            }
+            case "3" ->
+            {
+                if (alchemist == null) {player.currentCity.menu(player);}
+                else {alchemist.greet(player); alchemist.interact(player);}
+            }
             case "4" -> {inn.greet(player); inn.menu(player);}
-            case "5" -> {guild.menu(player);}
-            case "6" -> {school.greet(player); school.interact(player);}
+            case "5" ->
+            {
+                if (guild == null) {player.currentCity.menu(player);}
+                else {guild.greet(); guild.menu(player);}
+            }
+            case "6" ->
+            {
+                if (school == null) {player.currentCity.menu(player);}
+                else {school.greet(player); school.interact(player);}
+            }
             case "7" -> {wilderness.menu(player);}
         }
     }

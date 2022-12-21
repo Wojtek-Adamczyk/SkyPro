@@ -274,9 +274,35 @@ public class Inn extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);menu(player);}
-                    case "1" -> {System.out.println("");}
-                    case "2" -> {}
-                    case "3" -> {}
+                    case "1" ->
+                    {
+                        if (!player.world.missions[12].completed)
+                        {
+                            System.out.println("- Have you heard of Heimskr? This man comes to town every day and speaks in the forum about Talos and his divinity. Another moment and it will bring misfortune to the city.");
+                            System.out.println("Everyone would be grateful if someone shut his mouth, like... forever.");
+                            System.out.println();
+                        }
+                        else {System.out.println(inkeeperQuestTaken); System.out.println();}
+                    }
+                    case "2" ->
+                    {
+                        if (!player.world.missions[13].completed)
+                        {
+                            System.out.println("> You've heard rumors of a cave called the Elderglow Sanctuary. wealthy nobles go there to drink the sap from the Elderglow Tree to ensure good luck in business and health, but many of them do not return.");
+                            System.out.println("If their bodies are still there, there's certainly a lot of gold to be found there");
+                            System.out.println();
+                        }
+                        else {System.out.println(rumorsQuestTaken); System.out.println();}
+                    }
+                    case "3" ->
+                    {
+                        if (!player.world.missions[14].completed)
+                        {
+                            System.out.print("Jarl put a bounty on the head of the Redguard rebel who orchestrated the assassination of the Thalmor ambassador. Recent information on his whereabouts points to his whereabouts at Swindler's Den. Reward: 500 septims <");
+                            System.out.println();
+                        }
+                        else {System.out.println(boardQuestTaken); System.out.println();}
+                    }
                     case "4" -> {rentRoom(player);}
                     case "5" ->
                     {

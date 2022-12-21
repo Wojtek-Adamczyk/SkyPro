@@ -232,9 +232,9 @@ public class Wilderness extends Building
                 System.out.println("3. misja 2");
                 System.out.println("4. misja 3");
                 System.out.println("5. Go to Ancestors Glade");
-                System.out.println("6. misja gildii 1");
-                System.out.println("7. misja gildii 2");
-                System.out.println("8. misja gildii 3");
+                System.out.println("6. Search for abandoned shack");
+                System.out.println("7. Go to Half-Moon Mill");
+                System.out.println("8. Go to Penitus Oculatus Outpost");
                 System.out.println("9. Travel to another city");
 
                 Scanner input = new Scanner(System.in);
@@ -257,9 +257,39 @@ public class Wilderness extends Building
                         }
                         else {System.out.println(questCompleted); System.out.println();}
                     }
-                    case "6" -> {}//misja gildii1
-                    case "7" -> {}//misja gildii2
-                    case "8" -> {}//misja gildii 3
+                    case "6" ->
+                    {
+                        System.out.println(player.world.missions[37].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[37].completed)
+                        {
+                            player.mission = player.world.missions[37];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
+                    case "7" ->
+                    {
+                        System.out.println(player.world.missions[38].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[38].completed)
+                        {
+                            player.mission = player.world.missions[38];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
+                    case "8" ->
+                    {
+                        System.out.println(player.world.missions[39].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[39].completed)
+                        {
+                            player.mission = player.world.missions[39];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
                     case "9" -> {player.travel();}
                 }
             }
@@ -268,13 +298,13 @@ public class Wilderness extends Building
                 System.out.println("> YOU ARE STANDING IN FRONT OF THE WHITERUN WALLS");
                 System.out.println("0. See your statistics");
                 System.out.println("1. Enter the city");
-                System.out.println("2. misja 1");
-                System.out.println("3. misja 2");
-                System.out.println("4. misja 3");
+                System.out.println("2. Go to Heimskr hut");
+                System.out.println("3. Search for Elderglow Sanctuary");
+                System.out.println("4. Search for Swindler's Den");
                 System.out.println("5. Go to the Watchtower");
-                System.out.println("6. misja gildii 1");
-                System.out.println("7. misja gildii 2");
-                System.out.println("8. misja gildii 3");
+                System.out.println("6. Go to Pelagia's Farm");
+                System.out.println("7. Go to Glenmoril Cave");
+                System.out.println("8. Go to Gallows Rock");
                 System.out.println("9. Travel to another city");
 
                 Scanner input = new Scanner(System.in);
@@ -283,9 +313,39 @@ public class Wilderness extends Building
                 {
                     case "0" -> {player.sheet(player);}
                     case "1" -> {player.currentCity.menu(player);}
-                    case "2" -> {}
-                    case "3" -> {}//misja2
-                    case "4" -> {}//misja3
+                    case "2" ->
+                    {
+                        System.out.println(player.world.missions[12].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[12].completed)
+                        {
+                            player.mission = player.world.missions[12];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
+                    case "3" ->
+                    {
+                        System.out.println(player.world.missions[13].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[13].completed)
+                        {
+                            player.mission = player.world.missions[13];
+                            player.mission.sneak(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
+                    case "4" ->
+                    {
+                        System.out.println(player.world.missions[14].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[14].completed)
+                        {
+                            player.mission = player.world.missions[14];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
                     case "5" ->
                     {
                         System.out.println(player.world.missions[32].dialog);
@@ -298,9 +358,39 @@ public class Wilderness extends Building
                         }
                         else {System.out.println(questCompleted); System.out.println();}
                     }
-                    case "6" -> {}//misja gildii1
-                    case "7" -> {}//misja gildii2
-                    case "8" -> {}//misja gildii 3
+                    case "6" ->
+                    {
+                        System.out.println(player.world.missions[40].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[40].completed)
+                        {
+                            player.mission = player.world.missions[40];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
+                    case "7" ->
+                    {
+                        System.out.println(player.world.missions[41].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[41].completed)
+                        {
+                            player.mission = player.world.missions[41];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
+                    case "8" ->
+                    {
+                        System.out.println(player.world.missions[42].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[42].completed)
+                        {
+                            player.mission = player.world.missions[42];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
                     case "9" -> {player.travel();}
                 }
             }
@@ -347,9 +437,9 @@ public class Wilderness extends Building
                 System.out.println("3. misja 2");
                 System.out.println("4. misja 3");
                 System.out.println("5. Go to Skytemple Ruins");
-                System.out.println("6. misja gildii 1");
-                System.out.println("7. misja gildii 2");
-                System.out.println("8. misja gildii 3");
+                System.out.println("6. Go to Saarthal");
+                System.out.println("7. Go to Alftand");
+                System.out.println("8. Search for Labirynthian");
                 System.out.println("9. Travel to another city");
 
                 Scanner input = new Scanner(System.in);
@@ -372,9 +462,39 @@ public class Wilderness extends Building
                         }
                         else {System.out.println(questCompleted); System.out.println();}
                     }
-                    case "6" -> {}//misja gildii1
-                    case "7" -> {}//misja gildii2
-                    case "8" -> {}//misja gildii 3
+                    case "6" ->
+                    {
+                        System.out.println(player.world.missions[43].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[43].completed)
+                        {
+                            player.mission = player.world.missions[43];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
+                    case "7" ->
+                    {
+                        System.out.println(player.world.missions[44].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[44].completed)
+                        {
+                            player.mission = player.world.missions[44];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
+                    case "8" ->
+                    {
+                        System.out.println(player.world.missions[45].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[45].completed)
+                        {
+                            player.mission = player.world.missions[45];
+                            player.mission.check(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
                     case "9" -> {player.travel();}
                 }
             }
@@ -422,9 +542,9 @@ public class Wilderness extends Building
                 System.out.println("3. misja 2");
                 System.out.println("4. misja 3");
                 System.out.println("5. Go to Northwind Summit");
-                System.out.println("6. misja gildii 1");
-                System.out.println("7. misja gildii 2");
-                System.out.println("8. misja gildii 3");
+                System.out.println("6. Go to Merryfair Farm");
+                System.out.println("7. Go to Goldenglow Estate");
+                System.out.println("8. Go to Honningbrew Meadery");
                 System.out.println("9. Travel to another city");
 
                 Scanner input = new Scanner(System.in);
@@ -447,9 +567,39 @@ public class Wilderness extends Building
                         }
                         else {System.out.println(questCompleted); System.out.println();}
                     }
-                    case "6" -> {}//misja gildii1
-                    case "7" -> {}//misja gildii2
-                    case "8" -> {}//misja gildii 3
+                    case "6" ->
+                    {
+                        System.out.println(player.world.missions[46].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[46].completed)
+                        {
+                            player.mission = player.world.missions[46];
+                            player.mission.sneak(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
+                    case "7" ->
+                    {
+                        System.out.println(player.world.missions[47].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[47].completed)
+                        {
+                            player.mission = player.world.missions[47];
+                            player.mission.sneak(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
+                    case "8" ->
+                    {
+                        System.out.println(player.world.missions[48].dialog);
+                        TimeUnit.SECONDS.sleep(2);
+                        if (!player.world.missions[48].completed)
+                        {
+                            player.mission = player.world.missions[48];
+                            player.mission.sneak(player);
+                        }
+                        else {System.out.println(questCompleted); System.out.println();}
+                    }
                     case "9" -> {player.travel();}
                 }
             }
