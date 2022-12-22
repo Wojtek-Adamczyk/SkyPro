@@ -112,6 +112,8 @@ public class Inn extends Building
                             System.out.println("man and I can imagine he will not be happy with that.");
                             System.out.println("You know what I'm saying. That's why they haven't find any volunteer yet.");
                             System.out.println();
+                            player.currentCity.inn.menu(player);
+                            System.out.println();
                         }
                         else {System.out.println(inkeeperQuestTaken); System.out.println();}
                     }
@@ -122,6 +124,8 @@ public class Inn extends Building
                             System.out.print("> You overheard the conversation between two Argonians. North-east of Solitude there is a cave inhabited by few smugglers.");
                             System.out.println(" They are convinced that no one knows about their location so they won't be aware and careful.");
                             System.out.println();
+                            player.currentCity.inn.menu(player);
+                            System.out.println();
                         }
                         else {System.out.println(rumorsQuestTaken); System.out.println();}
                     }
@@ -131,6 +135,8 @@ public class Inn extends Building
                         {
                             System.out.print("> Daredevil needed, who will take care of necromancers residing in Wolfskull Cave west of the city");
                             System.out.println(" This is a dangerous task and queen Elisif the Fair takes no responsibility of anyone's death. Reward: 1200 septims. <");
+                            System.out.println();
+                            player.currentCity.inn.menu(player);
                             System.out.println();
                         }
                         else {System.out.println(boardQuestTaken); System.out.println();}
@@ -163,6 +169,8 @@ public class Inn extends Building
                             System.out.println("Each day he's gaining more and more power. Please, do something about it and whole Morthal will be thankful.");
                             System.out.println("We do not have anything for you but I'm sure that you will find lots of treasures in his lair.");
                             System.out.println();
+                            player.currentCity.inn.menu(player);
+                            System.out.println();
                         }
                         else {System.out.println(inkeeperQuestTaken); System.out.println();}
                     }
@@ -172,6 +180,8 @@ public class Inn extends Building
                         {
                             System.out.println("You heard conversation about woman called Alva. She has a hut somewhere in the swamps, where she's collecting their family treasures.");
                             System.out.println();
+                            player.currentCity.inn.menu(player);
+                            System.out.println();
                         }
                         else {System.out.println(rumorsQuestTaken); System.out.println();}
                     }
@@ -180,6 +190,8 @@ public class Inn extends Building
                         if (!player.world.missions[5].completed)
                         {
                             System.out.println("> Volunteer is needed to hunt mudcrabs all over the swamps surrounding Mortahl. Jarl will reward the volunteer with 200 septims <");
+                            System.out.println();
+                            player.currentCity.inn.menu(player);
                             System.out.println();
                         }
                         else {System.out.println(boardQuestTaken); System.out.println();}
@@ -211,6 +223,8 @@ public class Inn extends Building
                             System.out.println(" - They say that some cannibal cult arranges its meetings in Hall of the Dead. Personally I don't think they are dangerous, if they were, why they need to hide themselves?");
                             System.out.println("Maybe you should check it out. Priests will be thankful.");
                             System.out.println();
+                            player.currentCity.inn.menu(player);
+                            System.out.println();
                         }
                         else {System.out.println(inkeeperQuestTaken); System.out.println();}
                     }
@@ -221,6 +235,8 @@ public class Inn extends Building
                             System.out.println("> In the Silver-Blood Inn you overheard the conversation of two citizens about ancient Dwemer ruins in the east.");
                             System.out.println("Rumors has it it's full of treasures but no one is brave enough to fight with it's guardians - fearsome automatons.");
                             System.out.println();
+                            player.currentCity.inn.menu(player);
+                            System.out.println();
                         }
                         else {System.out.println(rumorsQuestTaken); System.out.println();}
                     }
@@ -229,6 +245,8 @@ public class Inn extends Building
                         if (!player.world.missions[8].completed)
                         {
                             System.out.println("Jarl is looking for brave men or women to liberate Sanuarch Mine. Cave is currently inhabited by very dangerous Forsworn squad. Volunteer will be rewarded with 800 septims.");
+                            System.out.println();
+                            player.currentCity.inn.menu(player);
                             System.out.println();
                         }
                         else {System.out.println(boardQuestTaken); System.out.println();}
@@ -259,6 +277,8 @@ public class Inn extends Building
                         {
                             System.out.println("- People say that a monstrous bear has a lair in a nearby cave. They make bets who will kill the beasts first... You look like a tough man. Maybe you will kill the beast before it will hurt one of these imbecils?");
                             System.out.println();
+                            player.currentCity.inn.menu(player);
+                            System.out.println();
                         }
                         else {System.out.println(inkeeperQuestTaken); System.out.println();}
                     }
@@ -268,6 +288,8 @@ public class Inn extends Building
                         {
                             System.out.println("> You overheard a rumor that someone heard a rumor that one of the Jarl's prisoners buried a ring of extraordinary value in the cemetery. The point is that the place is haunted by the ghosts or skeletons");
                             System.out.println();
+                            player.currentCity.inn.menu(player);
+                            System.out.println();
                         }
                         else {System.out.println(rumorsQuestTaken); System.out.println();}
                     }
@@ -276,6 +298,8 @@ public class Inn extends Building
                         if (!player.world.missions[11].completed)
                         {
                             System.out.print("> Jarl is looking for a daredevil who will slay Deadra lurking around the town. Risk is high but the payment is even higher <");
+                            System.out.println();
+                            player.currentCity.inn.menu(player);
                             System.out.println();
                         }
                         else {System.out.println(boardQuestTaken); System.out.println();}
@@ -307,6 +331,8 @@ public class Inn extends Building
                             System.out.println("- Have you heard of Heimskr? This man comes to town every day and speaks in the forum about Talos and his divinity. Another moment and it will bring misfortune to the city.");
                             System.out.println("Everyone would be grateful if someone shut his mouth, like... forever.");
                             System.out.println();
+                            player.currentCity.inn.menu(player);
+                            System.out.println();
                         }
                         else {System.out.println(inkeeperQuestTaken); System.out.println();}
                     }
@@ -317,6 +343,8 @@ public class Inn extends Building
                             System.out.println("> You've heard rumors of a cave called the Elderglow Sanctuary. wealthy nobles go there to drink the sap from the Elderglow Tree to ensure good luck in business and health, but many of them do not return.");
                             System.out.println("If their bodies are still there, there's certainly a lot of gold to be found there");
                             System.out.println();
+                            player.currentCity.inn.menu(player);
+                            System.out.println();
                         }
                         else {System.out.println(rumorsQuestTaken); System.out.println();}
                     }
@@ -325,6 +353,8 @@ public class Inn extends Building
                         if (!player.world.missions[14].completed)
                         {
                             System.out.println("Jarl put a bounty on the head of the Redguard rebel who orchestrated the assassination of the Thalmor ambassador. Recent information on his whereabouts points to his whereabouts at Swindler's Den. Reward: 500 septims <");
+                            System.out.println();
+                            player.currentCity.inn.menu(player);
                             System.out.println();
                         }
                         else {System.out.println(boardQuestTaken); System.out.println();}
@@ -356,6 +386,8 @@ public class Inn extends Building
                             System.out.println("- No one in town can sleep. It's been like this for a few weeks since this mage moved into the Windward Tower on the shore. No one knows what he's doing there, but people are saying more and more that he cursed us.");
                             System.out.println(" Maybe... would you take care of this problem?");
                             System.out.println();
+                            player.currentCity.inn.menu(player);
+                            System.out.println();
                         }
                         else {System.out.println(inkeeperQuestTaken); System.out.println();}
                     }
@@ -365,6 +397,8 @@ public class Inn extends Building
                         {
                             System.out.println("> You heard that the curator of the newly created Mythic Dawn Museum has collected many legendary items, including one extremely valuable - the necklace of Mankar Camoran, the leader of the cult during the Oblivion Crisis");
                             System.out.println();
+                            player.currentCity.inn.menu(player);
+                            System.out.println();
                         }
                         else {System.out.println(rumorsQuestTaken); System.out.println();}
                     }
@@ -373,6 +407,8 @@ public class Inn extends Building
                         if (!player.world.missions[17].completed)
                         {
                             System.out.println("> Jarl offered a bounty of 600 septims for killing an extremely dangerous horker that had already killed four experienced hunters. The beast has a lair somewhere on the shores of the Sea of Ghosts. <");
+                            System.out.println();
+                            player.currentCity.inn.menu(player);
                             System.out.println();
                         }
                         else {System.out.println(boardQuestTaken); System.out.println();}
@@ -403,6 +439,8 @@ public class Inn extends Building
                         {
                             System.out.println("- A pack of wolves has been attacking travelers lately. Together with the citizens, we collected a small amount for a volunteer who will take care of this matter, but so far no one has come forward");
                             System.out.println();
+                            player.currentCity.inn.menu(player);
+                            System.out.println();
                         }
                         else {System.out.println(inkeeperQuestTaken); System.out.println();}
                     }
@@ -412,6 +450,8 @@ public class Inn extends Building
                         {
                             System.out.println("> You overheard that some rich nobleman who wanted to visit the College is staying at the Nightgate Inn a short distance from the town");
                             System.out.println();
+                            player.currentCity.inn.menu(player);
+                            System.out.println();
                         }
                         else {System.out.println(rumorsQuestTaken); System.out.println();}
                     }
@@ -420,6 +460,8 @@ public class Inn extends Building
                         if (!player.world.missions[20].completed)
                         {
                             System.out.println("> Jarl offered a bounty for getting rid of the elemental accidentally created by the mages. The beast is unpredictable and dangerous, so the jarl has also banned ordinary people from taking this task <");
+                            System.out.println();
+                            player.currentCity.inn.menu(player);
                             System.out.println();
                         }
                         else {System.out.println(boardQuestTaken); System.out.println();}
@@ -451,6 +493,8 @@ public class Inn extends Building
                             System.out.println("- These out-of-town hunters are asking for a brawl... They come here every day and drink and then hurl racial slurs at Dunmers and Argonians. It scares away all non-human clients.");
                             System.out.println("Why don't you take care of them for a few gold coins? No one will miss them.");
                             System.out.println();
+                            player.currentCity.inn.menu(player);
+                            System.out.println();
                         }
                         else {System.out.println(inkeeperQuestTaken); System.out.println();}
                     }
@@ -460,6 +504,8 @@ public class Inn extends Building
                         {
                             System.out.println("> You overheard Dunmer and Argonian talking about the Viola Giordiano's ring they plan to steal.");
                             System.out.println();
+                            player.currentCity.inn.menu(player);
+                            System.out.println();
                         }
                         else {System.out.println(rumorsQuestTaken); System.out.println();}
                     }
@@ -468,6 +514,8 @@ public class Inn extends Building
                         if (!player.world.missions[23].completed)
                         {
                             System.out.println("> King Ulfric seeks out a seasoned tracker to track down and kill the fugitive criminal responsible for three murderers in the Windhelm. Reward: 1000 septims <");
+                            System.out.println();
+                            player.currentCity.inn.menu(player);
                             System.out.println();
                         }
                         else {System.out.println(boardQuestTaken); System.out.println();}
@@ -499,6 +547,8 @@ public class Inn extends Building
                             System.out.println("- These Briar Rose Meadery thugs come here every week and demand some protection money and the Jarl doesn't do anything about it. The citizens would take care of it themselves, but their seat is a real fortress.");
                             System.out.println("But you... you seem like someone who could help us.");
                             System.out.println();
+                            player.currentCity.inn.menu(player);
+                            System.out.println();
                         }
                         else {System.out.println(inkeeperQuestTaken); System.out.println();}
                     }
@@ -508,6 +558,8 @@ public class Inn extends Building
                         {
                             System.out.println("> You've heard rumors that one of the merchants camping near the city never closes his chest of valuables, as if he's waiting for someone to get at them");
                             System.out.println();
+                            player.currentCity.inn.menu(player);
+                            System.out.println();
                         }
                         else {System.out.println(rumorsQuestTaken); System.out.println();}
                     }
@@ -516,6 +568,8 @@ public class Inn extends Building
                         if (!player.world.missions[26].completed)
                         {
                             System.out.print("> Jarl is looking for a volunteer to collect Nirnroot for the court alchemist. To the best of honorable Wylandriah knowledge, Nirnroot grows at Sutumnshade Clearing infested with aggresive spriggans. Reward: 300 septims <");
+                            System.out.println();
+                            player.currentCity.inn.menu(player);
                             System.out.println();
                         }
                         else {System.out.println(boardQuestTaken); System.out.println();}

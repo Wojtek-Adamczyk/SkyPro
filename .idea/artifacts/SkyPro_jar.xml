@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="SkyPro:jar">
+  <artifact type="jar" build-on-make="true" name="SkyPro:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/SkyPro_jar</output-path>
     <root id="archive" name="SkyPro.jar">
       <element id="module-output" name="SkyPro" />
