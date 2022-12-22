@@ -75,7 +75,7 @@ public class Player
             if (currentCity.guildFollower == follower) {currentCity.guildFollower = null;}
             if (currentCity.follower == follower) {currentCity.guildFollower = null;}
         }
-        else System.out.println("- I'm sorry traveller. You can't afford my skills.");
+        else {System.out.println("- I'm sorry traveller. You can't afford my skills.");}
     }
 
     Mission mission;

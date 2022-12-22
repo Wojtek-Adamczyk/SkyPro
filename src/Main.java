@@ -12,7 +12,7 @@ public class Main
         System.out.println();
         world.cities[4].wilderness.menu(player);
 
-        while (player.currentHP >= 0) {player.currentCity.menu(player);}
+        while (player.currentHP >= 0) {player.currentCity.wilderness.menu(player);}
 
     }
 }
