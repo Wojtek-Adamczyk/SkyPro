@@ -281,9 +281,9 @@ public class Guild extends Building
                         {
                             System.out.println("- This one will be more personal. Maybe you heard that our organisation owns a Honningbrew Meadery. And here's the problem. Some hobo mage hold up himself in basement.");
                             System.out.println("I don't know what he wants but I know that this man is dangerous. Also, we are convinced that his necklace gives him his power. You will get down there, steal the necklace and then we will kick this pal out.");
-                            System.out.println("This will be more personal. Maybe you heard that our organisation owns a Honningbrew Meadery. And here's the problem. Some hobo mage hold up himself in basement. I don't know what he wants but I know that this man is dangerous.");
-                            System.out.println("Also, we are convinced that his necklace gives him his power. You will get down there, steal the necklace and then we will kick this pal out. You don't have to kill him.");
-                            System.out.println("  We are not Dark Brotherhood, remember. Quiet and sneaky.");
+                            System.out.println("This will be more personal. Maybe you heard that our organisation owns a Honningbrew Meadery. And here's the problem. Some hobo mage hold up himself in basement.");
+                            System.out.println("I don't know what he wants but I know that this man is dangerous. Also, we are convinced that his necklace gives him his power. You will get down there, steal the necklace and then we will kick this pal out.");
+                            System.out.println("You don't have to kill him. We are not Dark Brotherhood, remember. Quiet and sneaky.");
                             points += 3;
                             System.out.println();
                         }

@@ -69,16 +69,37 @@ public class Mission
             {
                 System.out.println("Follower HP: " + (player.follower.currentHP -= (enemy.damage - player.follower.armor)));
                 TimeUnit.SECONDS.sleep(1);
-                enemy.currentHP -= (player.damage - enemy.armor);
+                System.out.println("Enemy HP: " + (enemy.currentHP -= (player.damage - enemy.armor)));
                 TimeUnit.SECONDS.sleep(1);
                 System.out.println("Enemy HP: " + (enemy.currentHP -= (player.follower.damage - enemy.armor)));
                 TimeUnit.SECONDS.sleep(1);
                 if (player.follower.currentHP <= 0 )
                 {
                     System.out.println();
-                    System.out.println(player.follower + "died");
+                    System.out.println(player.follower.name + " died");
                     System.out.println();
-                    break;
+                    while (true)
+                    {
+                        System.out.println("Your HP: " + (player.currentHP -= (enemy.damage - player.armor)));
+                        TimeUnit.SECONDS.sleep(1);
+                        System.out.println("Enemy HP:" + (enemy.currentHP -= (player.damage - enemy.armor)));
+                        TimeUnit.SECONDS.sleep(1);
+                        if (player.currentHP <= 0)
+                        {
+                            System.out.println();
+                            System.out.println("> YOU DIED - with yours character's death, the thread of prophecy is severed. Start a new game to restore the weave of fate");
+                            break;
+                        }
+                        if (enemy.currentHP <= 0 )
+                        {
+                            System.out.println("> You defeated the enemy and collected " + player.mission.reward + " septims");
+                            player.money += player.mission.reward;
+                            System.out.println();
+                            completed = true;
+                            break;
+                        }
+                    }
+
                 }
                 if (enemy.currentHP <= 0)
                 {
