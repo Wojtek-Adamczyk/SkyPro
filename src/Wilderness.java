@@ -26,7 +26,6 @@ public class Wilderness extends Building
 
     String questCompleted = "> There's nothing more I can do there.";
 
-
     public void menu(Player player) throws InterruptedException
     {
         switch (type)

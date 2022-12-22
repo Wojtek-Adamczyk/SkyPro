@@ -99,8 +99,8 @@ public class Mission
                             break;
                         }
                     }
-
                 }
+
                 if (enemy.currentHP <= 0)
                 {
                     System.out.println();

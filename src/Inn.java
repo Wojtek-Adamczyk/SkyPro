@@ -23,7 +23,6 @@ public class Inn extends Building
     private final Inn.Type type;
     public Inn(Inn.Type type) {this.type = type;}
 
-
     public void greet(Player player)
     {
         Random greet = new Random();

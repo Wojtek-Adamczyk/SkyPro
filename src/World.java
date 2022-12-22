@@ -37,7 +37,6 @@ public class World
         enemies[7] = new Enemy(7);
         enemies[8] = new Enemy(8);
         enemies[9] = new Enemy(9);
-        enemies[10] = new Enemy(10);
 
         missions[0] = new Mission("> King Olaf's tomb exudes sinister energy", enemies[1], enemies[0].reward, false, cities[0], 0);
         missions[1] = new Mission("> There are several bags with various things next to the cave", enemies[0], enemies[0].reward, false, cities[0], 2);
@@ -66,7 +65,9 @@ public class World
         missions[24] = new Mission("> The Black Briar Lodge from a distance looks like a regular big house, but as you get closer you see more and more fortifications and mercenary thugs", enemies[7], enemies[0].reward, false, cities[8], 0);
         missions[25] = new Mission("> There is a bonfire by the road, and several tents are pitched around it", enemies[0], enemies[0].reward + 200, false, cities[8], 4);
         missions[26] = new Mission("> Autumnshade Clearing radiates a beautiful greenish light", enemies[8], enemies[0].reward + 300, false, cities[8], 0);
+
         // missions[27] - there is one break mission because I can't count
+
         missions[28] = new Mission("> As you climbing higher, you see marks of dragon's claws in the snow", enemies[4], enemies[0].reward + 2000, false, cities[0], 0);
         missions[29] = new Mission("> In the distance you see Eldersblood Peak and marks of dragon's presence between the marsh trees", enemies[4], enemies[0].reward + 1000, false, cities[1], 0);
         missions[30] = new Mission("> Mountains and ravines of The Reach hold seems a perfect place to dragon's lair", enemies[4], enemies[0].reward + 1500, false, cities[0], 0);
@@ -95,5 +96,4 @@ public class World
     public Follower[] followers = new Follower[14];
     public Mission[] missions = new Mission[49];
     public Enemy[] enemies = new Enemy[11];
-
 }

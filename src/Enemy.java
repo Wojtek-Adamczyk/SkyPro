@@ -9,13 +9,12 @@ public class Enemy
     Integer level;
     Integer reward;
 
-
     public Enemy(Integer level)
     {
         this.level = level;
         Random generator = new Random();
 
-        if (level == 0) // bandyty, słabe draugry
+        if (level == 0)
         {
             currentHP = generator.nextInt(50,110);
             damage = generator.nextInt(5,11);
@@ -23,7 +22,7 @@ public class Enemy
             reward = generator.nextInt(30,200);
         }
 
-        if (level == 1) // silne draugry, fornswrons, automatony
+        if (level == 1)
         {
             currentHP = generator.nextInt(150,220);
             damage = generator.nextInt(11,15);
@@ -31,7 +30,7 @@ public class Enemy
             reward = generator.nextInt(70,300);
         }
 
-        if (level == 2) // magowie
+        if (level == 2)
         {
             currentHP = generator.nextInt(70,100);
             damage = generator.nextInt(20,24);
@@ -39,7 +38,7 @@ public class Enemy
             reward = generator.nextInt(100,200);
         }
 
-        if (level == 3) // zwierzaki małe
+        if (level == 3)
         {
             currentHP = generator.nextInt(20,50);
             damage = generator.nextInt(5,8);
@@ -47,7 +46,7 @@ public class Enemy
             reward = generator.nextInt(0,50);
         }
 
-        if (level == 4) // smoki
+        if (level == 4)
         {
             currentHP = generator.nextInt(400,600);
             damage = generator.nextInt(15,25);
@@ -55,7 +54,7 @@ public class Enemy
             reward = generator.nextInt(300,900);
         }
 
-        if (level == 5) // wampiry/wilkołaki
+        if (level == 5)
         {
             currentHP = generator.nextInt(150,250);
             damage = generator.nextInt(11,18);
@@ -63,7 +62,7 @@ public class Enemy
             reward = generator.nextInt(200,400);
         }
 
-        if (level == 6) // duze zwierzaki
+        if (level == 6)
         {
             currentHP = generator.nextInt(100,180);
             damage = generator.nextInt(8,15);
@@ -71,7 +70,7 @@ public class Enemy
             reward = generator.nextInt(0,10);
         }
 
-        if (level == 7) // herszty
+        if (level == 7)
         {
             currentHP = generator.nextInt(150,250);
             damage = generator.nextInt(8,14);
@@ -79,7 +78,7 @@ public class Enemy
             reward = generator.nextInt(100,300);
         }
 
-        if (level == 8) // silny mag
+        if (level == 8)
         {
             currentHP = generator.nextInt(150,250);
             damage = generator.nextInt(20,26);
@@ -87,7 +86,7 @@ public class Enemy
             reward = generator.nextInt(100,300);
         }
 
-        if (level == 8) // fey
+        if (level == 8)
         {
             currentHP = generator.nextInt(150,250);
             damage = generator.nextInt(12,16);
@@ -95,7 +94,7 @@ public class Enemy
             reward = generator.nextInt(50,100);
         }
 
-        if (level == 9) // deadry
+        if (level == 9)
         {
             currentHP = generator.nextInt(200,300);
             damage = generator.nextInt(15,19);

@@ -22,7 +22,8 @@ public class Keep extends Building
     private final Type type;
     public Keep(Type type) {this.type = type;}
 
-    public void pickpocket(Player player) throws InterruptedException {
+    public void pickpocket(Player player) throws InterruptedException
+    {
         Random chance = new Random();
         Integer stealChance = chance.nextInt(0, 2);
         if (stealChance == 1)

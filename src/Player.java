@@ -79,12 +79,10 @@ public class Player
     }
 
     Mission mission;
-
     World world;
     Follower follower;
     public Building building;
     public City currentCity;
-
 }
 
 

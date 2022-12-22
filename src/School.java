@@ -21,7 +21,8 @@ public class School extends Building
         interact(player);
     }
 
-    public void interact(Player player) throws InterruptedException {
+    public void interact(Player player) throws InterruptedException
+    {
         System.out.println("0. See your statistics");
         System.out.println("1. Train your stealth");
         System.out.println("2. Leave");

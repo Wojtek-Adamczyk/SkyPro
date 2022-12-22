@@ -42,7 +42,8 @@ public class Guild extends Building
     String collegeQuestTaken = "- You have already helped us a lot in this matter";
     String thievesQuestTaken = "- Those trinkets already disappeared, don't be too greedy, pal";
 
-    public void menu(Player player) throws InterruptedException {
+    public void menu(Player player) throws InterruptedException
+    {
         switch (type)
         {
             case BROTHERHOOD ->
