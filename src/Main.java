@@ -1,9 +1,8 @@
-import java.util.concurrent.TimeUnit;
+import java.io.IOException;
 
 public class Main
 {
-    public static void main(String[] args) throws InterruptedException
-    {
+    public static void main(String[] args) throws InterruptedException, IOException {
         Player player = new Player(100, 100, 10, 0, 300, 0);
         World world = new World();
         player.world = world;
@@ -13,8 +12,5 @@ public class Main
         world.cities[4].wilderness.menu(player);
 
         while (player.currentHP >= 0) {player.currentCity.wilderness.menu(player);}
-
-
-
     }
 }
