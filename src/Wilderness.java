@@ -46,13 +46,7 @@ public class Wilderness extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);}
-                    case "1" ->
-                    {
-                        System.out.println("Entering Solitude...");
-                        TimeUnit.SECONDS.sleep(3);
-                        System.out.println();
-                        player.currentCity.menu(player);
-                    }
+                    case "1" -> {player.currentCity.menu(player);}
                     case "2" ->
                     {
                         System.out.println(player.world.missions[0].dialog);
@@ -116,13 +110,7 @@ public class Wilderness extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);}
-                    case "1" ->
-                    {
-                        System.out.println("Entering Morthal...");
-                        TimeUnit.SECONDS.sleep(3);
-                        System.out.println();
-                        player.currentCity.menu(player);
-                    }
+                    case "1" -> {player.currentCity.menu(player);}
                     case "2" ->
                     {
                         System.out.println(player.world.missions[3].dialog);
@@ -186,13 +174,7 @@ public class Wilderness extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);}
-                    case "1" ->
-                    {
-                        System.out.println("Entering Markarth...");
-                        TimeUnit.SECONDS.sleep(3);
-                        System.out.println();
-                        player.currentCity.menu(player);
-                    }
+                    case "1" -> {player.currentCity.menu(player);}
                     case "2" ->
                     {
                         System.out.println(player.world.missions[6].dialog);
@@ -259,13 +241,7 @@ public class Wilderness extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);}
-                    case "1" ->
-                    {
-                        System.out.println("Entering Falkreath...");
-                        TimeUnit.SECONDS.sleep(3);
-                        System.out.println();
-                        player.currentCity.menu(player);
-                    }
+                    case "1" -> {player.currentCity.menu(player);}
                     case "2" ->
                     {
                         System.out.println(player.world.missions[9].dialog);
@@ -365,13 +341,7 @@ public class Wilderness extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);}
-                    case "1" ->
-                    {
-                        System.out.println("Entering Whiterun...");
-                        TimeUnit.SECONDS.sleep(3);
-                        System.out.println();
-                        player.currentCity.menu(player);
-                    }
+                    case "1" -> {player.currentCity.menu(player);}
                     case "2" ->
                     {
                         System.out.println(player.world.missions[12].dialog);
@@ -469,13 +439,7 @@ public class Wilderness extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);}
-                    case "1" ->
-                    {
-                        System.out.println("Entering Dawnstar...");
-                        TimeUnit.SECONDS.sleep(3);
-                        System.out.println();
-                        player.currentCity.menu(player);
-                    }
+                    case "1" -> {player.currentCity.menu(player);}
                     case "2" ->
                     {
                         System.out.println(player.world.missions[15].dialog);
@@ -542,13 +506,7 @@ public class Wilderness extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);}
-                    case "1" ->
-                    {
-                        System.out.println("Entering Winterhold...");
-                        TimeUnit.SECONDS.sleep(3);
-                        System.out.println();
-                        player.currentCity.menu(player);
-                    }
+                    case "1" -> {player.currentCity.menu(player);}
                     case "2" ->
                     {
                         System.out.println(player.world.missions[18].dialog);
@@ -645,13 +603,7 @@ public class Wilderness extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);}
-                    case "1" ->
-                    {
-                        System.out.println("Entering Windhelm...");
-                        TimeUnit.SECONDS.sleep(3);
-                        System.out.println();
-                        player.currentCity.menu(player);
-                    }
+                    case "1" -> {player.currentCity.menu(player);}
                     case "2" ->
                     {
                         System.out.println(player.world.missions[21].dialog);
@@ -719,13 +671,7 @@ public class Wilderness extends Building
                 switch (playerInput)
                 {
                     case "0" -> {player.sheet(player);}
-                    case "1" ->
-                    {
-                        System.out.println("Entering Riften...");
-                        TimeUnit.SECONDS.sleep(3);
-                        System.out.println();
-                        player.currentCity.menu(player);
-                    }
+                    case "1" -> {player.currentCity.menu(player);}
                     case "2" ->
                     {
                         System.out.println(player.world.missions[24].dialog);
