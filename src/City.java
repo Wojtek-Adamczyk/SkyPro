@@ -220,6 +220,7 @@ class City
                 TimeUnit.SECONDS.sleep(3);
                 wilderness.menu(player);
             }
+            case "help" -> player.help();
         }
     }
 }

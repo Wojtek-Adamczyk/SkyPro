@@ -1,8 +1,7 @@
-import java.io.IOException;
-
 public class Main
 {
-    public static void main(String[] args) throws InterruptedException, IOException {
+    public static void main(String[] args) throws InterruptedException
+    {
         Player player = new Player(100, 100, 10, 0, 300, 0);
         World world = new World();
         player.world = world;

@@ -1,4 +1,3 @@
-import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
@@ -92,6 +91,7 @@ public class Wilderness extends Building
                         else {System.out.println(questCompleted); System.out.println();}
                     }
                     case "6" -> {player.travel();}
+                    case "help" -> player.help();
                 }
             }
             case MORTHAL ->
@@ -156,6 +156,7 @@ public class Wilderness extends Building
                         else {System.out.println(questCompleted); System.out.println();}
                     }
                     case "6" -> {player.travel();}
+                    case "help" -> player.help();
                 }
             }
             case MARKARTH ->
@@ -220,6 +221,7 @@ public class Wilderness extends Building
                         else {System.out.println(questCompleted); System.out.println();}
                     }
                     case "6" -> {player.travel();}
+                    case "help" -> player.help();
                 }
             }
             case FALKREATH ->
@@ -320,6 +322,7 @@ public class Wilderness extends Building
                         else {System.out.println(questCompleted); System.out.println();}
                     }
                     case "9" -> {player.travel();}
+                    case "help" -> player.help();
                 }
             }
             case WHITERUN ->
@@ -421,6 +424,7 @@ public class Wilderness extends Building
                         else {System.out.println(questCompleted); System.out.println();}
                     }
                     case "9" -> {player.travel();}
+                    case "help" -> player.help();
                 }
             }
             case DAWNSTAR ->
@@ -485,6 +489,7 @@ public class Wilderness extends Building
                         else {System.out.println(questCompleted); System.out.println();}
                     }
                     case "6" -> {player.travel();}
+                    case "help" -> player.help();
                 }
             }
             case WINTERHOLD ->
@@ -585,6 +590,7 @@ public class Wilderness extends Building
                         else {System.out.println(questCompleted); System.out.println();}
                     }
                     case "9" -> {player.travel();}
+                    case "help" -> player.help();
                 }
             }
             case WINDHELM ->
@@ -650,6 +656,7 @@ public class Wilderness extends Building
                         else {System.out.println(questCompleted); System.out.println();}
                     }
                     case "6" -> {player.travel();}
+                    case "help" -> player.help();
                 }
             }
             case RIFTEN ->
@@ -750,6 +757,7 @@ public class Wilderness extends Building
                         else {System.out.println(questCompleted); System.out.println();}
                     }
                     case "9" -> {player.travel();}
+                    case "help" -> player.help();
                 }
             }
         }
