@@ -20,7 +20,7 @@ public class Player implements Serializable
         this.armor = armor;
         this.money = money;
         this.stealth = stealth;
-        this.gameState = new State(this, world);
+        this.gameState = new State(this, world, building);
     }
 
     public void help()

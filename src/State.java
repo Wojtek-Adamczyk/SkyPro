@@ -7,16 +7,18 @@ public class State implements Serializable
 
     public Player player;
     public World world;
+    public Building building;
 
-    public State(Player player, World world)
+    public State(Player player, World world, Building building)
     {
         this.player = player;
         this.world = world;
+        this.building = building;
     }
 
     public void saveGame()
     {
-        State gameState = new State(this.player, this.world);
+        State gameState = new State(this.player, this.world, this.building);
         try
         {
             FileOutputStream saveGame = new FileOutputStream("C:\\skyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\\sajwik");
@@ -30,9 +32,8 @@ public class State implements Serializable
         catch (IOException e) {e.printStackTrace(); System.out.println("*** SOMETHING WENT WRONG - GAME NOT SAVED ***"); System.out.println();}
     }
 
-    public static Player loadGame()
+    public void loadGame()
     {
-        Player player = null;
         try
         {
             FileInputStream loadGame = new FileInputStream("C:\\skyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\\sajwik");
@@ -43,6 +44,6 @@ public class State implements Serializable
             loadGame.close();
         }
         catch (IOException | ClassNotFoundException e) {e.printStackTrace();}
-        return player;
+
     }
 }
