@@ -35,12 +35,12 @@ public class State implements Serializable
         Player player = null;
         try
         {
-            FileInputStream fileIn = new FileInputStream("C:\\skyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\\sajwik");
-            ObjectInputStream in = new ObjectInputStream(fileIn);
-            State gameState = (State) in.readObject();
+            FileInputStream loadGame = new FileInputStream("C:\\skyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\\sajwik");
+            ObjectInputStream load = new ObjectInputStream(loadGame);
+            State gameState = (State) load.readObject();
             player = gameState.player;
-            in.close();
-            fileIn.close();
+            load.close();
+            loadGame.close();
         }
         catch (IOException | ClassNotFoundException e) {e.printStackTrace();}
         return player;
