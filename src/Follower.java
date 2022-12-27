@@ -1,4 +1,6 @@
-public class Follower
+import java.io.Serializable;
+
+public class Follower implements Serializable
 {
     String name;
     Integer currentHP;

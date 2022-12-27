@@ -1,7 +1,8 @@
+import java.io.Serializable;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
-public class Mission
+public class Mission implements Serializable
 {
     String dialog;
     Enemy enemy;

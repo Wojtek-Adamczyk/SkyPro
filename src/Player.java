@@ -1,7 +1,8 @@
+import java.io.Serializable;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
-public class Player
+public class Player implements Serializable
 {
     Integer currentHP;
     Integer maximumHP;
@@ -9,8 +10,9 @@ public class Player
     Integer armor;
     Integer money;
     Integer stealth;
+    public State gameState;
 
-    public Player(Integer currentHP, Integer maximumHP, Integer damage, Integer armor, Integer money, Integer stealth)
+    public Player(Integer currentHP, Integer maximumHP, Integer damage, Integer armor, Integer money, Integer stealth, World world)
     {
         this.currentHP = currentHP;
         this.maximumHP = maximumHP;
@@ -18,6 +20,7 @@ public class Player
         this.armor = armor;
         this.money = money;
         this.stealth = stealth;
+        this.gameState = new State(this, world);
     }
 
     public void help()
@@ -27,6 +30,8 @@ public class Player
         System.out.println("*** REMEMBER*** there is only one save slot");
         System.out.println();
     }
+
+
 
     public void sheet(Player player)
     {

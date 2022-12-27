@@ -1,4 +1,6 @@
-public class World
+import java.io.Serializable;
+
+public class World implements Serializable
 {
     public World()
     {

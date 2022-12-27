@@ -1,7 +1,7 @@
+import java.io.Serializable;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
-public class Enemy
+public class Enemy implements Serializable
 {
     Integer currentHP;
     Integer damage;

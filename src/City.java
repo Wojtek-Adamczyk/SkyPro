@@ -1,7 +1,8 @@
+import java.io.Serializable;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
-class City
+class City implements Serializable
 {
     String name;
     Inn inn;

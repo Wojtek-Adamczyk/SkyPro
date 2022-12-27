@@ -1,4 +1,6 @@
-class Building
+import java.io.Serializable;
+
+class Building implements Serializable
 {
     public void leave(Player player) throws InterruptedException
     {

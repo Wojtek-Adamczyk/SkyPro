@@ -1,8 +1,10 @@
-public class Main
+import java.io.Serializable;
+
+public class Main implements Serializable
 {
     public static void main(String[] args) throws InterruptedException
     {
-        Player player = new Player(100, 100, 10, 0, 300, 0);
+        Player player = new Player(100, 100, 10, 0, 300, 0, new World());
         World world = new World();
         player.world = world;
 
@@ -11,5 +13,7 @@ public class Main
         world.cities[4].wilderness.menu(player);
 
         while (player.currentHP >= 0) {player.currentCity.wilderness.menu(player);}
+
+
     }
 }
