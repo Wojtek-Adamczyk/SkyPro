@@ -11,7 +11,7 @@ public class Player implements Serializable
     Integer money;
     Integer stealth;
 
-    public Player(Integer currentHP, Integer maximumHP, Integer damage, Integer armor, Integer money, Integer stealth, World world)
+    public Player(Integer currentHP, Integer maximumHP, Integer damage, Integer armor, Integer money, Integer stealth)
     {
         this.currentHP = currentHP;
         this.maximumHP = maximumHP;

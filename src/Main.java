@@ -4,7 +4,7 @@ public class Main implements Serializable
 {
     public static void main(String[] args) throws InterruptedException, IOException, ClassNotFoundException
     {
-        Player player = new Player(100000, 1000, 100, 0, 3000, 0, new World());
+        Player player = new Player(100, 100, 10, 0, 300, 0);
         World world = new World();
         player.world = world;
 
