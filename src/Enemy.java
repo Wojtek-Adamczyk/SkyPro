@@ -9,6 +9,7 @@ public class Enemy implements Serializable
     Integer level;
     Integer reward;
 
+
     public Enemy(Integer level)
     {
         this.level = level;

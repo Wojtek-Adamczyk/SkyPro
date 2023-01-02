@@ -1,4 +1,4 @@
-import java.util.Random;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class School extends Building
@@ -7,8 +7,7 @@ public class School extends Building
 
     public void greet(Player player) {{System.out.println("- Why would you like to train your stealth, hm? Just joking. I don't care, unless you got shining septims, it stands to reason");}}
 
-    public void train(Player player) throws InterruptedException
-    {
+    public void train(Player player) throws InterruptedException, IOException, ClassNotFoundException {
         if (player.money >= 50)
         {
             player.stealth += 1;
@@ -21,8 +20,7 @@ public class School extends Building
         interact(player);
     }
 
-    public void interact(Player player) throws InterruptedException
-    {
+    public void interact(Player player) throws InterruptedException, IOException, ClassNotFoundException {
         System.out.println("0. See your statistics");
         System.out.println("1. Train your stealth");
         System.out.println("2. Leave");

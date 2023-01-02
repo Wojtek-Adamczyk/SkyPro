@@ -2,6 +2,7 @@ import java.io.Serializable;
 
 public class World implements Serializable
 {
+
     public World()
     {
         followers[0] = new Follower("Belrand", 100, 11, 2, cities[0]);

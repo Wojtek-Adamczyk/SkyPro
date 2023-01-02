@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
@@ -19,14 +20,13 @@ public class Wilderness extends Building
         Type(String name) {this.name = name;}
     }
 
-    State gameState;
     private final Wilderness.Type type;
 
     public Wilderness(Wilderness.Type type) {this.type = type;}
 
     String questCompleted = "> There's nothing more I can do there.";
 
-    public void menu(Player player) throws InterruptedException
+    public void menu(Player player) throws InterruptedException, IOException, ClassNotFoundException
     {
         switch (type)
         {
@@ -426,10 +426,6 @@ public class Wilderness extends Building
                     }
                     case "9" -> {player.travel();}
                     case "help" -> player.help();
-                    case "save" -> player.gameState.saveGame();
-                    case "load" -> {player.gameState.loadGame();
-                    }
-
                 }
             }
             case DAWNSTAR ->

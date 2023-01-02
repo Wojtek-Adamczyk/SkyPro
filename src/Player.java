@@ -10,7 +10,6 @@ public class Player implements Serializable
     Integer armor;
     Integer money;
     Integer stealth;
-    public State gameState;
 
     public Player(Integer currentHP, Integer maximumHP, Integer damage, Integer armor, Integer money, Integer stealth, World world)
     {
@@ -20,7 +19,6 @@ public class Player implements Serializable
         this.armor = armor;
         this.money = money;
         this.stealth = stealth;
-        this.gameState = new State(this, world, building);
     }
 
     public void help()

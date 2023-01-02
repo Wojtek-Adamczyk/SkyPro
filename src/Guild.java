@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Guild extends Building
@@ -42,8 +43,7 @@ public class Guild extends Building
     String collegeQuestTaken = "- You have already helped us a lot in this matter";
     String thievesQuestTaken = "- Those trinkets already disappeared, don't be too greedy, pal";
 
-    public void menu(Player player) throws InterruptedException
-    {
+    public void menu(Player player) throws InterruptedException, IOException, ClassNotFoundException {
         switch (type)
         {
             case BROTHERHOOD ->

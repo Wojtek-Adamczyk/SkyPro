@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.io.Serializable;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
@@ -12,6 +13,8 @@ public class Mission implements Serializable
     Integer stealth;
 
 
+
+
     public Mission(String dialog, Enemy enemy, Integer reward, boolean completed, City currentCity, Integer stealth)
     {
         this.dialog = dialog;
@@ -22,8 +25,7 @@ public class Mission implements Serializable
         this.stealth = stealth;
     }
 
-    public void check(Player player) throws InterruptedException
-    {
+    public void check(Player player) throws InterruptedException, IOException, ClassNotFoundException {
         System.out.println("1. Engage in fight");
         System.out.println("2. Turn back");
 
@@ -36,8 +38,7 @@ public class Mission implements Serializable
         }
     }
 
-    public void sneak(Player player) throws InterruptedException
-    {
+    public void sneak(Player player) throws InterruptedException, IOException, ClassNotFoundException {
         System.out.println("1. Try to sneak past");
         System.out.println("2. Engage in fight");
         System.out.println("3. Turn back");
@@ -78,6 +79,7 @@ public class Mission implements Serializable
                 {
                     System.out.println();
                     System.out.println(player.follower.name + " died");
+                    player.follower = null;
                     System.out.println();
                     while (true)
                     {

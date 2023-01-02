@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.io.Serializable;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
@@ -153,8 +154,7 @@ class City implements Serializable
         }
     }
 
-    public void menu(Player player) throws InterruptedException
-    {
+    public void menu(Player player) throws InterruptedException, IOException, ClassNotFoundException {
         System.out.println("Entering " + player.currentCity.name + "...");
         TimeUnit.SECONDS.sleep(3);
         System.out.println("0. See your statistics");

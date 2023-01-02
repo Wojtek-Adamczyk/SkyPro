@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -16,7 +17,7 @@ public class Blacksmith extends Building
         }
     }
 
-    public void buyWeapon(Player player) throws InterruptedException {
+    public void buyWeapon(Player player) throws InterruptedException, IOException, ClassNotFoundException {
         if (player.money >= 100)
         {
             player.damage++;
@@ -29,7 +30,7 @@ public class Blacksmith extends Building
         interact(player);
     }
 
-    public void buyArmor(Player player) throws InterruptedException {
+    public void buyArmor(Player player) throws InterruptedException, IOException, ClassNotFoundException {
         if (player.money >= 300)
         {
             player.armor++;
@@ -42,7 +43,7 @@ public class Blacksmith extends Building
         interact(player);
     }
 
-    public void pickpocket(Player player) throws InterruptedException {
+    public void pickpocket(Player player) throws InterruptedException, IOException, ClassNotFoundException {
         Random chance = new Random();
         Integer stealChance = chance.nextInt(0, 5);
         if (stealChance == 1)
@@ -65,7 +66,7 @@ public class Blacksmith extends Building
         }
     }
 
-    public void interact(Player player) throws InterruptedException {
+    public void interact(Player player) throws InterruptedException, IOException, ClassNotFoundException {
         System.out.println("0. See your statistics");
         System.out.println("1. Buy a weapon");
         System.out.println("2. Buy armor");

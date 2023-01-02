@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
@@ -90,8 +91,7 @@ public class Inn extends Building
     String rumorsQuestTaken = "> You don't hear anything interesting";
     String boardQuestTaken = "> You don't see anything interesting";
 
-    public void menu(Player player) throws InterruptedException
-    {
+    public void menu(Player player) throws InterruptedException, IOException, ClassNotFoundException {
         switch (type)
         {
             case SOLITUDE ->
