@@ -12,9 +12,6 @@ public class Mission implements Serializable
     City currentCity;
     Integer stealth;
 
-
-
-
     public Mission(String dialog, Enemy enemy, Integer reward, boolean completed, City currentCity, Integer stealth)
     {
         this.dialog = dialog;
@@ -25,7 +22,8 @@ public class Mission implements Serializable
         this.stealth = stealth;
     }
 
-    public void check(Player player) throws InterruptedException, IOException, ClassNotFoundException {
+    public void check(Player player) throws InterruptedException, IOException, ClassNotFoundException
+    {
         System.out.println("1. Engage in fight");
         System.out.println("2. Turn back");
 
@@ -38,7 +36,8 @@ public class Mission implements Serializable
         }
     }
 
-    public void sneak(Player player) throws InterruptedException, IOException, ClassNotFoundException {
+    public void sneak(Player player) throws InterruptedException, IOException, ClassNotFoundException
+    {
         System.out.println("1. Try to sneak past");
         System.out.println("2. Engage in fight");
         System.out.println("3. Turn back");

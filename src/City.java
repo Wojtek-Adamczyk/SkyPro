@@ -154,7 +154,8 @@ class City implements Serializable
         }
     }
 
-    public void menu(Player player) throws InterruptedException, IOException, ClassNotFoundException {
+    public void menu(Player player) throws InterruptedException, IOException, ClassNotFoundException
+    {
         System.out.println("Entering " + player.currentCity.name + "...");
         TimeUnit.SECONDS.sleep(3);
         System.out.println("0. See your statistics");

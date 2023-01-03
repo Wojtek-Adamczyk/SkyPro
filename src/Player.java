@@ -92,8 +92,8 @@ public class Player implements Serializable
     Mission mission;
     World world;
     Follower follower;
-    public Building building;
-    public City currentCity;
+    Building building;
+    City currentCity;
 }
 
 

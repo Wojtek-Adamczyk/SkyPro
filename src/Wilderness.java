@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Wilderness extends Building
 {
+
     public enum Type
     {
         SOLITUDE("Solitude"),
@@ -25,6 +26,7 @@ public class Wilderness extends Building
     public Wilderness(Wilderness.Type type) {this.type = type;}
 
     String questCompleted = "> There's nothing more I can do there.";
+
 
     public void menu(Player player) throws InterruptedException, IOException, ClassNotFoundException
     {
