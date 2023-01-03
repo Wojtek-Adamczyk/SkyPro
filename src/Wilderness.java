@@ -31,8 +31,6 @@ public class Wilderness extends Building
 
     public void menu(Player player) throws InterruptedException, IOException, ClassNotFoundException
     {
-        this.state = state;
-
         switch (type)
         {
             case SOLITUDE ->
