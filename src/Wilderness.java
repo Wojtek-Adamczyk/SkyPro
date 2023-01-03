@@ -27,9 +27,12 @@ public class Wilderness extends Building
 
     String questCompleted = "> There's nothing more I can do there.";
 
+    State state;
 
     public void menu(Player player) throws InterruptedException, IOException, ClassNotFoundException
     {
+        this.state = state;
+
         switch (type)
         {
             case SOLITUDE ->
@@ -432,14 +435,6 @@ public class Wilderness extends Building
             }
             case DAWNSTAR ->
             {
-                System.out.println("> FROZEN BAY OF THE DAWNSTAR SHINES IN THE DISTANCE");
-                System.out.println("0. See your statistics");
-                System.out.println("1. Enter the city");
-                System.out.println("2. Go to Windward Tower");
-                System.out.println("3. Visit the Mythic Dawn Museum");
-                System.out.println("4. Walk along the coast");
-                System.out.println("5. Go to Nightcaller Temple");
-                System.out.println("6. Travel to another city");
 
                 Scanner input = new Scanner(System.in);
                 String playerInput = input.nextLine();

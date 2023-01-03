@@ -85,8 +85,8 @@ public class Keep extends Building
                     {
                         if (!player.world.missions[28].completed)
                         {
-                            System.out.println(" - In the name of Queen Elisif, wife of High King Torygg, and all citizens of Haafingar I humbly beg you to kill dragon residing on the Mount Kilkreath.");
-                            System.out.println(" You will be rewarded with two thousand septims and forever will be recognized as honorary citizen of Solitude.");
+                            System.out.println("- In the name of Queen Elisif, wife of High King Torygg, and all citizens of Haafingar I humbly beg you to kill dragon residing on the Mount Kilkreath.");
+                            System.out.println("You will be rewarded with two thousand septims and forever will be recognized as honorary citizen of Solitude.");
                             System.out.println();
                         }
                         else {System.out.println(keepQuestTaken); System.out.println();}
@@ -108,7 +108,7 @@ public class Keep extends Building
                     {
                         if (!player.world.missions[29].completed)
                         {
-                            System.out.println(" - Yes... I have seen you in my dreams, Dovakiin. Your destiny is to stop the dragons. And the dragon in Eldersblood Peak is a sign. You have to kill it.");
+                            System.out.println("- Yes... I have seen you in my dreams, Dovakiin. Your destiny is to stop the dragons. And the dragon in Eldersblood Peak is a sign. You have to kill it.");
                             System.out.println("Morthal isn't reach hold, but I'm sure you will be rewarded wtih... let's say one thousand septims for killing the beast.");
                             System.out.println();
                         }
@@ -135,7 +135,7 @@ public class Keep extends Building
                     {
                         if (!player.world.missions[30].completed)
                         {
-                            System.out.println(" - By the name of Eight or any different gods you believe. You have to protect the city from dragon that infested in Dragontooth Crater!");
+                            System.out.println("- By the name of Eight or any different gods you believe. You have to protect the city from dragon that infested in Dragontooth Crater!");
                             System.out.println("Markarth flows with silver and blood. If you will come back, then you will have enough silver for a long time. If not, well... I will pray for your soul");
                             System.out.println();
                         }
@@ -297,7 +297,7 @@ public class Keep extends Building
                     {
                         if (!player.world.missions[36].completed)
                         {
-                            System.out.println(" - You were expected Dragonborn. I need your help. Whole Rift needs your help. Dragon were spotted on Northwind Summit.");
+                            System.out.println("- You were expected Dragonborn. I need your help. Whole Rift needs your help. Dragon were spotted on Northwind Summit.");
                             System.out.println("Of course, you will be rewarded. I can give you one thousand septims. Maybe a little bit more if you will hurry up. Can you do this for Skyrim?");
                             System.out.println();
                         }
