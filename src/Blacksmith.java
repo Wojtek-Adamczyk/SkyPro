@@ -22,7 +22,7 @@ public class Blacksmith extends Building
         {
             player.damage++;
             player.money -= 100;
-            System.out.println("> YOU SUCCESFULLY PURSHACES A WEAPON");
+            System.out.println("> YOU PURCHASED A WEAPON");
         }
         else System.out.println("- Come back when you will have enough gold.");
         System.out.println();
@@ -35,7 +35,7 @@ public class Blacksmith extends Building
         {
             player.armor++;
             player.money -= 300;
-            System.out.println("> YOU SUCCESFULLY PURSHACES AN ARMOR");
+            System.out.println("> YOU PURCHASED AN ARMOR");
         }
         else System.out.println("- Gold solves a lor of problems, eh?");
         System.out.println();

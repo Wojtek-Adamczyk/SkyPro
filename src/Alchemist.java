@@ -22,7 +22,7 @@ public class Alchemist extends Building
         {
             player.maximumHP += 10;
             player.money -= 125;
-            System.out.println("> YOU SUCCESFULLY PURSHACED A POTION");
+            System.out.println("> YOU PURCHASED A POTION");
         }
         else System.out.println("- Come back when you will have enough gold.");
         System.out.println();
