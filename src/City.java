@@ -15,7 +15,6 @@ class City implements Serializable
     Wilderness wilderness;
     Follower follower;
     Follower guildFollower;
-    String text;
 
     boolean isKeep;
     boolean isBlacksmith;
@@ -26,7 +25,7 @@ class City implements Serializable
     boolean isWilderness;
     public boolean[] buildings = new boolean[7];
 
-    City(String name, boolean isKeep, boolean isBlacksmith, boolean isAlchemist, boolean isInn, boolean isGuild, boolean isSchool, boolean isWilderness, Follower follower, String text)
+    City(String name, boolean isKeep, boolean isBlacksmith, boolean isAlchemist, boolean isInn, boolean isGuild, boolean isSchool, boolean isWilderness, Follower follower)
     {
         this.name = name;
         this.isKeep = isKeep;
@@ -37,7 +36,6 @@ class City implements Serializable
         this.isWilderness = isWilderness;
         this.follower = follower;
         this.isSchool = isSchool;
-        this.text = text;
 
         if (isKeep)
         {
@@ -91,7 +89,7 @@ class City implements Serializable
         }
     }
 
-    City(String name, boolean isKeep, boolean isBlacksmith, boolean isAlchemist, boolean isInn, boolean isGuild, boolean isSchool, boolean isWilderness, Follower follower, Follower guildFollower, String text)
+    City(String name, boolean isKeep, boolean isBlacksmith, boolean isAlchemist, boolean isInn, boolean isGuild, boolean isSchool, boolean isWilderness, Follower follower, Follower guildFollower)
     {
         this.name = name;
         this.isKeep = isKeep;
@@ -103,7 +101,6 @@ class City implements Serializable
         this.follower = follower;
         this.guildFollower = guildFollower;
         this.isSchool = isSchool;
-        this.text = text;
 
         if (isKeep)
         {

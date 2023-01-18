@@ -1,37 +1,48 @@
 import java.io.*;
 
-public class State
-{
-    World world;
-    Player player;
+public class State {
 
-    public void save()
+    public static final String FILE_PATH = "C:\\skyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\\player.state";
+
+    public static void save(Player player)
     {
-        try (ObjectOutputStream save = new ObjectOutputStream(new FileOutputStream("C:\\skyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy")))
+        try
         {
-            save.writeObject(world);
-            save.writeObject(player);
-            System.out.println("GAME SAVED SUCCESSFULLY");
+            FileOutputStream fileOut = new FileOutputStream(FILE_PATH);
+            ObjectOutputStream out = new ObjectOutputStream(fileOut);
+            out.writeObject(player);
+            out.close();
+            fileOut.close();
+            System.out.println("Player state SUCCESSFULLY saved to " + FILE_PATH);
+            System.out.println();
         }
         catch (IOException e)
         {
             e.printStackTrace();
-            System.out.println("SOMETHING WENT WRONG - GAME NOT SAVED");
+            System.out.println("NOT SAVED");
+            System.out.println();
         }
     }
 
-    public void load()
+    public static Player load()
     {
-        try (ObjectInputStream load = new ObjectInputStream(new FileInputStream("C:\\skyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy")))
+        try
         {
-            world = (World) load.readObject();
-            player = (Player) load.readObject();
-            System.out.println("GAME LOADED SUCCESSFULLY");
+            FileInputStream fileIn = new FileInputStream(FILE_PATH);
+            ObjectInputStream in = new ObjectInputStream(fileIn);
+            Player player = (Player) in.readObject();
+            in.close();
+            fileIn.close();
+            System.out.println("Player state SUCCESSFULLY loaded from " + FILE_PATH);
+            System.out.println();
+            return player;
         }
         catch (IOException | ClassNotFoundException e)
         {
             e.printStackTrace();
-            System.out.println("SOMETHING WENT WRONG - GAME NOT LOADED");
+            System.out.println("NOT LOADED");
+            System.out.println();
+            return null;
         }
     }
 }

@@ -95,5 +95,3 @@ public class Player implements Serializable
     Building building;
     City currentCity;
 }
-
-
