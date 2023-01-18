@@ -1,8 +1,9 @@
 import java.io.*;
 
-public class State {
+public class State
+{
 
-    public static final String FILE_PATH = "C:\\skyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\\player.state";
+    public static final String FILE_PATH = "Save\\player.state";
 
     public static void save(Player player)
     {

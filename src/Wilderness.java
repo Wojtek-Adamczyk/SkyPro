@@ -429,7 +429,7 @@ public class Wilderness extends Building
                     case "9" -> {player.travel();}
                     case "help" -> player.help();
                     case "save" -> State.save(player);
-                    case "load" -> State.load();
+                    case "load" -> player = State.load();
                 }
             }
             case DAWNSTAR ->
