@@ -33,7 +33,6 @@ public class Main implements Serializable
             }
             case "load" ->
             {
-
                 Player player = State.load();
                 World world = State.loadWorld();
 
