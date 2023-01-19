@@ -35,6 +35,7 @@ public class Main implements Serializable
             {
                 Player player = State.load();
                 World world = State.loadWorld();
+                Building building = State.loadRest();
 
                 player.currentCity = world.cities[4];
                 System.out.println();

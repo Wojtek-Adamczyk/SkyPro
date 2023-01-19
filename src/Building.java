@@ -3,8 +3,8 @@ import java.io.Serializable;
 
 class Building implements Serializable
 {
-
-    public void leave(Player player) throws InterruptedException, IOException, ClassNotFoundException {
+    public void leave(Player player) throws InterruptedException, IOException, ClassNotFoundException
+    {
         player.building = null;
         player.currentCity.menu(player);
     }

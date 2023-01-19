@@ -432,7 +432,7 @@ public class Wilderness extends Building
                     }
                     case "9" -> {player.travel();}
                     case "help" -> player.help();
-                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world); State.saveRest(player.building);}
                 }
             }
             case DAWNSTAR ->
@@ -498,7 +498,7 @@ public class Wilderness extends Building
                     }
                     case "6" -> {player.travel();}
                     case "help" -> player.help();
-                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world); State.saveRest(player.building);}
                 }
             }
             case WINTERHOLD ->
