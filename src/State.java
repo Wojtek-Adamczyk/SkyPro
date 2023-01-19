@@ -2,10 +2,8 @@ import java.io.*;
 
 public class State
 {
-
     public static final String FILE_PATH_PLAYER = "Saved games\\saved.player";
     public static final String FILE_PATH_WORLD = "Saved games\\saved.world";
-    public static final String FILE_PATH_REST = "Saved games\\saved.rest";
 
     public static void savePlayer(Player player)
     {
@@ -16,7 +14,8 @@ public class State
             save.writeObject(player);
             save.close();
             fileSave.close();
-            System.out.println("Player state SUCCESSFULLY saved to " + FILE_PATH_PLAYER);
+            System.out.println("Game saved SUCCESSFULLY");
+            System.out.println();
         }
         catch (IOException e)
         {
@@ -35,35 +34,8 @@ public class State
             save.writeObject(world);
             save.close();
             fileSave.close();
-            System.out.println("World state SUCCESSFULLY saved to " + FILE_PATH_WORLD);
-            System.out.println();
         }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-            System.out.println("SOMETHING WENT WRONG - GAME NOT SAVED");
-            System.out.println();
-        }
-    }
-
-    public static void saveRest(Building building)
-    {
-        try
-        {
-            FileOutputStream fileSave = new FileOutputStream(FILE_PATH_REST);
-            ObjectOutputStream save = new ObjectOutputStream(fileSave);
-            save.writeObject(building);
-            save.close();
-            fileSave.close();
-            System.out.println("World state SUCCESSFULLY saved to " + FILE_PATH_REST);
-            System.out.println();
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-            System.out.println("SOMETHING WENT WRONG - GAME NOT SAVED");
-            System.out.println();
-        }
+        catch (IOException e) {e.printStackTrace();}
     }
 
     public static Player load()
@@ -75,7 +47,8 @@ public class State
             Player player = (Player) load.readObject();
             load.close();
             fileLoad.close();
-            System.out.println("Player state SUCCESSFULLY loaded from " + FILE_PATH_PLAYER);
+            System.out.println("Game loaded SUCCESSFULLY");
+            System.out.println();
             return player;
 
         }
@@ -97,38 +70,8 @@ public class State
             World world = (World) load.readObject();
             load.close();
             fileLoad.close();
-            System.out.println("Game state SUCCESSFULLY loaded from " + FILE_PATH_WORLD);
             return world;
-
         }
-        catch (IOException | ClassNotFoundException e)
-        {
-            e.printStackTrace();
-            System.out.println("SOMETHING WENT WRONG - GAME NOT LOADED");
-            System.out.println();
-            return null;
-        }
-    }
-
-    public static Building loadRest()
-    {
-        try
-        {
-            FileInputStream fileLoad = new FileInputStream(FILE_PATH_REST);
-            ObjectInputStream load = new ObjectInputStream(fileLoad);
-            Building building = (Building) load.readObject();
-            load.close();
-            fileLoad.close();
-            System.out.println("Game state SUCCESSFULLY loaded from " + FILE_PATH_REST);
-            return building;
-
-        }
-        catch (IOException | ClassNotFoundException e)
-        {
-            e.printStackTrace();
-            System.out.println("SOMETHING WENT WRONG - GAME NOT LOADED");
-            System.out.println();
-            return null;
-        }
+        catch (IOException | ClassNotFoundException e) {e.printStackTrace();return null;}
     }
 }

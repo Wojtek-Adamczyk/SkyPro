@@ -34,12 +34,6 @@ public class Main implements Serializable
             case "load" ->
             {
                 Player player = State.load();
-                World world = State.loadWorld();
-                Building building = State.loadRest();
-
-                player.currentCity = world.cities[4];
-                System.out.println();
-                world.cities[4].wilderness.menu(player);
 
                 while (player.currentHP >= 0) {player.currentCity.wilderness.menu(player);}
             }
