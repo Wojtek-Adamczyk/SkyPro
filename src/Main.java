@@ -7,6 +7,11 @@ public class Main implements Serializable
 {
     public static void main(String[] args) throws InterruptedException, IOException, ClassNotFoundException
     {
+        System.out.println();
+        System.out.println("// this 'game' in currently in 'development' and will be expanded and/or changed over time");
+        System.out.println("// for now there is only one save slot to save your progress and every 'save' will overwrite previous slot");
+        System.out.println();
+
         System.out.println("'start' - start new game");
         System.out.println("'load' - load saved game");
         Scanner newGame = new Scanner(System.in);
@@ -30,8 +35,7 @@ public class Main implements Serializable
             {
 
                 Player player = State.load();
-                World world = new World();
-                player.world = world;
+                World world = State.loadWorld();
 
                 player.currentCity = world.cities[4];
                 System.out.println();

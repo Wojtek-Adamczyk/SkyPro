@@ -4,7 +4,6 @@ import java.util.concurrent.TimeUnit;
 
 public class Wilderness extends Building
 {
-
     public enum Type
     {
         SOLITUDE("Solitude"),
@@ -20,6 +19,7 @@ public class Wilderness extends Building
         private final String name;
         Type(String name) {this.name = name;}
     }
+    
 
     private final Wilderness.Type type;
 
@@ -428,8 +428,8 @@ public class Wilderness extends Building
                     }
                     case "9" -> {player.travel();}
                     case "help" -> player.help();
-                    case "save" -> State.save(player);
-                    case "load" -> player = State.load();
+                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "load" -> {player = State.load(); player.world = State.loadWorld();}
                 }
             }
             case DAWNSTAR ->
