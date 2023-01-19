@@ -60,11 +60,12 @@ public class Alchemist extends Building
         System.out.println("3. Leave");
 
         Scanner input = new Scanner(System.in);
-        int playerInput = input.nextInt();
+        String playerInput = input.nextLine();
 
-        if (playerInput == 0) {player.sheet(player); interact(player);}
-        else if (playerInput == 1) {buyPotion(player);}
-        else if (playerInput == 2) {pickpocket(player);}
-        else if (playerInput == 3) {leave(player);}
+        if (playerInput == "0") {player.sheet(player); interact(player);}
+        else if (playerInput == "1") {buyPotion(player);}
+        else if (playerInput == "2") {pickpocket(player);}
+        else if (playerInput == "3") {leave(player);}
+        else if (playerInput == "save") {State.savePlayer(player); State.saveWorld(player.world);}
     }
 }

@@ -74,12 +74,13 @@ public class Blacksmith extends Building
         System.out.println("4. Leave");
 
         Scanner input = new Scanner(System.in);
-        int playerInput = input.nextInt();
+        String playerInput = input.nextLine();
 
-        if (playerInput == 0) {player.sheet(player); interact(player);}
-        else if (playerInput == 1) {buyWeapon(player);}
-        else if (playerInput == 2) {buyArmor(player);}
-        else if (playerInput == 3) {pickpocket(player);}
-        else if (playerInput == 4) {leave(player);}
+        if (playerInput == "0") {player.sheet(player); interact(player);}
+        else if (playerInput == "!") {buyWeapon(player);}
+        else if (playerInput == "2") {buyArmor(player);}
+        else if (playerInput == "3") {pickpocket(player);}
+        else if (playerInput == "4") {leave(player);}
+        else if (playerInput == "Save") {State.savePlayer(player); State.saveWorld(player.world);}
     }
 }

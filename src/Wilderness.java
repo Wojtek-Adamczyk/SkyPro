@@ -95,6 +95,7 @@ public class Wilderness extends Building
                     }
                     case "6" -> {player.travel();}
                     case "help" -> player.help();
+                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
                 }
             }
             case MORTHAL ->
@@ -160,6 +161,7 @@ public class Wilderness extends Building
                     }
                     case "6" -> {player.travel();}
                     case "help" -> player.help();
+                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
                 }
             }
             case MARKARTH ->
@@ -225,6 +227,7 @@ public class Wilderness extends Building
                     }
                     case "6" -> {player.travel();}
                     case "help" -> player.help();
+                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
                 }
             }
             case FALKREATH ->
@@ -326,6 +329,7 @@ public class Wilderness extends Building
                     }
                     case "9" -> {player.travel();}
                     case "help" -> player.help();
+                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
                 }
             }
             case WHITERUN ->
@@ -429,7 +433,6 @@ public class Wilderness extends Building
                     case "9" -> {player.travel();}
                     case "help" -> player.help();
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
-                    case "load" -> {player = State.load(); player.world = State.loadWorld();}
                 }
             }
             case DAWNSTAR ->
@@ -495,6 +498,7 @@ public class Wilderness extends Building
                     }
                     case "6" -> {player.travel();}
                     case "help" -> player.help();
+                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
                 }
             }
             case WINTERHOLD ->
@@ -596,6 +600,7 @@ public class Wilderness extends Building
                     }
                     case "9" -> {player.travel();}
                     case "help" -> player.help();
+                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
                 }
             }
             case WINDHELM ->
@@ -662,6 +667,7 @@ public class Wilderness extends Building
                     }
                     case "6" -> {player.travel();}
                     case "help" -> player.help();
+                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
                 }
             }
             case RIFTEN ->
@@ -763,6 +769,7 @@ public class Wilderness extends Building
                     }
                     case "9" -> {player.travel();}
                     case "help" -> player.help();
+                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
                 }
             }
         }
