@@ -224,7 +224,7 @@ class City implements Serializable
             }
             case "help" -> player.help();
             case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
-            default -> System.out.println("Invalid command");
+            default -> {System.out.println("> Invalid command <"); System.out.println();}
         }
     }
 }

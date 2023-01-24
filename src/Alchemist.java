@@ -67,5 +67,6 @@ public class Alchemist extends Building
         else if (playerInput == "2") {pickpocket(player);}
         else if (playerInput == "3") {leave(player);}
         else if (playerInput == "save") {State.savePlayer(player); State.saveWorld(player.world);}
+        else {System.out.println("> Invalid command <"); System.out.println();}
     }
 }

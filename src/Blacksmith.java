@@ -82,5 +82,6 @@ public class Blacksmith extends Building
         else if (playerInput == "3") {pickpocket(player);}
         else if (playerInput == "4") {leave(player);}
         else if (playerInput == "Save") {State.savePlayer(player); State.saveWorld(player.world);}
+        else {System.out.println("> Invalid command <"); System.out.println();}
     }
 }
