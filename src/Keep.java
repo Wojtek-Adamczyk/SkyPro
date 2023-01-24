@@ -89,6 +89,7 @@ public class Keep extends Building
                     case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
             case MORTHAL ->
@@ -112,6 +113,7 @@ public class Keep extends Building
                     case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
             case MARKARTH ->
@@ -135,6 +137,7 @@ public class Keep extends Building
                     case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
             case FALKREATH ->
@@ -158,6 +161,7 @@ public class Keep extends Building
                     case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
             case WHITERUN ->
@@ -181,6 +185,7 @@ public class Keep extends Building
                     case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
             case DAWNSTAR ->
@@ -204,6 +209,7 @@ public class Keep extends Building
                     case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
             case WINTERHOLD ->
@@ -227,6 +233,7 @@ public class Keep extends Building
                     case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
             case WINDHELM ->
@@ -250,6 +257,7 @@ public class Keep extends Building
                     case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
             case RIFTEN ->
@@ -273,6 +281,7 @@ public class Keep extends Building
                     case "2" -> {pickpocket(player);}
                     case "3" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
         }

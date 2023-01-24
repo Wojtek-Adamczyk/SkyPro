@@ -111,6 +111,7 @@ public class Guild extends Building
                     }
                     case "5" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
 
@@ -178,6 +179,7 @@ public class Guild extends Building
                     }
                     case "5" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
 
@@ -251,6 +253,7 @@ public class Guild extends Building
                     }
                     case "5" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
 
@@ -318,6 +321,7 @@ public class Guild extends Building
                     }
                     case "5" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
         }

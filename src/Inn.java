@@ -142,6 +142,7 @@ public class Inn extends Building
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
             case MORTHAL ->
@@ -193,6 +194,7 @@ public class Inn extends Building
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
             case MARKARTH ->
@@ -244,6 +246,7 @@ public class Inn extends Building
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
             case FALKREATH ->
@@ -295,6 +298,7 @@ public class Inn extends Building
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
             case WHITERUN ->
@@ -346,6 +350,7 @@ public class Inn extends Building
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
             case DAWNSTAR ->
@@ -397,6 +402,7 @@ public class Inn extends Building
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
             case WINTERHOLD ->
@@ -448,6 +454,7 @@ public class Inn extends Building
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
             case WINDHELM ->
@@ -499,6 +506,7 @@ public class Inn extends Building
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
             case RIFTEN ->
@@ -550,6 +558,7 @@ public class Inn extends Building
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
                     case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    default -> System.out.println("Invalid command");
                 }
             }
         }
