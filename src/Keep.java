@@ -23,7 +23,8 @@ public class Keep extends Building
     private final Type type;
     public Keep(Type type) {this.type = type;}
 
-    public void pickpocket(Player player) throws InterruptedException, IOException, ClassNotFoundException {
+    public void pickpocket(Player player) throws InterruptedException, IOException, ClassNotFoundException
+    {
         Random chance = new Random();
         int stealChance = chance.nextInt(0, 2);
         if (stealChance == 1)
@@ -35,6 +36,7 @@ public class Keep extends Building
             System.out.println();
             player.currentHP = player.maximumHP;
             player.money = 0;
+            player.currentCity.menu(player);
         }
         else
         {

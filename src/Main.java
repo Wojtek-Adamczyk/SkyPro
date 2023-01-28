@@ -26,21 +26,18 @@ public class Main implements Serializable
                 World world = new World();
                 player.world = world;
 
+                player.currentCity = world.cities[4];
                 while (player.currentHP > 0)
                 {
-                    player.currentCity = world.cities[4];
-
 
                     world.cities[4].wilderness.menu(player);
                     player.currentCity.wilderness.menu(player);
-
                 }
             }
             case "load" ->
             {
                 Player player = State.loadPlayer();
                 World world = State.loadWorld();
-
                 while (player.currentHP > 0) {player.currentCity.wilderness.menu(player);}
             }
         }

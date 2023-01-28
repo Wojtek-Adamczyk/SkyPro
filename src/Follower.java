@@ -8,8 +8,6 @@ public class Follower implements Serializable
     Integer armor;
     City city;
 
-
-
     public Follower(String name, Integer currentHP, Integer damage, Integer armor, City city)
     {
         this.name = name;

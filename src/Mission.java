@@ -89,7 +89,7 @@ public class Mission implements Serializable
                         if (player.currentHP <= 0)
                         {
                             System.out.println();
-                            System.out.println("> YOU DIED - with yours character's death, the thread of prophecy is severed. Start a new game or load your save to restore the weave of fate");
+                            System.out.println("> YOU DIED - with yours character's death, the thread of prophecy is severed. Restore a saved game or start a new one to restore the weave of fate");
                             break;
                         }
                         if (enemy.currentHP <= 0 )

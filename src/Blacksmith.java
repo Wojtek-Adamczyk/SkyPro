@@ -17,7 +17,8 @@ public class Blacksmith extends Building
         }
     }
 
-    public void buyWeapon(Player player) throws InterruptedException, IOException, ClassNotFoundException {
+    public void buyWeapon(Player player) throws InterruptedException, IOException, ClassNotFoundException
+    {
         if (player.money >= 100)
         {
             player.damage++;
@@ -30,7 +31,8 @@ public class Blacksmith extends Building
         interact(player);
     }
 
-    public void buyArmor(Player player) throws InterruptedException, IOException, ClassNotFoundException {
+    public void buyArmor(Player player) throws InterruptedException, IOException, ClassNotFoundException
+    {
         if (player.money >= 300)
         {
             player.armor++;
@@ -43,7 +45,8 @@ public class Blacksmith extends Building
         interact(player);
     }
 
-    public void pickpocket(Player player) throws InterruptedException, IOException, ClassNotFoundException {
+    public void pickpocket(Player player) throws InterruptedException, IOException, ClassNotFoundException
+    {
         Random chance = new Random();
         Integer stealChance = chance.nextInt(0, 5);
         if (stealChance == 1)
@@ -55,6 +58,7 @@ public class Blacksmith extends Building
             System.out.println();
             player.currentHP = player.maximumHP;
             player.money = 0;
+            player.currentCity.menu(player);
         }
         else
         {

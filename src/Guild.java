@@ -246,49 +246,44 @@ public class Guild extends Building
                         if (!player.world.missions[46].completed)
                         {
                             points += 1;
+                            System.out.println("- Listen pal, I don't know if you are good with our arts, so I'll give you simple task. There is a farm nearby city. One of farmers have valuable ring. I want it to change it's owner.\n" +
+                                    "I don't care who will it be, but remember we are not murderers. He doesn't have to die. Got it?");
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
                         }
-                        else
-                        {
-                            System.out.println(thievesQuestTaken);
-                            System.out.println();
-                        }
+                        else {System.out.println(thievesQuestTaken); System.out.println();}
                     }
                     case "2" ->
                     {
                         if (!player.world.missions[47].completed)
                         {
                             points += 2;
+                            System.out.println("- This task is a little more dangerous so listen carefully. Our very powerful client wants Goldenglow Estate for himself. You will get inside, steal act of ownership, and come back in one piece.\n" +
+                                    "This is is important thing, got it? Prepare yourself and by the gods, don't get your hands dirty.");
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
                         }
-                        else
-                        {
-                            System.out.println(thievesQuestTaken);
-                            System.out.println();
-                        }
+                        else {System.out.println(thievesQuestTaken); System.out.println();}
                     }
                     case "3" ->
                     {
                         if (!player.world.missions[48].completed)
                         {
                             points += 3;
+                            System.out.println("- This will be more personal. Maybe you heard that our organisation owns a Honningbrew Meadery. And here's the problem. Some hobo mage hold up himself in basement.\n" +
+                                    "I don't know what he wants but I know that this man is dangerous. Also, we are convinced that his necklace gives him his power. You will get down there, steal the necklace and then we will kick his ass out.\n" +
+                                    "You don't have to kill him. We are not Dark Brotherhood, remember. Quiet and sneaky.");
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
                         }
-                        else
-                        {
-                            System.out.println(thievesQuestTaken);
-                            System.out.println();
-                        }
+                        else {System.out.println(thievesQuestTaken); System.out.println();}
                     }
                     case "4" ->
                     {
-                        if (player.currentCity.guildFollower != null && points >= 6) {player.hireFollower(player.currentCity.guildFollower); player.money += 500;}
+                        if (player.currentCity.guildFollower != null && points >= 6) {player.hireFollower(player.currentCity.guildFollower); player.money -= 500;}
                         else if (player.currentCity.guildFollower == null) System.out.println("- What's wrong pal? Sapphire used you and disappeared?");
                         else {System.out.println("- If you can't help yourself, no one here can help you. Prove yourself and we'll talk.");  player.currentCity.menu(player); System.out.println();}
                         System.out.println();

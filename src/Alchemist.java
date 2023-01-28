@@ -42,6 +42,7 @@ public class Alchemist extends Building
             System.out.println();
             player.currentHP = player.maximumHP;
             player.money = 0;
+            player.currentCity.menu(player);
         }
         else
         {
