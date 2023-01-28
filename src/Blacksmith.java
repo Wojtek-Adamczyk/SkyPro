@@ -66,7 +66,8 @@ public class Blacksmith extends Building
         }
     }
 
-    public void interact(Player player) throws InterruptedException, IOException, ClassNotFoundException {
+    public void interact(Player player) throws InterruptedException, IOException, ClassNotFoundException
+    {
         System.out.println("0. See your statistics");
         System.out.println("1. Buy a weapon");
         System.out.println("2. Buy armor");
@@ -76,12 +77,12 @@ public class Blacksmith extends Building
         Scanner input = new Scanner(System.in);
         String playerInput = input.nextLine();
 
-        if (playerInput == "0") {player.sheet(player); interact(player);}
-        else if (playerInput == "!") {buyWeapon(player);}
-        else if (playerInput == "2") {buyArmor(player);}
-        else if (playerInput == "3") {pickpocket(player);}
-        else if (playerInput == "4") {leave(player);}
-        else if (playerInput == "Save") {State.savePlayer(player); State.saveWorld(player.world);}
+        if (playerInput.equals("0")) {player.sheet(player); interact(player);}
+        else if (playerInput.equals("1")) {buyWeapon(player);}
+        else if (playerInput.equals("2")) {buyArmor(player);}
+        else if (playerInput.equals("3")) {pickpocket(player);}
+        else if (playerInput.equals("4")) {leave(player);}
+        else if (playerInput.equals("Save")) {State.savePlayer(player); State.saveWorld(player.world);}
         else {System.out.println("> Invalid command <"); System.out.println();}
     }
 }

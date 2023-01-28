@@ -62,45 +62,36 @@ public class Guild extends Building
                         if (!player.world.missions[37].completed)
                         {
                             points += 1;
+                            System.out.println("- Narfi at the abandoned shack in the woods. Someone wants this filthy beggar dead. Accept this gold, then eliminate the target. So begins a contract, bound in blood.");
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
                         }
-                        else
-                        {
-                            System.out.println(brotherhoodQuestTaken);
-                            System.out.println();
-                        }
+                        else {System.out.println(brotherhoodQuestTaken); System.out.println();}
                     }
                     case "2" ->
                     {
                         if (!player.world.missions[38].completed)
                         {
                             points += 2;
+                            System.out.println("- Hern at the Half-Moon Mill. This vile vampire needs to meet a grim end. Accept this gold, then kill the target. Hail Sithis!");
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
                         }
-                        else
-                        {
-                            System.out.println(brotherhoodQuestTaken);
-                            System.out.println();
-                        }
+                        else {System.out.println(brotherhoodQuestTaken); System.out.println();}
                     }
                     case "3" ->
                     {
                         if (!player.world.missions[39].completed)
                         {
                             points += 3;
+                            System.out.println("- Gaius Maro in Penitus Oculatus Outpost. This pathetic Empire minion has offended our client. Accept this gold, then kill the target. All hail the Listener! All hail Sithis!");
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
                         }
-                        else
-                        {
-                            System.out.println(brotherhoodQuestTaken);
-                            System.out.println();
-                        }
+                        else {System.out.println(brotherhoodQuestTaken); System.out.println();}
                     }
                     case "4" ->
                     {
@@ -130,45 +121,36 @@ public class Guild extends Building
                         if (!player.world.missions[40].completed)
                         {
                             points += 1;
+                            System.out.println("- First quest, ey? Good. It won't be hard, brother. You have to go to Pelagia Farm and kill some wild cat that infested in the shed. Beast killed one farmer already so the landowner ask us to take care of this 'problem'.");
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
                         }
-                        else
-                        {
-                            System.out.println(companionQuestTaken);
-                            System.out.println();
-                        }
+                        else {System.out.println(companionQuestTaken); System.out.println();}
                     }
                     case "2" ->
                     {
                         if (!player.world.missions[41].completed)
                         {
                             points += 2;
+                            System.out.println("- Kodlak himself want you to kill the witches from Glenmoril and bring him the head of one of them. I'm not sure why he's asking for this spawn's head but those are his words. Don't make him wait.");
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
                         }
-                        else
-                        {
-                            System.out.println(companionQuestTaken);
-                            System.out.println();
-                        }
+                        else {System.out.println(companionQuestTaken); System.out.println();}
                     }
                     case "3" ->
                     {
                         if (!player.world.missions[42].completed)
                         {
                             points += 3;
+                            System.out.println("- It is time to strike the Silver Hand. They've been after us for too long. We will hit them in their own headquarters in Gallows Rock. Preprare yourself brother. It will be tough battle.");
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
                         }
-                        else
-                        {
-                            System.out.println(companionQuestTaken);
-                            System.out.println();
-                        }
+                        else {System.out.println(companionQuestTaken); System.out.println();}
                     }
                     case "4" ->
                     {
@@ -198,45 +180,37 @@ public class Guild extends Building
                         if (!player.world.missions[43].completed)
                         {
                             points += 1;
+                            System.out.println("- We need you in Saarthal. A team of archaeologists found something interesting and probably dangerous. You have to protect them.");
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
                         }
-                        else
-                        {
-                            System.out.println(collegeQuestTaken);
-                            System.out.println();
-                        }
+                        else {System.out.println(collegeQuestTaken); System.out.println();}
                     }
                     case "2" ->
                     {
                         if (!player.world.missions[44].completed)
                         {
                             points += 2;
+                            System.out.println("- Our informants says that there is ancient Dwemwer Artifact in Alftand ruins - Focusing Crystal.\n" +
+                                    "Rumors has it that it can store great amounts of magic energy to use it later in any way. Bring this artifact here");
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
                         }
-                        else
-                        {
-                            System.out.println(collegeQuestTaken);
-                            System.out.println();
-                        }
+                        else {System.out.println(collegeQuestTaken); System.out.println();}
                     }
                     case "3" ->
                     {
                         if (!player.world.missions[45].completed)
                         {
                             points += 3;
+                            System.out.println("- Some dark power is raising in the Labyrynthian. We think this might be one of the legendary Dragon Priests. If it is true, we have to stop him before it's too late.");
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
                         }
-                        else
-                        {
-                            System.out.println(collegeQuestTaken);
-                            System.out.println();
-                        }
+                        else {System.out.println(collegeQuestTaken); System.out.println();}
                     }
                     case "4" ->
                     {

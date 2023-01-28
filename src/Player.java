@@ -29,8 +29,6 @@ public class Player implements Serializable
         System.out.println();
     }
 
-
-
     public void sheet(Player player)
     {
         System.out.println("HP: " + player.currentHP + "/" + player.maximumHP);

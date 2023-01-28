@@ -9,7 +9,7 @@ public class Alchemist extends Building
     public void greet(Player player)
     {
         Random greet = new Random();
-        Integer greeting = greet.nextInt(0,1);
+        int greeting = greet.nextInt(0,1);
         switch (greeting)
         {
             case 0 -> System.out.println("- Got a pretty full stock of potions and alchemy reagents.");
@@ -32,7 +32,7 @@ public class Alchemist extends Building
 
     public void pickpocket(Player player) throws InterruptedException, IOException, ClassNotFoundException {
         Random chance = new Random();
-        Integer stealChance = chance.nextInt(0, 5);
+        int stealChance = chance.nextInt(0, 5);
         if (stealChance == 1)
         {
             System.out.println("- Stop right there you criminal scum! You have commited crimes against Skyrim and her people. You will rot in jail!");
@@ -46,7 +46,7 @@ public class Alchemist extends Building
         else
         {
             Random stolen = new Random();
-            Integer stolenMoney = stolen.nextInt(10,100);
+            int stolenMoney = stolen.nextInt(10,100);
             player.money += stolenMoney;
             System.out.println("> You stole " + stolenMoney + " septims");
             interact(player);
@@ -62,11 +62,11 @@ public class Alchemist extends Building
         Scanner input = new Scanner(System.in);
         String playerInput = input.nextLine();
 
-        if (playerInput == "0") {player.sheet(player); interact(player);}
-        else if (playerInput == "1") {buyPotion(player);}
-        else if (playerInput == "2") {pickpocket(player);}
-        else if (playerInput == "3") {leave(player);}
-        else if (playerInput == "save") {State.savePlayer(player); State.saveWorld(player.world);}
-        else {System.out.println("> Invalid command <"); System.out.println();}
+        if (playerInput.equals("0")) {player.sheet(player); interact(player);}
+        else if (playerInput.equals("1")) {buyPotion(player);}
+        else if (playerInput.equals("2")) {pickpocket(player);}
+        else if (playerInput.equals("3")) {leave(player);}
+        else if (playerInput.equals("save")) {State.savePlayer(player); State.saveWorld(player.world);}
+        //else {System.out.println("> Invalid command <"); System.out.println();}
     }
 }

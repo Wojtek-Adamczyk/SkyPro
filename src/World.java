@@ -2,7 +2,6 @@ import java.io.Serializable;
 
 public class World implements Serializable
 {
-
     public World()
     {
         followers[0] = new Follower("Belrand", 100, 11, 2, cities[0]);
@@ -24,11 +23,11 @@ public class World implements Serializable
         cities[1] = new City("Morthal", true, false, true, true, false, false, true, followers[1]);
         cities[2] = new City("Markarth", true, true, true, true, false, false, true, followers[2]);
         cities[3] = new City("Falkreath", true, true, false, true, true, false, true, followers[3], followers[9]);
-        cities[4] = new City("Whiterun", true, true, true, true, true, false,true, followers[4], followers[10]);
+        cities[4] = new City("Whiterun", true, true, true, true, true, false, true, followers[4], followers[10]);
         cities[5] = new City("Dawnstar", true, true, true, true, false, false, true, followers[5]);
-        cities[6] = new City("Winterhold", true, false, false, true, true, false,true, followers[6], followers[11]);
+        cities[6] = new City("Winterhold", true, false, false, true, true, false, true, followers[6], followers[11]);
         cities[7] = new City("Windhelm", true, true, true, true, false, false, true, followers[7]);
-        cities[8] = new City("Riften", true, true, true, true, true, true,true, followers[8], followers[12]);
+        cities[8] = new City("Riften", true, true, true, true, true, true, true, followers[8], followers[12]);
 
         enemies[0] = new Enemy(0);
         enemies[1] = new Enemy(1);
@@ -51,7 +50,7 @@ public class World implements Serializable
         missions[7] = new Mission("> As the clatter of the gate dies down, only gusts of steam and steady knocking can be heard", enemies[1], enemies[0].reward + 500, false, cities[2], 5);
         missions[8] = new Mission("> When you enter the mine, you see fornsworns taking clothes and money from the murdered people", enemies[1], enemies[0].reward + 800, false, cities[2], 0);
         missions[9] = new Mission("> Animal, and not only animal bones spill out of the cave", enemies[6], enemies[0].reward, false, cities[3], 0);
-        missions[10] = new Mission("> A strange mist hovers over the graves", enemies[0], enemies[0].reward + 100, false, cities[3], 0);
+        missions[10] = new Mission("> A strange mist hovers over the graves", enemies[0], enemies[0].reward + 100, false, cities[3], 1);
         missions[11] = new Mission("> As you make your way through the dense forest, you suddenly smell sulfur", enemies[9], enemies[0].reward + 500, false, cities[3], 0);
         missions[12] = new Mission("> Heimskr's hut looks warm and welcoming", enemies[0], enemies[0].reward, false, cities[4], 0);
         missions[13] = new Mission("> A strange unnatural flash comes from the Elderglow Cave", enemies[8], enemies[0].reward + 100, false, cities[4], 5);
@@ -99,4 +98,5 @@ public class World implements Serializable
     public Follower[] followers = new Follower[14];
     public Mission[] missions = new Mission[49];
     public Enemy[] enemies = new Enemy[11];
+
 }

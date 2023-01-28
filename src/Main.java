@@ -16,26 +16,32 @@ public class Main implements Serializable
         System.out.println("'load' - load saved game");
         Scanner newGame = new Scanner(System.in);
         String isNewGame = newGame.nextLine();
-
+        
         switch (isNewGame)
         {
             case "start" ->
             {
+
                 Player player = new Player(100, 100, 10, 0, 300, 0);
                 World world = new World();
                 player.world = world;
 
-                player.currentCity = world.cities[4];
-                System.out.println();
-                world.cities[4].wilderness.menu(player);
+                while (player.currentHP > 0)
+                {
+                    player.currentCity = world.cities[4];
 
-                while (player.currentHP >= 0) {player.currentCity.wilderness.menu(player);}
+
+                    world.cities[4].wilderness.menu(player);
+                    player.currentCity.wilderness.menu(player);
+
+                }
             }
             case "load" ->
             {
-                Player player = State.load();
+                Player player = State.loadPlayer();
+                World world = State.loadWorld();
 
-                while (player.currentHP >= 0) {player.currentCity.wilderness.menu(player);}
+                while (player.currentHP > 0) {player.currentCity.wilderness.menu(player);}
             }
         }
     }

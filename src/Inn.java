@@ -54,7 +54,7 @@ public class Inn extends Building
     public void pickpocket(Player player)
     {
         Random chance = new Random();
-        Integer stealChance = chance.nextInt(0, 10);
+        int stealChance = chance.nextInt(0, 10);
         if (stealChance == 1)
         {
             System.out.println("- Stop right there you criminal scum! You have commited crimes against Skyrim and her people. You will rot in jail!");
@@ -91,7 +91,8 @@ public class Inn extends Building
     String rumorsQuestTaken = "> You don't hear anything interesting";
     String boardQuestTaken = "> You don't see anything interesting";
 
-    public void menu(Player player) throws InterruptedException, IOException, ClassNotFoundException {
+    public void menu(Player player) throws InterruptedException, IOException, ClassNotFoundException
+    {
         switch (type)
         {
             case SOLITUDE ->

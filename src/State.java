@@ -38,7 +38,7 @@ public class State
         catch (IOException e) {e.printStackTrace();}
     }
 
-    public static Player load()
+    public static Player loadPlayer()
     {
         try
         {
@@ -72,6 +72,6 @@ public class State
             fileLoad.close();
             return world;
         }
-        catch (IOException | ClassNotFoundException e) {e.printStackTrace();return null;}
+        catch (IOException | ClassNotFoundException e) {e.printStackTrace(); return null;}
     }
 }

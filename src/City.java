@@ -180,10 +180,10 @@ class City implements Serializable
             {
                 switch (i)
                 {
-                    case 1 -> {System.out.println("2. <NOT AVILABLE>");}
-                    case 2 -> {System.out.println("3. <NOT AVILABLE>");}
-                    case 4 -> {System.out.println("5. <NOT AVILABLE>");}
-                    case 5 -> {System.out.println("6. <NOT AVILABLE>");}
+                    case 1 -> System.out.println("2. <NOT AVILABLE>");
+                    case 2 -> System.out.println("3. <NOT AVILABLE>");
+                    case 4 -> System.out.println("5. <NOT AVILABLE>");
+                    case 5 -> System.out.println("6. <NOT AVILABLE>");
                 }
             }
         }

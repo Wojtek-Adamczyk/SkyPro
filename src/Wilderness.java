@@ -103,7 +103,7 @@ public class Wilderness extends Building
             {
                 System.out.println("> YOU ARE STANDING IN THE HJAALMARCH MARSHES. IN THE DISTANCE YOU SEE HOUSES OF MORTHAL");
                 System.out.println("0. See your statistics");
-                System.out.println("1. Enter the city");
+                System.out.println("1. Examine Eldersblood Peak");
                 System.out.println("2. Examine Movarth's Lair");
                 System.out.println("3. Search for Alva's hidden hut");
                 System.out.println("4. Hunt mudcrabs");
