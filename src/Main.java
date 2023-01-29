@@ -9,7 +9,6 @@ public class Main implements Serializable
     {
         System.out.println();
         System.out.println("// this 'game' in currently in 'development' and will be expanded and/or changed over time");
-        System.out.println("// for now there is only one save slot to save your progress and every 'save' will overwrite previous slot");
         System.out.println();
 
         System.out.println("'start' - start new game");
@@ -21,7 +20,6 @@ public class Main implements Serializable
         {
             case "start" ->
             {
-
                 Player player = new Player(100, 100, 10, 0, 300, 0);
                 World world = new World();
                 player.world = world;
@@ -29,7 +27,6 @@ public class Main implements Serializable
                 player.currentCity = world.cities[4];
                 while (player.currentHP > 0)
                 {
-
                     world.cities[4].wilderness.menu(player);
                     player.currentCity.wilderness.menu(player);
                 }

@@ -7,20 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba9b0e8-e653-4fc5-935a-609cd52afe78" name="Changes" comment="whatever">
-      <change afterPath="$PROJECT_DIR$/Saved games/sa.player" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Saved games/sa.world" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved games/saved.player" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved games/saved.world" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Alchemist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alchemist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blacksmith.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blacksmith.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Follower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Follower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Guild.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Guild.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Keep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Keep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved games/1.player" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved games/1.world" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved games/sa.player" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved games/sa.world" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/School.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/State.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,13 +69,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670873078584</updated>
-    </task>
-    <task id="LOCAL-00011" summary="whatever">
-      <created>1671298796818</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1671298796818</updated>
     </task>
     <task id="LOCAL-00012" summary="whatever">
       <created>1671357388528</created>
@@ -420,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674922267223</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="whatever">
+      <created>1674934705444</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1674934705444</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
