@@ -45,7 +45,7 @@ public class Inn extends Building
             player.money -= 10;
             System.out.println("> Drowsiness overwhelms you...");
             TimeUnit.SECONDS.sleep(8);
-            System.out.println("> YOU AWAKEND FEELING WELL RESTED");
+            System.out.println("> YOU AWAKENED FEELING WELL RESTED");
         }
         else System.out.println("- Come back when you will have enough gold.");
         System.out.println();
@@ -56,9 +56,7 @@ public class Inn extends Building
         int stealChance = chance.nextInt(0, 10);
         if (stealChance == 1)
         {
-            System.out.println("- Stop right there you criminal scum! You have commited crimes against Skyrim and her people. You will rot in jail!");
-            System.out.println("> ALL YOUR BELONGINGS WERE CONFISCATED");
-            System.out.println("> DURING JAIL TIME YOU CURED YOURSELF");
+            Dialogue.pickpocket();
             player.follower = null;
             System.out.println();
             player.currentHP = player.maximumHP;

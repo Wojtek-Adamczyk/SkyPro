@@ -35,9 +35,7 @@ public class Alchemist extends Building
         int stealChance = chance.nextInt(0, 5);
         if (stealChance == 1)
         {
-            System.out.println("- Stop right there you criminal scum! You have commited crimes against Skyrim and her people. You will rot in jail!");
-            System.out.println("> ALL YOUR BELONGINGS WERE CONFISCATED");
-            System.out.println("> DURING JAIL TIME YOU CURED YOURSELF");
+            Dialogue.pickpocket();
             player.follower = null;
             System.out.println();
             player.currentHP = player.maximumHP;
@@ -54,7 +52,8 @@ public class Alchemist extends Building
         }
     }
 
-    public void interact(Player player) throws InterruptedException, IOException, ClassNotFoundException {
+    public void interact(Player player) throws InterruptedException, IOException, ClassNotFoundException
+    {
         System.out.println("0. See your statistics");
         System.out.println("1. Buy health increment potion");
         System.out.println("2. Pickpocket");
@@ -68,6 +67,6 @@ public class Alchemist extends Building
         else if (playerInput.equals("2")) {pickpocket(player);}
         else if (playerInput.equals("3")) {leave(player);}
         else if (playerInput.equals("save")) {State.saveGame(player, player.world);}
-        //else {System.out.println("> Invalid command <"); System.out.println();}
+        else {System.out.println("> Invalid command <"); System.out.println();}
     }
 }

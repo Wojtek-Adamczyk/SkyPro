@@ -29,9 +29,7 @@ public class Keep extends Building
         int stealChance = chance.nextInt(0, 2);
         if (stealChance == 1)
         {
-            System.out.println("- Stop right there you criminal scum! You have commited crimes against Skyrim and her people. You will rot in jail!");
-            System.out.println("> ALL YOUR BELONGINGS WERE CONFISCATED");
-            System.out.println("> DURING JAIL TIME YOU CURED YOURSELF");
+            Dialogue.pickpocket();
             player.follower = null;
             System.out.println();
             player.currentHP = player.maximumHP;

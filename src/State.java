@@ -13,8 +13,8 @@ public class State {
             String fileName = scanner.nextLine();
             FileOutputStream fileSave = new FileOutputStream(FOLDER_PATH + "\\" + fileName + ".game");
             ObjectOutputStream save = new ObjectOutputStream(fileSave);
-            GameState gameState = new GameState(player, world);
-            save.writeObject(gameState);
+            Game game = new Game(player, world);
+            save.writeObject(game);
             save.close();
             fileSave.close();
             System.out.println("GAME STATE saved SUCCESSFULLY as " + fileName);
@@ -26,7 +26,7 @@ public class State {
         }
     }
 
-    public static GameState loadGame()
+    public static Game loadGame()
     {
         try {
             Scanner scanner = new Scanner(System.in);
@@ -34,12 +34,12 @@ public class State {
             String fileName = scanner.nextLine();
             FileInputStream fileLoad = new FileInputStream(FOLDER_PATH + "\\" + fileName + ".game");
             ObjectInputStream load = new ObjectInputStream(fileLoad);
-            GameState gameState = (GameState) load.readObject();
+            Game game = (Game) load.readObject();
             load.close();
             fileLoad.close();
             System.out.println("GAME STATE loaded SUCCESSFULLY from " + fileName);
             System.out.println();
-            return gameState;
+            return game;
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
             System.out.println("SOMETHING WENT WRONG - GAME NOT LOADED");
