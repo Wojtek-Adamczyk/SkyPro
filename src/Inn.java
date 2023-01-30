@@ -150,7 +150,7 @@ public class Inn extends Building
                     }
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
-                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "save" -> {State.saveGame(player, player.world);}
                     default -> {System.out.println("> Invalid command <"); System.out.println();}
                 }
             }
@@ -207,7 +207,7 @@ public class Inn extends Building
                     }
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
-                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "save" -> {State.saveGame(player, player.world);}
                     default -> {System.out.println("> Invalid command <"); System.out.println();}
                 }
             }
@@ -264,7 +264,7 @@ public class Inn extends Building
                     }
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
-                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "save" -> {State.saveGame(player, player.world);}
                     default -> {System.out.println("> Invalid command <"); System.out.println();}
                 }
             }
@@ -319,7 +319,7 @@ public class Inn extends Building
                     }
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
-                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "save" -> {State.saveGame(player, player.world);}
                     default -> {System.out.println("> Invalid command <"); System.out.println();}
                 }
             }
@@ -376,7 +376,7 @@ public class Inn extends Building
                     }
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
-                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "save" -> {State.saveGame(player, player.world);}
                     default -> {System.out.println("> Invalid command <"); System.out.println();}
                 }
             }
@@ -432,7 +432,7 @@ public class Inn extends Building
                     }
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
-                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "save" -> {State.saveGame(player, player.world);}
                     default -> {System.out.println("> Invalid command <"); System.out.println();}
                 }
             }
@@ -487,7 +487,7 @@ public class Inn extends Building
                     }
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
-                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "save" -> {State.saveGame(player, player.world);}
                     default -> {System.out.println("> Invalid command <"); System.out.println();}
                 }
             }
@@ -543,7 +543,7 @@ public class Inn extends Building
                     }
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
-                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "save" -> {State.saveGame(player, player.world);}
                     default -> {System.out.println("> Invalid command <"); System.out.println();}
                 }
             }
@@ -600,7 +600,7 @@ public class Inn extends Building
                     }
                     case "6" -> {pickpocket(player);}
                     case "7" -> {leave(player);}
-                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "save" -> {State.saveGame(player, player.world);}
                     default -> {System.out.println("> Invalid command <"); System.out.println();}
                 }
             }

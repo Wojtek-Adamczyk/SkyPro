@@ -33,9 +33,10 @@ public class Main implements Serializable
             }
             case "load" ->
             {
-                Player player = State.loadPlayer();
-                World world = State.loadWorld();
-                while (player.currentHP > 0) {player.currentCity.wilderness.menu(player);}
+                GameState gameState = State.loadGame();
+                Player player = gameState.getPlayer();
+                World world = gameState.getWorld();
+                while (player.currentHP > 0) { player.currentCity.wilderness.menu(player); }
             }
         }
     }

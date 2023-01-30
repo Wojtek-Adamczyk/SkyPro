@@ -33,7 +33,7 @@ public class School extends Building
         if (playerInput.equals("0")) {player.sheet(player); interact(player);}
         else if (playerInput.equals("1")) {train(player);}
         else if (playerInput.equals("2")) {leave(player);}
-        else if (playerInput.equals("save")) {State.savePlayer(player); State.saveWorld(player.world);}
+        else if (playerInput.equals("save")) {State.saveGame(player, player.world);}
         else {System.out.println("> Invalid command <"); System.out.println();}
     }
 }

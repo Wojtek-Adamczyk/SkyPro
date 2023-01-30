@@ -223,7 +223,7 @@ class City implements Serializable
                 wilderness.menu(player);
             }
             case "help" -> player.help();
-            case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+            case "save" -> {State.saveGame(player, player.world);}
             default -> {System.out.println("> Invalid command <"); System.out.println();}
         }
     }

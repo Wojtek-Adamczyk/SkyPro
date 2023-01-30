@@ -95,7 +95,7 @@ public class Wilderness extends Building
                     }
                     case "6" -> {player.travel();}
                     case "help" -> player.help();
-                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "save" -> {State.saveGame(player, player.world);}
                     default -> {System.out.println("> Invalid command <"); System.out.println();}
                 }
             }
@@ -162,7 +162,7 @@ public class Wilderness extends Building
                     }
                     case "6" -> {player.travel();}
                     case "help" -> player.help();
-                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "save" -> {State.saveGame(player, player.world);}
                     default -> {System.out.println("> Invalid command <"); System.out.println();}
                 }
             }
@@ -229,7 +229,7 @@ public class Wilderness extends Building
                     }
                     case "6" -> {player.travel();}
                     case "help" -> player.help();
-                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "save" -> {State.saveGame(player, player.world);}
                     default -> {System.out.println("> Invalid command <"); System.out.println();}
                 }
             }
@@ -332,7 +332,7 @@ public class Wilderness extends Building
                     }
                     case "9" -> {player.travel();}
                     case "help" -> player.help();
-                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "save" -> {State.saveGame(player, player.world);}
                     default -> {System.out.println("> Invalid command <"); System.out.println();}
                 }
             }
@@ -436,7 +436,7 @@ public class Wilderness extends Building
                     }
                     case "9" -> {player.travel();}
                     case "help" -> player.help();
-                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "save" -> {State.saveGame(player, player.world);}
                     default -> {System.out.println("> Invalid command <"); System.out.println();}
                 }
             }
@@ -503,7 +503,7 @@ public class Wilderness extends Building
                     }
                     case "6" -> {player.travel();}
                     case "help" -> player.help();
-                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "save" -> {State.saveGame(player, player.world);}
                     default -> {System.out.println("> Invalid command <"); System.out.println();}
                 }
             }
@@ -606,7 +606,7 @@ public class Wilderness extends Building
                     }
                     case "9" -> {player.travel();}
                     case "help" -> player.help();
-                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "save" -> {State.saveGame(player, player.world);}
                     default -> {System.out.println("> Invalid command <"); System.out.println();}
                 }
             }
@@ -674,7 +674,7 @@ public class Wilderness extends Building
                     }
                     case "6" -> {player.travel();}
                     case "help" -> player.help();
-                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "save" -> {State.saveGame(player, player.world);}
                     default -> {System.out.println("> Invalid command <"); System.out.println();}
                 }
             }
@@ -777,7 +777,7 @@ public class Wilderness extends Building
                     }
                     case "9" -> {player.travel();}
                     case "help" -> player.help();
-                    case "save" -> {State.savePlayer(player); State.saveWorld(player.world);}
+                    case "save" -> {State.saveGame(player, player.world);}
                     default -> {System.out.println("> Invalid command <"); System.out.println();}
                 }
             }
