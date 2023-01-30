@@ -62,8 +62,8 @@ public class Guild extends Building
                         if (!player.world.missions[37].completed)
                         {
                             points += 1;
-                            System.out.println("- Narfi at the abandoned shack in the woods. Someone wants this filthy beggar dead. Accept this gold, then eliminate the target. So begins a contract, bound in blood.");
                             System.out.println();
+                            Dialogue.brotherhoodBeg();
                             player.currentCity.guild.menu(player);
                             System.out.println();
                         }
@@ -74,7 +74,7 @@ public class Guild extends Building
                         if (!player.world.missions[38].completed)
                         {
                             points += 2;
-                            System.out.println("- Hern at the Half-Moon Mill. This vile vampire needs to meet a grim end. Accept this gold, then kill the target. Hail Sithis!");
+                            Dialogue.brotherhoodMid();
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
@@ -86,7 +86,7 @@ public class Guild extends Building
                         if (!player.world.missions[39].completed)
                         {
                             points += 3;
-                            System.out.println("- Gaius Maro in Penitus Oculatus Outpost. This pathetic Empire minion has offended our client. Accept this gold, then kill the target. All hail the Listener! All hail Sithis!");
+                            Dialogue.brotherhoodAdv();
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
@@ -121,7 +121,7 @@ public class Guild extends Building
                         if (!player.world.missions[40].completed)
                         {
                             points += 1;
-                            System.out.println("- First quest, ey? Good. It won't be hard, brother. You have to go to Pelagia Farm and kill some wild cat that infested in the shed. Beast killed one farmer already so the landowner ask us to take care of this 'problem'.");
+                            Dialogue.companionBeg();
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
@@ -133,7 +133,7 @@ public class Guild extends Building
                         if (!player.world.missions[41].completed)
                         {
                             points += 2;
-                            System.out.println("- Kodlak himself want you to kill the witches from Glenmoril and bring him the head of one of them. I'm not sure why he's asking for this spawn's head but those are his words. Don't make him wait.");
+                            Dialogue.companionMid();
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
@@ -145,7 +145,7 @@ public class Guild extends Building
                         if (!player.world.missions[42].completed)
                         {
                             points += 3;
-                            System.out.println("- It is time to strike the Silver Hand. They've been after us for too long. We will hit them in their own headquarters in Gallows Rock. Preprare yourself brother. It will be tough battle.");
+                            Dialogue.companionAdv();
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
@@ -180,7 +180,7 @@ public class Guild extends Building
                         if (!player.world.missions[43].completed)
                         {
                             points += 1;
-                            System.out.println("- We need you in Saarthal. A team of archaeologists found something interesting and probably dangerous. You have to protect them.");
+                            Dialogue.collegeBeg();
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
@@ -192,8 +192,7 @@ public class Guild extends Building
                         if (!player.world.missions[44].completed)
                         {
                             points += 2;
-                            System.out.println("- Our informants says that there is ancient Dwemwer Artifact in Alftand ruins - Focusing Crystal.\n" +
-                                    "Rumors has it that it can store great amounts of magic energy to use it later in any way. Bring this artifact here");
+                            Dialogue.collegeMid();
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
@@ -205,7 +204,7 @@ public class Guild extends Building
                         if (!player.world.missions[45].completed)
                         {
                             points += 3;
-                            System.out.println("- Some dark power is raising in the Labyrynthian. We think this might be one of the legendary Dragon Priests. If it is true, we have to stop him before it's too late.");
+                            Dialogue.collegeAdv();
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
@@ -246,8 +245,7 @@ public class Guild extends Building
                         if (!player.world.missions[46].completed)
                         {
                             points += 1;
-                            System.out.println("- Listen pal, I don't know if you are good with our arts, so I'll give you simple task. There is a farm nearby city. One of farmers have valuable ring. I want it to change it's owner.\n" +
-                                    "I don't care who will it be, but remember we are not murderers. He doesn't have to die. Got it?");
+                            Dialogue.thievesBeg();
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
@@ -259,8 +257,7 @@ public class Guild extends Building
                         if (!player.world.missions[47].completed)
                         {
                             points += 2;
-                            System.out.println("- This task is a little more dangerous so listen carefully. Our very powerful client wants Goldenglow Estate for himself. You will get inside, steal act of ownership, and come back in one piece.\n" +
-                                    "This is is important thing, got it? Prepare yourself and by the gods, don't get your hands dirty.");
+                            Dialogue.thievesMid();
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
@@ -272,9 +269,7 @@ public class Guild extends Building
                         if (!player.world.missions[48].completed)
                         {
                             points += 3;
-                            System.out.println("- This will be more personal. Maybe you heard that our organisation owns a Honningbrew Meadery. And here's the problem. Some hobo mage hold up himself in basement.\n" +
-                                    "I don't know what he wants but I know that this man is dangerous. Also, we are convinced that his necklace gives him his power. You will get down there, steal the necklace and then we will kick his ass out.\n" +
-                                    "You don't have to kill him. We are not Dark Brotherhood, remember. Quiet and sneaky.");
+                            Dialogue.collegeAdv();
                             System.out.println();
                             player.currentCity.guild.menu(player);
                             System.out.println();
