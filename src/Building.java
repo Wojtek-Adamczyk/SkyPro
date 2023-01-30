@@ -9,4 +9,3 @@ class Building implements Serializable
         player.currentCity.menu(player);
     }
 }
-

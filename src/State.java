@@ -7,7 +7,8 @@ public class State {
 
     public static void saveGame(Player player, World world)
     {
-        try {
+        try
+        {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Enter a name for the .game save file:");
             String fileName = scanner.nextLine();
@@ -19,7 +20,9 @@ public class State {
             fileSave.close();
             System.out.println("GAME STATE saved SUCCESSFULLY as " + fileName);
             System.out.println();
-        } catch (IOException e) {
+        }
+        catch (IOException e)
+        {
             e.printStackTrace();
             System.out.println("SOMETHING WENT WRONG - GAME NOT SAVED");
             System.out.println();
@@ -28,7 +31,8 @@ public class State {
 
     public static Game loadGame()
     {
-        try {
+        try
+        {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Enter the name of the .game save file you want to load:");
             String fileName = scanner.nextLine();
@@ -40,7 +44,9 @@ public class State {
             System.out.println("GAME STATE loaded SUCCESSFULLY from " + fileName);
             System.out.println();
             return game;
-        } catch (IOException | ClassNotFoundException e) {
+        }
+        catch (IOException | ClassNotFoundException e)
+        {
             e.printStackTrace();
             System.out.println("SOMETHING WENT WRONG - GAME NOT LOADED");
             System.out.println();
