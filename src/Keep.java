@@ -84,12 +84,7 @@ public class Keep extends Building
                     case "0" -> {player.sheet(player); menu(player);}
                     case "1" ->
                     {
-                        if (!player.world.missions[28].completed)
-                        {
-                            System.out.println("- In the name of Queen Elisif, wife of High King Torygg, and all citizens of Haafingar I humbly beg you to kill dragon residing on the Mount Kilkreath.\n" +
-                                "You will be rewarded with two thousand septims and forever will be recognized as honorary citizen of Solitude.");
-                            System.out.println();
-                        }
+                        if (!player.world.missions[28].completed) {Dialogue.solitudeKeep();}
                         else {System.out.println(keepQuestTaken); System.out.println();}
                     }
                     case "2" -> pickpocket(player);
@@ -109,12 +104,7 @@ public class Keep extends Building
                     case "0" -> {player.sheet(player); menu(player);}
                     case "1" ->
                     {
-                        if (!player.world.missions[29].completed)
-                        {
-                            System.out.println("- Yes... I have seen you in my dreams, Dovakiin. Your destiny is to stop the dragons. And the dragon in Eldersblood Peak is a sign. You have to kill it.\n" +
-                                    "Morthal isn't rich hold, but I'm sure you will be rewarded wtih... let's say one thousand septims for killing the beast.");
-                            System.out.println();
-                        }
+                        if (!player.world.missions[29].completed) {Dialogue.morthalKeep();}
                         else {System.out.println(keepQuestTaken);System.out.println();}
                     }
                     case "2" -> pickpocket(player);
@@ -134,12 +124,7 @@ public class Keep extends Building
                     case "0" -> {player.sheet(player); menu(player);}
                     case "1" ->
                     {
-                        if (!player.world.missions[30].completed)
-                        {
-                            System.out.println("- By the name of Eight or any different gods you believe. You have to protect the city from dragon that infested in Dragontooth Crater!\n" +
-                                    "Markarth flows with silver and blood. If you will come back, then you will have enough silver for a long time. If not, well... I will pray for your soul");
-                            System.out.println();
-                        }
+                        if (!player.world.missions[30].completed) {Dialogue.markarthKeep();}
                         else {System.out.println(keepQuestTaken);System.out.println();}
                     }
                     case "2" -> pickpocket(player);
@@ -159,12 +144,7 @@ public class Keep extends Building
                     case "0" -> {player.sheet(player); menu(player);}
                     case "1" ->
                     {
-                        if (!player.world.missions[31].completed)
-                        {
-                            System.out.println("- Yes. I think I might use your skills, stranger. You will kill a dragon in his lair, in Ancestors Glade\n" +
-                                    "You will get your reward when you'll come back. Then, I will decide how much gold you'll be given. Now go!");
-                            System.out.println();
-                        }
+                        if (!player.world.missions[31].completed) {Dialogue.falkreathKeep();}
                         else {System.out.println(keepQuestTaken); System.out.println();}
                     }
                     case "2" -> pickpocket(player);
@@ -184,12 +164,7 @@ public class Keep extends Building
                     case "0" -> {player.sheet(player); menu(player);}
                     case "1" ->
                     {
-                        if (!player.world.missions[32].completed)
-                        {
-                            System.out.println("- Whiterun needs you, friend. This damn dragon destroyed our Watchtower west of the city. I'm sure the beast is still somewhere there...\n" +
-                                    "I will grant you with a weapon from my personal armory and one thousand septims. This is a generous offer, I assure you.");
-                            System.out.println();
-                        }
+                        if (!player.world.missions[32].completed) {Dialogue.whiterunKeep();}
                         else {System.out.println(keepQuestTaken); System.out.println();}
                     }
                     case "2" -> {pickpocket(player);}
@@ -209,12 +184,7 @@ public class Keep extends Building
                     case "0" -> {player.sheet(player); menu(player);}
                     case "1" ->
                     {
-                        if (!player.world.missions[33].completed)
-                        {
-                            System.out.println("- You! You are the Dragonborn and you will help my city! Dragon blasphemed our dear goddess temple. There, behind the hills. You will kill it!\n" +
-                                    "Yes, yes, I will gave you reward, but first things first. Slay the beast!");
-                            System.out.println();
-                        }
+                        if (!player.world.missions[33].completed) {Dialogue.dawnstarKeep();}
                         else {System.out.println(keepQuestTaken); System.out.println();}
                     }
                     case "2" -> {pickpocket(player);}
@@ -234,12 +204,7 @@ public class Keep extends Building
                     case "0" -> {player.sheet(player); menu(player);}
                     case "1" ->
                     {
-                        if (!player.world.missions[34].completed)
-                        {
-                            System.out.println("- You must be this famous Dragonborn. It's doing well. I got job for you. Dragon job, more precisely. This big lizard infested in ancient Skytemple Ruins. YOu know what to do.\n" +
-                                    "I'll give you 500 septims and nothing more. We aren't rich people and I'm too tired and old to argue about money");
-                            System.out.println();
-                        }
+                        if (!player.world.missions[34].completed) {Dialogue.winterholdKeep();}
                         else {System.out.println(keepQuestTaken); System.out.println();}
                     }
                     case "2" -> {pickpocket(player);}
@@ -259,12 +224,7 @@ public class Keep extends Building
                     case "0" -> {player.sheet(player); menu(player);}
                     case "1" ->
                     {
-                        if (!player.world.missions[35].completed)
-                        {
-                            System.out.println("- I'm busy man so I'll talk straight. You will kill the dragon in Yngol Barrow and I will grant you the rank of thane of Windhelm.\n" +
-                                    "You will also get one thousand septims and armor from my personal collection as an expression of good will. Now go, I have a war on my mind.");
-                            System.out.println();
-                        }
+                        if (!player.world.missions[35].completed) {Dialogue.windhelmKeep();}
                         else {System.out.println(keepQuestTaken); System.out.println();}
                     }
                     case "2" -> {pickpocket(player);}
@@ -284,12 +244,7 @@ public class Keep extends Building
                     case "0" -> {player.sheet(player); menu(player);}
                     case "1" ->
                     {
-                        if (!player.world.missions[36].completed)
-                        {
-                            System.out.println("- You were expected Dragonborn. I need your help. Whole Rift needs your help. Dragon were spotted on Northwind Summit.\n" +
-                                    "Of course, you will be rewarded. I can give you one thousand septims. Maybe a little bit more if you will hurry up. Can you do this for Skyrim?");
-                            System.out.println();
-                        }
+                        if (!player.world.missions[36].completed) {Dialogue.riftenKeep();}
                         else {System.out.println(keepQuestTaken); System.out.println();}
                     }
                     case "2" -> {pickpocket(player);}

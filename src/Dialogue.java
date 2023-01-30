@@ -155,4 +155,67 @@ public class Dialogue
                 "I don't know what he wants but I know that this man is dangerous. Also, we are convinced that his necklace gives him his power. You will get down there, steal the necklace and then we will kick his ass out.\n" +
                 "You don't have to kill him. We are not Dark Brotherhood, remember. Quiet and sneaky.");
     }
+
+    public static void solitudeKeep()
+    {
+        System.out.println("- In the name of Queen Elisif, wife of High King Torygg, and all citizens of Haafingar I humbly beg you to kill dragon residing on the Mount Kilkreath.\n" +
+                "You will be rewarded with two thousand septims and forever will be recognized as honorary citizen of Solitude.");
+        System.out.println();
+    }
+
+    public static void morthalKeep()
+    {
+        System.out.println("- Yes... I have seen you in my dreams, Dovakiin. Your destiny is to stop the dragons. And the dragon in Eldersblood Peak is a sign. You have to kill it.\n" +
+                "Morthal isn't rich hold, but I'm sure you will be rewarded wtih... let's say one thousand septims for killing the beast.");
+        System.out.println();
+    }
+
+    public static void markarthKeep()
+    {
+        System.out.println("- By the name of Eight or any different gods you believe. You have to protect the city from dragon that infested in Dragontooth Crater!\n" +
+                "Markarth flows with silver and blood. If you will come back, then you will have enough silver for a long time. If not, well... I will pray for your soul");
+        System.out.println();
+    }
+
+    public static void falkreathKeep()
+    {
+        System.out.println("- Yes. I think I might use your skills, stranger. You will kill a dragon in his lair, in Ancestors Glade\n" +
+                "You will get your reward when you'll come back. Then, I will decide how much gold you'll be given. Now go!");
+        System.out.println();
+    }
+
+    public static void whiterunKeep()
+    {
+        System.out.println("- Whiterun needs you, friend. This damn dragon destroyed our Watchtower west of the city. I'm sure the beast is still somewhere there...\n" +
+                "I will grant you with a weapon from my personal armory and one thousand septims. This is a generous offer, I assure you.");
+        System.out.println();
+    }
+
+    public static void dawnstarKeep()
+    {
+        System.out.println("- You! You are the Dragonborn and you will help my city! Dragon blasphemed our dear goddess temple. There, behind the hills. You will kill it!\n" +
+                "Yes, yes, I will gave you reward, but first things first. Slay the beast!");
+        System.out.println();
+    }
+
+    public static void winterholdKeep()
+    {
+        System.out.println("- You must be this famous Dragonborn. It's doing well. I got job for you. Dragon job, more precisely. This big lizard infested in ancient Skytemple Ruins. YOu know what to do.\n" +
+                "I'll give you 500 septims and nothing more. We aren't rich people and I'm too tired and old to argue about money");
+        System.out.println();
+    }
+
+    public static void windhelmKeep()
+    {
+        System.out.println("- I'm busy man so I'll talk straight. You will kill the dragon in Yngol Barrow and I will grant you the rank of thane of Windhelm.\n" +
+                "You will also get one thousand septims and armor from my personal collection as an expression of good will. Now go, I have a war on my mind.");
+        System.out.println();
+    }
+
+    public static void riftenKeep()
+    {
+        System.out.println("- You were expected Dragonborn. I need your help. Whole Rift needs your help. Dragon were spotted on Northwind Summit.\n" +
+                "Of course, you will be rewarded. I can give you one thousand septims. Maybe a little bit more if you will hurry up. Can you do this for Skyrim?");
+        System.out.println();
+    }
 }
