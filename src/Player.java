@@ -25,7 +25,7 @@ public class Player implements Serializable
     {
         System.out.println("- type 'help' to see this menu again");
         System.out.println("- type 'save' to save a game and 'load' to restore saved game //this feature is in progress");
-        System.out.println("*** REMEMBER*** there is only one save slot");
+        System.out.println("");
         System.out.println();
     }
 

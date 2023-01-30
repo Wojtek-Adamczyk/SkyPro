@@ -11,7 +11,7 @@ class Game implements Serializable
         this.world = world;
     }
 
-    public Player getPlayer() {return player;}
+    public Player loadPlayer() {return player;}
 
-    public World getWorld() {return world;}
+    public World loadWorld() {return world;}
 }
