@@ -222,7 +222,6 @@ class City implements Serializable
                 TimeUnit.SECONDS.sleep(3);
                 wilderness.menu(player);
             }
-            case "help" -> player.help();
             case "save" -> {State.saveGame(player, player.world);}
             default -> {System.out.println("> Invalid command <"); System.out.println();}
         }

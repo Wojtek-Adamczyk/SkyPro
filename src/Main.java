@@ -7,10 +7,6 @@ public class Main implements Serializable
 {
     public static void main(String[] args) throws InterruptedException, IOException, ClassNotFoundException
     {
-        System.out.println();
-        System.out.println("// this 'game' in currently in 'development' and will be expanded and/or changed over time");
-        System.out.println();
-
         System.out.println("'start' - start new game");
         System.out.println("'load' - load saved game");
         Scanner newGame = new Scanner(System.in);

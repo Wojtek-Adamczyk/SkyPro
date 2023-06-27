@@ -1,6 +1,7 @@
 import java.io.Serializable;
 import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
+
+import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class Player implements Serializable
 {
@@ -19,14 +20,6 @@ public class Player implements Serializable
         this.armor = armor;
         this.money = money;
         this.stealth = stealth;
-    }
-
-    public void help()
-    {
-        System.out.println("- type 'help' to see this menu again");
-        System.out.println("- type 'save' to save a game and 'load' to restore saved game //this feature is in progress");
-        System.out.println("");
-        System.out.println();
     }
 
     public void sheet(Player player)
@@ -60,17 +53,18 @@ public class Player implements Serializable
         System.out.println("8. Travel to Windhelm");
         System.out.println("9. Travel to Riften");
 
+        String travelling = "Travelling to ";
         Scanner input = new Scanner(System.in);
         int playerInput = input.nextInt();
-        if (playerInput == 1) {currentCity = world.cities[0]; System.out.println("Travelling to Solitude..."); System.out.println(); TimeUnit.SECONDS.sleep(10);}
-        if (playerInput == 2) {currentCity = world.cities[1]; System.out.println("Travelling to Morthal..."); System.out.println(); TimeUnit.SECONDS.sleep(10);}
-        if (playerInput == 3) {currentCity = world.cities[2]; System.out.println("Travelling to Markarth..."); System.out.println(); TimeUnit.SECONDS.sleep(10);}
-        if (playerInput == 4) {currentCity = world.cities[3]; System.out.println("Travelling to Falkreath..."); System.out.println(); TimeUnit.SECONDS.sleep(10);}
-        if (playerInput == 5) {currentCity = world.cities[4]; System.out.println("Travelling to Whiterun..."); System.out.println(); TimeUnit.SECONDS.sleep(10);}
-        if (playerInput == 6) {currentCity = world.cities[5]; System.out.println("Travelling to Dawnstar..."); System.out.println(); TimeUnit.SECONDS.sleep(10);}
-        if (playerInput == 7) {currentCity = world.cities[6]; System.out.println("Travelling to Winterhold..."); System.out.println(); TimeUnit.SECONDS.sleep(10);}
-        if (playerInput == 8) {currentCity = world.cities[7]; System.out.println("Travelling to Windhelm..."); System.out.println(); TimeUnit.SECONDS.sleep(10);}
-        if (playerInput == 9) {currentCity = world.cities[8]; System.out.println("Travelling to Riften..."); System.out.println(); TimeUnit.SECONDS.sleep(10);}
+        if (playerInput == 1) {currentCity = world.cities[0]; System.out.println(travelling + "Solitude..."); System.out.println(); SECONDS.sleep(10);}
+        if (playerInput == 2) {currentCity = world.cities[1]; System.out.println(travelling + "Morthal..."); System.out.println(); SECONDS.sleep(10);}
+        if (playerInput == 3) {currentCity = world.cities[2]; System.out.println(travelling + "Markarth..."); System.out.println(); SECONDS.sleep(10);}
+        if (playerInput == 4) {currentCity = world.cities[3]; System.out.println(travelling + "Falkreath..."); System.out.println(); SECONDS.sleep(10);}
+        if (playerInput == 5) {currentCity = world.cities[4]; System.out.println(travelling + "Whiterun..."); System.out.println(); SECONDS.sleep(10);}
+        if (playerInput == 6) {currentCity = world.cities[5]; System.out.println(travelling + "Dawnstar..."); System.out.println(); SECONDS.sleep(10);}
+        if (playerInput == 7) {currentCity = world.cities[6]; System.out.println(travelling + "Winterhold..."); System.out.println(); SECONDS.sleep(10);}
+        if (playerInput == 8) {currentCity = world.cities[7]; System.out.println(travelling + "Windhelm..."); System.out.println(); SECONDS.sleep(10);}
+        if (playerInput == 9) {currentCity = world.cities[8]; System.out.println(travelling + "Riften..."); System.out.println(); SECONDS.sleep(10);}
     }
 
     public void hireFollower(Follower follower)
